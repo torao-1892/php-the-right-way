@@ -1,23 +1,22 @@
-# Welcome
+# Bem vindo
 
-There's a lot of outdated information on the Web that leads new PHP users astray, propagating bad practices and bad code. This must stop. _PHP: The Right Way_ is an easy-to-read, quick reference for PHP best practices, accepted coding standards, and links to authoritative tutorials around the Web.
+Existe muita informação obsoleta na Web que desnorteia novos programadores PHP, espalhando más práticas e péssimo código. Isto precisa acabar. _PHP: Do Jeito Certo_ é uma referência rápida de melhores práticas de PHP, renomados padrões de código e links para tutoriais competentes pela Web. 
 
-It is important to understand _there is no canonical way to use PHP_. That's the beauty of it. This website introduces new PHP developers to best practices, available options, and good information.
+É importante entender que _não existe uma maneira canônica de usar PHP_. Essa é a graça. Este site introduz novos desenvolvedores PHP às melhores práticas, opções disponíveis e boas informações.
 
-## Disclaimer
+## Atenção
 
-This is a living document and will continue to be updated with more helpful information and examples as they become available.
+Este é um documento "vivo", que continuará sendo atualizado com mais informações úteis e exemplos, assim que eles estiverem disponíveis.
 
-## How to Contribute
+## Como contribuir
 
-Help make this website the best resource for new PHP programmers! [Contribute on GitHub][1]
+Ajude a tornar este site o melhor recurso para novos programadores PHP! [Contribua no GitHub][1]
 
-## Spread the Word!
+## Espalhe a palavra!
 
-_PHP: The Right Way_ has web banner images you can use on your website. Show your support, and let new PHP
-developers know where to find good information!
+_PHP: Do Jeito Certo_ possui banners que você pode usar em seu site. Para mostrar seu apoio, deixe que novos desenvolvedores PHP saibam onde encontrar boas informações!
 
-[See Banner Images][2]
+[Banners][2]
 
 [1]: https://github.com/codeguy/php-the-right-way/tree/gh-pages
 [2]: /banners.html
