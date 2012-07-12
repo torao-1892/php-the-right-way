@@ -2,41 +2,38 @@
 isChild: true
 ---
 
-## Programming Paradigms
+## Paradigmas de programação
 
-PHP is a flexible, dynamic language that supports a variety of programming techniques. It has evolved dramatically over the years, 
-notably adding a solid object-oriented model in PHP 5.0 (2004), anonymous functions and namespaces in PHP 5.3 (2009), and traits in 
-PHP 5.4 (2012). 
+O PHP é uma linguagem dinâmica e flexível, que suporta uma variedade de técnicas de programação. Ele evoluiu drasticamente com o passar dos anos, notavelmente adicionando um sólido modelo de orientação a objetos no PHP 5.0 (2004), funções anônimas e namespaces no PHP 5.3 (2009) e traits no PHP 5.4 (2012).
 
-### Object-oriented Programming
+### Programação orientada a objetos
 
-* [Read about Object-oriented PHP][oop]
-* [Read about Traits][traits]
+* [Leia sobre PHP orientado a objetos][oop]
+* [Leia sobre Traits][traits]
 
-### Functional Programming
+### Programação funcional
 
-PHP has had annonymous functions since PHP 5.3:
+PHP possui funções anônimas desde o PHP 5.3:
 
 {% highlight php %}
 <?php
-$greet = function($name)
+$saudacao = function($nome)
 {
-    print("Hello {$name}");
+    print("Oi {$nome}");
 };
 
-$greet('World');
+$saudacao('Mundo');
 {% endhighlight %}
 
-* [Read about Anonymous functions][anonymous-functions]
-* [Read about dynamically invoking functions with `call_user_func_array`][call-user-func-array]
+* [Leia sobre Funções anônimas][anonymous-functions]
+* [Leia sobre invocar funções dinamicamente com `call_user_func_array`][call-user-func-array]
 
-### Meta Programming
+### Meta Programação
 
-Ruby developers often say that PHP is lacking `method_missing`, but it is available as `__call()`. There are many Magic Methods available 
-like `__get()`, `__set()`, `__clone()`, `__toString()`, etc.
+Desenvolvedores Ruby costumam dizer que o PHP carece de `method_missing`, mas ela está disponível como `__call()`. Existem muitos outros Métodos Mágicos disponíveis, como  `__get()`, `__set()`, `__clone()`, `__toString()`, etc.
 
-* [Read about Magic Methods][magic-methods]
-* [Read about Reflection][reflection]
+* [Leia sobre Métodos Mágicos][magic-methods]
+* [Leia sobre Reflexão][reflection]
 
 [namespaces]: http://php.net/manual/en/language.namespaces.php
 [overloading]: http://uk.php.net/manual/en/language.oop5.overloading.php
