@@ -7,9 +7,9 @@ O [Framework Interop Group][fig] (outrora conhecido como 'PHP Standards Group') 
 
 Idealmente você deveria escrever código PHP que adere a um ou mais destes padrões, de forma que outros desenvolvedores possam facilmente ler e trabalhar no seu código. Estes padrões são cumulativos, portanto usar PSR-1 requere a PSR-0, mas não requere a PSR-2.
 
-* [Ler sobre a PSR-0][psr0]
-* [Ler sobre a PSR-1][psr1]
-* [Ler sobre a PSR-2][psr2]
+* [Leia sobre a PSR-0][psr0]
+* [Leia sobre a PSR-1][psr1]
+* [Leia sobre a PSR-2][psr2]
 
 [Voltar ao topo](#top)
 
