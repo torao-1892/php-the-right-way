@@ -2,13 +2,13 @@
 isChild: true
 ---
 
-## Mac Setup
+## Instalação no Mac
 
-OSX comes prepackaged with PHP but it is normally a little behind the latest stable. Lion comes with PHP 5.3.6 and Mountain Lion has 5.3.10.
+O OSX já vem com o PHP, mas ele é normalmente um pouco atrasado em relação ao último estável. O Lion vem com o PHP 5.3.6 e o Mountain Lion com o 5.3.10.
 
-To update PHP on OSX you can get the PHP executable through a number of Mac [package managers][mac-package-managers] or [compile it yourself][mac-compile] (if compiling, be sure to have installed either Xcode or Apple's substitute ["Command Line Tools for Xcode" downloadable from Apple's Mac Developer Center][apple-developer]). 
+Para atualizar o PHP no OSX você pode pegar o executável do PHP através de vários [gerenciadores de pacote][mac-package-managers] para Mac ou [compilar você mesmo][mac-compile] (se você for compilar, certifique-se de ter instalado o Xcode ou seu substituto ["Command Line Tools for Xcode" disponível no Mac Developer Center da Apple][apple-developer]).
 
-For a complete LAMP package with GUI try [MAMP][mamp-downloads], otherwise consider the [Entropy 5.4][entropy-downloads] package.
+Para um pacote LAMP completo com GUI, tente o [MAMP][mamp-downloads], ou então considere o pacote [Entropy 5.4][entropy-downloads].
 
 [mac-package-managers]: http://www.php.net/manual/en/install.macosx.packages.php
 [mac-compile]: http://www.php.net/manual/en/install.macosx.compile.php

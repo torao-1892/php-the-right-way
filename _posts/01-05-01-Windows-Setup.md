@@ -2,24 +2,16 @@
 isChild: true
 ---
 
-## Windows Setup
+## Instalação no Windows
 
-PHP is available in several ways for Windows. You can [download the binaries](php-downloads) and until recently you could use a '.msi' 
-installer. The installer is no longer supported and stops at PHP 5.3.0.
+O PHP está disponível em diversas maneiras no Windows. Você pode [baixar os binários](php-downloads) e até recentemente você podia usar um instalador '.msi'. O instalador não é mais suportado e parou no PHP 5.3.0.
 
-For learning and local development you can use the built in webserver with PHP 5.4 so you don't need to worry about configuring it. If you 
-would like an "all-in-one" which includes a full-blown webserver and MySQL too then tools such as the [Web Platform Installer][wpi], 
-[XAMPP][xampp] and [WAMP][wamp] will help get a Windows development environment up and running fast. That said, these tools will be 
-a little different from production so be careful of environment differences if you are working on Windows and deploying to Linux.
+Para aprender e desenvolver localmente, você pode utilizar o servidor web embutido com o PHP 5.4, de forma que você não precisa se preocupar em configurá-lo. Se você prefere um "pacote completo" que inclui um servidor web e MySQL, então ferramentas como o [Web Platform Installer][wpi], 
+[XAMPP][xampp] e [WAMP][wamp] irão ajudá-lo a montar um ambiente de desenvolvimento em Windows rapidamente. Dito isso, estas ferramentas serão um pouco diferentes das ferramentas em produção, portanto tenha cuidado quanto às diferenças de ambiente caso esteja trabalhando em Windows e publicando em Linux. 
 
-If you need to run your production system on Windows then IIS7 will give you the most stable and best performance. You can use 
-[phpmanager][phpmanager] (a GUI plugin for IIS7) to make configuring and managing PHP simple. IIS7 comes with FastCGI built in and ready 
-to go, you just need to configure PHP as a handler. For support and additional resources there is a [dedicated area on iis.net][php-iis] for 
-PHP.
+Caso você precise rodar seu ambiente de produção em Windows, então o IIS7 vai lhe dar mais estabilidade e melhor performance. Você pode usar o [phpmanager][phpmanager] (um plugin GUI para o IIS7) para tornar a configuração e gerenciamento do PHP mais simples. O IIS7 vem com FastCGI embutido e pronto para uso, você só precisa configurar o PHP como handler. Para suporte e mais recursos, existe uma [área dedicada no iis.net][php-iis] ao PHP.
 
-Generally running your application on different environment in development and production can lead to strange bugs popping up when you go 
-live. If you are developing on Windows and deploying to Linux (or anything non-Windows) then you should consider using a Virtual Machine. This 
-sounds tricky, but using [Vagrant][vagrant] you can set up simple wrappers, then using [Puppet][puppet] or [Chef][chef] you can provision these boxes and share them with your colleagues to ensure you're all working on the same stack. More on this soon.
+Geralmente, rodar sua aplicação em ambientes de desenvolvimento e produção diferentes pode levar a bugs estranhos quando você publica. Se você está desenvolvendo em Windows e publicando em Linux (ou qualquer coisa não-Windows), então você deveria considerar usar uma Máquina Virtual. Isto pode parecer difícil, mas usando [Vagrant][vagrant] você pode configurar pequenos wrappers, então usando [Puppet][puppet] ou [Chef][chef] você pode prover estas caixas e compartilhá-las com colegas, garantindo que todos estão trabalhando na mesma pilha. Falaremos mais sobre isso logo.
 
 [php-downloads]: http://windows.php.net
 [phpmanager]: http://phpmanager.codeplex.com/
