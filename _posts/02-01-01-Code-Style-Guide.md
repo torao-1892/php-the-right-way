@@ -1,16 +1,17 @@
-# Code Style Guide
+# Guia de estilo de código
 
-The PHP community is large and diverse, composed of innumerable libraries, frameworks, and components. It is common for PHP developers to choose several of these and combine them into a single project. It is important that PHP code adhere (as close as possible) to a common code style to make it easy for developers to mix and match various libraries for their projects.
+A comunidade PHP é grande e diversa, composta por inúmeras bibliotecas, frameworks e componentes. É comum para desenvolvedores PHP escolher vários destes e combiná-los em um único projeto. É importante que código PHP siga um estilo de código comum para que desenvolvedores PHP possam misturar várias bibliotecas em seus projetos.
 
-The [Framework Interop Group][fig] (formerly known as the 'PHP Standards Group') has proposed and approved a series of style recommendations, known as [PSR-0][psr0], [PSR-1][psr1] and [PSR-2][psr2]. Don't let the funny names confuse you, these recommendations are merely a set of rules that some projects like Drupal, Zend, CakePHP, phpBB, AWS SDK, FuelPHP, Lithium, etc are starting to adopt. You can use them for your own projects, or continue to use your own personal style.
+O [Framework Interop Group][fig] (outrora conhecido como 'PHP Standards Group') propôs e aprovou várias recomendações de estilo, conhecidas como
+[PSR-0][psr0], [PSR-1][psr1] e [PSR-2][psr2]. Não deixe os nomes estranhos confundi-lo, estas recomendações são meramente um conjunto de regras que projetos como Drupal, Zend, CakePHP, phpBB, AWS SDK, FuelPHP, Lithium, etc estão começando a adotar. Você pode utilizá-las para seus próprios projetos, ou continuar utilizando seu estilo pessoal.
 
-Ideally you should write PHP code that adheres to one or more of these standards so that other developers can easily read and work with your code. They all add on to the recommendation before, so using PSR-1 requires PSR-0, but does not require PSR-2.
+Idealmente você deveria escrever código PHP que adere a um ou mais destes padrões, de forma que outros desenvolvedores possam facilmente ler e trabalhar no seu código. Estes padrões são cumulativos, portanto usar PSR-1 requere a PSR-0, mas não requere a PSR-2.
 
-* [Read about PSR-0][psr0]
-* [Read about PSR-1][psr1]
-* [Read about PSR-2][psr2]
+* [Ler sobre a PSR-0][psr0]
+* [Ler sobre a PSR-1][psr1]
+* [Ler sobre a PSR-2][psr2]
 
-[Back to Top](#top)
+[Voltar ao topo](#top)
 
 [fig]: http://www.php-fig.org/
 [psr0]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
