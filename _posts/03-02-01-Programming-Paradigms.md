@@ -8,6 +8,8 @@ O PHP é uma linguagem dinâmica e flexível, que suporta uma variedade de técn
 
 ### Programação orientada a objetos
 
+O PHP possui um conjunto completo de funcionalidades de programação orientada a objetos, incluindo suporte à classes, classes abstratas, interfaces, herança, construtores, clonagem, exceções e muito mais.
+
 * [Leia sobre PHP orientado a objetos][oop]
 * [Leia sobre Traits][traits]
 
@@ -39,7 +41,10 @@ Desenvolvedores Ruby costumam dizer que o PHP carece de `method_missing`, mas el
 [overloading]: http://uk.php.net/manual/en/language.oop5.overloading.php
 [oop]: http://www.php.net/manual/en/language.oop5.php
 [anonymous-functions]: http://www.php.net/manual/en/functions.anonymous.php
+[closure-class]: http://php.net/manual/en/class.closure.php
+[callables]: http://php.net/manual/en/language.types.callable.php
 [magic-methods]: http://php.net/manual/en/language.oop5.magic.php
 [reflection]: http://www.php.net/manual/en/intro.reflection.php
 [traits]: http://www.php.net/traits
 [call-user-func-array]: http://php.net/manual/en/function.call-user-func-array.php
+[closures-rfc]: https://wiki.php.net/rfc/closures

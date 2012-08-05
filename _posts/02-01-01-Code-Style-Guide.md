@@ -11,9 +11,13 @@ Idealmente você deveria escrever código PHP que adere a um ou mais destes padr
 * [Leia sobre a PSR-1][psr1]
 * [Leia sobre a PSR-2][psr2]
 
-[Voltar ao topo](#top)
+Você pode usar o sniff [phpcs-psr][phpcs-psr] para o [PHP_CodeSniffer][phpcs] para checar seu código para as recomendações. Use o 
+[PHP Coding Standards Fixer][phpcsfixer] do Fabien Potencier para automaticamente modificar seu código para que ele seja compatível com os padrões, evitando precisar fazer as alterações na mão.
 
 [fig]: http://www.php-fig.org/
 [psr0]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
 [psr1]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md
 [psr2]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
+[phpcs]: http://pear.php.net/package/PHP_CodeSniffer/
+[phpcs-psr]: https://github.com/klaussilveira/phpcs-psr
+[phpcsfixer]: http://cs.sensiolabs.org/

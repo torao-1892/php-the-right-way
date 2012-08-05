@@ -13,6 +13,7 @@
 * [Chris Shiflett](http://twitter.com/shiflett)
 * [Sebastian Bergmann](http://twitter.com/s_bergmann)
 * [Matthew Weier O'Phinney](http://twitter.com/weierophinney)
+* [Nikita Popov](http://twitter.com/nikita_ppv)
 
 ## Mentoring
 
@@ -28,3 +29,4 @@
 * [AWS Elastic Beanstalk](http://aws.amazon.com/elasticbeanstalk/)
 * [cloudControl](https://www.cloudcontrol.com/)
 * [Windows Azure](http://www.windowsazure.com/)
+* [Zend Developer Cloud](http://www.phpcloud.com/develop)
