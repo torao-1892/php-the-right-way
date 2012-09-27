@@ -3,7 +3,7 @@
 A comunidade PHP é grande e diversa, composta por inúmeras bibliotecas, frameworks e componentes. É comum para desenvolvedores PHP escolher vários destes e combiná-los em um único projeto. É importante que código PHP siga um estilo de código comum para que desenvolvedores PHP possam misturar várias bibliotecas em seus projetos.
 
 O [Framework Interop Group][fig] (outrora conhecido como 'PHP Standards Group') propôs e aprovou várias recomendações de estilo, conhecidas como
-[PSR-0][psr0], [PSR-1][psr1] e [PSR-2][psr2]. Não deixe os nomes estranhos confundi-lo, estas recomendações são meramente um conjunto de regras que projetos como Drupal, Zend, CakePHP, phpBB, AWS SDK, FuelPHP, Lithium, etc estão começando a adotar. Você pode utilizá-las para seus próprios projetos, ou continuar utilizando seu estilo pessoal.
+[PSR-0][psr0], [PSR-1][psr1] e [PSR-2][psr2]. Não deixe os nomes estranhos confundi-lo, estas recomendações são meramente um conjunto de regras que projetos como Drupal, Zend, CakePHP, phpBB, AWS SDK, FuelPHP, Lithium etc. estão começando a adotar. Você pode utilizá-las para seus próprios projetos, ou continuar utilizando seu estilo pessoal.
 
 Idealmente você deveria escrever código PHP que adere a um ou mais destes padrões, de forma que outros desenvolvedores possam facilmente ler e trabalhar no seu código. Estes padrões são cumulativos, portanto usar PSR-1 requere a PSR-0, mas não requere a PSR-2.
 
