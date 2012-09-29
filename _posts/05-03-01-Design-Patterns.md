@@ -2,15 +2,15 @@
 isChild: true
 ---
 
-## Design Patterns
+## Padrões de Projeto
 
-When you are building your application it is helpful to use common patterns in your code and common patterns for the
-overall structure of your project. Using common patterns is helpful because it makes it much easier to manage your code
-and lets other developers quickly understand how everything fits together.
+Quando você está construindo sua aplicação é útil usar padrões comuns no seu código, e padrões comuns para a
+estutura global do seu projeto. Usar padrões comuns é útil porque ele torna muito mais fácil gerenciar seu código
+e faz os outros desenvolvedores entenderem rapidamente como tudo se encaixa.
 
-If you use a framework then most of the higher level code and project structure will be based on that framework, so a
-lot of the pattern decisions are made for you. But it is still up to you to pick out the best patterns to follow in the
-code you build on top of the framework. If, on the other hand, you are not using a framework to build your application
-then you have to find the patterns that best suit the type and size of application that you're building.
+Se você usa um framework então a maioria do código de alto nível e a estrutura do projeto será baseada naquele framework, assim
+muitas das decisões sobre padrões já são tomadas para você. No entanto continua sendo sua responsabilidade escolher os melhores padrões a seguir no
+código que você escreve por cima do framework. Se, por outro lado, você não estiver usando um framework para construir sua aplicação
+então você precisa descobrir os padrões que melhor se ajustem ao tipo e ao tamanho da aplicação que você está construindo.
 
-* Continue reading on [Design Patterns](/pages/Design-Patterns.html)
+* Continue lendo sobre [Padrões de Projeto](/pages/Design-Patterns.html)
