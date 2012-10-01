@@ -2,29 +2,29 @@
 isChild: true
 ---
 
-## Data Filtering
+## Filtro de Dados
 
-Never ever (ever) trust foreign input introduced to your PHP code. Always sanitize and validate
-foreign input before using it in code. The `filter_var` and `filter_input` functions can sanitize text and validate text formats (e.g.
-email addresses).
+Nunca, jamais (nunca mesmo), confie em entradas externas feitas no seu código PHP. Sempre higienize(sanitize) e valide
+as entradas externas antes de utilizá-las no seu código. As funcões `filter_var` e `filter_input` podem higienizar textos e validar formatos (e.g.
+endereços de email).
 
-Foreign input can be anything: `$_GET` and `$_POST` form input data, some values in the `$_SERVER`
-superglobal, and the HTTP request body via `fopen('php://input', 'r')`. Remember, foreign input is not
-limited to form data submitted by the user. Uploaded and downloaded files, session values, cookie data,
-and data from third-party web services are foreign input, too.
+Entradas externas podem ser qualquer coisa: dados de entrada de formulário `$_GET` ou `$_POST`, alguns valores na superglobal
+`$_SERVER` e o corpo da requisição HTTP via `fopen('php://input', 'r')`. Lembre-se, entradas externas não estão
+limitadas a dados de formulários enviados pelo usuário. Arquivos carregados e baixados, valores em sessões, dados dos cookies
+e dados de web services de terceiros também são entradas externas.
 
-While foreign data can be stored, combined, and accessed later, it is still foreign input. Every
-time you process, output, concatenate, or include data in your code, ask yourself if
-the data is filtered properly and can it be trusted.
+Enquanto o dado externo puder ser armazenado, combinado ou acessado posteriormente, ele continua sendo uma entrada externa. Todo
+momento que você processar, emitir, concatenar ou incluir dados no seu código, pergunte a si mesmo se
+eles foram filtrados adequadamente e se são confiáveis.
 
-Data may be _filtered_ differently based on its purpose. For example, when unfiltered foreign input is passed
-into HTML page output, it can execute HTML and JavaScript on your site! This is known as Cross-Site
-Scripting (XSS) and can be a very dangerous attack. One way to avoid XSS is to sanitize all HTML tags
-in the input by removing tags or escaping them into HTML entities.
+Os dados podem ser _filtrados_ de maneiras diferentes baseando-se em sua finalidade. Por exemplo, quando entradas externas não filtradas são passadas
+para uma saída de página HTML, elas podem executar HTML e JavaScript no seu site! Isso é conhecido como Cross-Site
+Scripting (XSS) e pode ser um ataque bem perigoso. Um modo de evitar o XSS é higienizar todas as tags HTML
+da entrada, removendo as tags ou escapando-as usando entidades HTML.
 
-Another example is passing options to be executed on the command line. This can be extremely dangerous
-(and is usually a bad idea), but you can use the built-in `escapeshellarg` function to sanitize the executed
-command's arguments.
+Outro exemplo é ao passar opções para execução na linha de comando. Isso pode ser extremamente perigoso
+(e geralmente é má ideia), mas você pode usar a função embutida `escapeshellarg` para higienizar os argumentos
+executados.
 
 One last example is accepting foreign input to determine a file to load from the filesystem. This can be exploited by
 changing the filename to a file path. You need to remove "/", "../", [null bytes][6], or other characters from the file path so it can't
