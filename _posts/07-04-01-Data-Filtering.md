@@ -26,36 +26,36 @@ Outro exemplo é ao passar opções para execução na linha de comando. Isso po
 (e geralmente é má ideia), mas você pode usar a função embutida `escapeshellarg` para higienizar os argumentos
 executados.
 
-One last example is accepting foreign input to determine a file to load from the filesystem. This can be exploited by
-changing the filename to a file path. You need to remove "/", "../", [null bytes][6], or other characters from the file path so it can't
-load hidden, non-public, or sensitive files.
+Um último exemplo é aceitar entradas externas para determinar o carregamento de um arquivo do sistema de arquivos. Isso pode ser explorado
+alterando o nome e o caminho do arquivo. Você precisa remover os "/", "../", [null bytes][6] e outros caracteres do caminho do arquivo, dessa forma
+não será possível carregar arquivos ocultos, privados ou confidenciais.
 
-* [Learn about data filtering][1]
-* [Learn about `filter_var`][4]
-* [Learn about `filter_input`][5]
-* [Learn about handling null bytes][6]
+* [Aprenda sobre filtro de dados][1]
+* [Aprenda sobre a `filter_var`][4]
+* [Aprenda sobre a `filter_input`][5]
+* [Aprenda sobre tratamento de null bytes][6]
 
-### Sanitization
+### Higienização/Sanitization
 
-Sanitization removes (or escapes) illegal or unsafe characters from foreign input.
+A higienização remove (ou "escapa") caracteres ilegais ou inseguros das entradas externas.
 
-For example, you should sanitize foreign input before including the input in HTML or inserting it
-into a raw SQL query. When you use bound parameters with [PDO](#databases), it will
-sanitize the input for you.
+Por exemplo, você deveria higienizar entradas externas antes de incluí-las no HTML ou de inseri-las
+em consultas SQL brutas. Quando você usar parâmetros restritos com a [PDO](#databases), ela já irá
+higienizar as entradas para você.
 
-Sometimes it is required to allow some safe HTML tags in the input when including it in the HTML
-page. This is very hard to do and many avoid it by using other more restricted formatting like
-Markdown or BBCode, although whitelisting libraries like [HTML Purifier][html-purifier] exists for
-this reason.
+Às vezes será obrigatório permitir algumas tags HTML seguras na sua entrada quando estiver incluindo-as em um página
+HTML. Isso é bem difícil de fazer e muitas evitam isso utilizando outros formatos mais restritos, como
+o Markdown ou o BBCode, embora bibliotecas para listas brancas/whitelistening, como a [HTML Purifier][html-purifier], existem
+por essa razão.
 
-[See Sanitization Filters][2]
+[Veja sobre os Filtros de Higienização][2]
 
-### Validation
+### Validação
 
-Validation ensures that foreign input is what you expect. For example, you may want to validate an
-email address, a phone number, or age when processing a registration submission.
+A validação garante que as entradas externas são o que você espera. Por exemplo, você pode querer validar um
+endereço de email, um número de telefone ou uma idade quando for processar o envio de um registro.
 
-[See Validation Filters][3]
+[Veja sobre os Filtros de Validação][3]
 
 [1]: http://www.php.net/manual/en/book.filter.php
 [2]: http://www.php.net/manual/en/filter.filters.sanitize.php
