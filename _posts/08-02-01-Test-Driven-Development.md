@@ -2,13 +2,13 @@
 isChild: true
 ---
 
-## Test Driven Development
+## Desenvolvimento Orientado a Testes
 
-From [Wikipedia](http://en.wikipedia.org/wiki/Test-driven_development):
+Da [Wikipedia](http://en.wikipedia.org/wiki/Test-driven_development):
 
-> Test-driven development (TDD) is a software development process that relies on the repetition of a very short development cycle: first the developer writes a failing automated test case that defines a desired improvement or new function, then produces code to pass that test and finally refactors the new code to acceptable standards. Kent Beck, who is credited with having developed or 'rediscovered' the technique, stated in 2003 that TDD encourages simple designs and inspires confidence
+> O desenvolvimento orientado a testes (TDD) é um processo de desenvolvimento que se baseia na repetição de um ciclo de desenvolvimento bem curto: primeiro o desenvolvedor escreve um caso de teste automatizado que falha, definindo uma melhoria ou uma nova função desejada, em seguida produz o código para passar no teste, e finalmente refatora o novo código pelos padrões aceitáveis. Kent Back, que é creditado como quem desenvolveu ou "redescobriu" essa técnica, afirmou em 2003 que o TDD encoraja design simples e inspira confiança.
 
-There are several different types of testing that you can do for your application
+Existem vários tipos diferentes de testes que você pode fazer para sua aplicação.
 
 ### Unit Testing
 
