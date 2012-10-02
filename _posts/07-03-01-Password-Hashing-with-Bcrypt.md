@@ -2,18 +2,18 @@
 isChild: true
 ---
 
-## Password Hashing with Bcrypt
+## Hash de Senhas com Bcrypt
 
-Eventually everyone builds a PHP application that relies on user login. Usernames and (hashed) passwords are stored in a database and later used to authenticate users upon login.
+No fim, todos construímos aplicações PHP que dependem de login dos usuários. Usuários e senhas (com hash) são armazenadas em um banco de dados e posteriormente são usados para autenticar os usuários no login.
 
-It is important that you properly _hash_ passwords that are stored in a database. If passwords are not hashed, and your database is hacked or accessed by an unauthorized third-party, all user accounts are now compromised.
+É importante que você faça adequadamente o _hash_ das senhas que são armazenadas em um banco de dados. Se as senhas não estiverm com hash, e seu banco for hackeado ou acessado por alguém não autorizado, todas as contas dos usuários ficarão comprometidas.
 
-**Hash passwords with Bcrypt**. It's super simple, and (for all intents and purposes) Bcrypt makes it impossible for someone to reverse-engineer the plain-text version of a password should the database be compromised.
+**Faça o hash das senhas com o Bcrypt**. É super simples, e (para todos os efeitos) o Bcrypt impossibilita que alguém possa, usando engenharia reversa em uma versão em texto puro de uma senha, fazer com que o banco fique comprometido.
 
-There are several Bcrypt libraries for PHP that you may use.
+Existem várias bibliotecas Bcrypt para o PHP que você pode utilizar.
 
-* [Read "How to Safely Store a Password" by Coda Hale][3]
-* [Use Bcrypt with PHPass][4]
+* [Leia "Como Armazenar uma Senha de Forma Segura" por Coda Hale][3]
+* [Use o Bcrypt com o PHPass][4]
 
 [3]: http://codahale.com/how-to-safely-store-a-password/
 [4]: http://www.openwall.com/phpass/
