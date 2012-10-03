@@ -2,11 +2,11 @@
 isChild: true
 ---
 
-## Desenvolvimento Orientado a Testes
+## Desenvolvimento Guiado por Testes
 
 Da [Wikipedia](http://en.wikipedia.org/wiki/Test-driven_development):
 
-> O desenvolvimento orientado a testes (TDD) é um processo de desenvolvimento que se baseia na repetição de um ciclo de desenvolvimento bem curto: primeiro o desenvolvedor escreve um caso de teste automatizado que falha, definindo uma melhoria ou uma nova função desejada, em seguida produz o código para passar no teste, e finalmente refatora o novo código pelos padrões aceitáveis. Kent Back, que é creditado como quem desenvolveu ou "redescobriu" essa técnica, afirmou em 2003 que o TDD encoraja design simples e inspira confiança.
+> O desenvolvimento guiado por testes (TDD) é um processo de desenvolvimento que se baseia na repetição de um ciclo de desenvolvimento bem curto: primeiro o desenvolvedor escreve um caso de teste automatizado que falha, definindo uma melhoria ou uma nova função desejada, em seguida produz o código para passar no teste, e finalmente refatora o novo código pelos padrões aceitáveis. Kent Back, que é creditado como quem desenvolveu ou "redescobriu" essa técnica, afirmou em 2003 que o TDD encoraja design simples e inspira confiança.
 
 Existem vários tipos diferentes de testes que você pode fazer para sua aplicação.
 
