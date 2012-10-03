@@ -18,7 +18,7 @@ valores entram e saem em várias funções e métodos, você pode garantir que a
 funcionando corretamente. Utilizando Injeção de Dependências e construindo classes "mock" e stubs, você pode verificar se
 as dependências foram utilizadas corretamente para uma cobertura de testes ainda melhor.
 
-Quando você criar uma classe ou função, você deveria criar um teste unitário para cada comportamento que ela deveria ter. Num nível bem básico, você deveria
+Quando for criar uma classe ou função, você deveria criar um teste unitário para cada comportamento que ela deveria ter. Num nível bem básico, você deveria
 garantir que são emitidos erros quando você envia argumentos errados e garantir que tudo funciona bem se você enviar argumentos válidos.
 Isso ajudará a garantir que, quando você alterar sua classe ou sua função posteriormente no ciclo de
 desenvolvimento, as funcionalidades antigas continuarão funcionando como esperado. A única alternativa a isso seria
@@ -35,24 +35,23 @@ PHP, mas existem várias alternativas:
 * [Enhance PHP](http://www.enhance-php.com/)
 * [PUnit](http://punit.smf.me.uk/)
 
-### Integration Testing
+### Testes de Integração
 
-From [Wikipedia](http://en.wikipedia.org/wiki/Integration_testing):
+Da [Wikipedia](http://en.wikipedia.org/wiki/Integration_testing):
 
-> Integration testing (sometimes called Integration and Testing, abbreviated "I&T") is the phase in software testing in which individual software modules are combined and tested as a group. It occurs after unit testing and before validation testing. Integration testing takes as its input modules that have been unit tested, groups them in larger aggregates, applies tests defined in an integration test plan to those aggregates, and delivers as its output the integrated system ready for system testing.
+> Testes de integração (chamado às vezes de "Integração e Teste", abreviado como "I&T") é a fase do teste do software na qual módulos individuais do sistema são combinados e testados como um grupo. Ela acontece após os testes unitários e antes dos testes de validação. Os testes de integração recebem como entrada os módulos que foram testados unitariamente, os agrupa em grandes blocos, aplica testes definidos em um plano de teste de integração, e entrega como saída o sistema integrado pronto para os testes de sistema.
 
-Many of the same tools that can be used for unit testing can be used for integration testing as many
-of the same principles are used.
+Muitos das mesmas ferramentas que são usadas para testes unitários podem ser usadas para testes de integração, pois muitos
+dos mesmos princípios são usados.
 
-### Functional Testing
+### Testes Funcionais
 
-Sometimes also known as acceptance testing, functional testing consists of using tools to create automated
-tests that actually use your application instead of just verifying that individual units of code are behaving
-correctly and that individual units can speak to each other correctly. These tools typically work using real
-data and simulating actual users of the application.
+Algumas vezes conhecidos também como testes de aceitação, os testes funcionais consistem em utilizar ferramentas para criar testes automatizados
+que usem de verdade sua aplicação, em vez de apenas verificar se unidades individuais de código se comportam
+adequadamente ou se essas partes conversam entre si do jeito certo. Essas ferramentas geralmente trabalham usando dados reais e simulam usuários verdadeiros da sua aplicação.
 
-#### Functional Testing Tools
+#### Ferramentas para Testes Funcionais
 
 * [Selenium](http://seleniumhq.com)
 * [Mink](http://mink.behat.org)
-* [Codeception](http://codeception.com) is a full-stack testing framework that includes acceptance testing tools
+* O [Codeception](http://codeception.com) é um framework de testes full-stack que inclui ferramentas para testes de aceitação
