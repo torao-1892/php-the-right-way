@@ -1,11 +1,11 @@
-# Resources
+# Recursos
 
-## From the Source
+## A Fonte
 
-* [PHP Website](http://php.net/)
-* [PHP Documentation](http://php.net/docs.php)
+* [Site do PHP](http://php.net/)
+* [Documentação do PHP](http://php.net/docs.php)
 
-## People to Follow
+## Pessoas para Seguir
 
 * [Rasmus Lerdorf](http://twitter.com/rasmus)
 * [Fabien Potencier](http://twitter.com/fabpot)
@@ -17,9 +17,9 @@
 
 ## Mentoring
 
-* [phpmentoring.org](http://phpmentoring.org/) - Formal, peer to peer mentoring in the PHP community.
+* [phpmentoring.org](http://phpmentoring.org/) - Mentoring formal e um-para-um na comunidade PHP.
 
-## PHP PaaS Providers
+## Fornecedores de PaaS PHP
 
 * [PagodaBox](https://pagodabox.com/)
 * [PHP Fog](https://phpfog.com/)
