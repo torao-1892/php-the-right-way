@@ -18,21 +18,19 @@ cache de objetos, ele inclui uma API simples para adicionar seus próprios dados
 como um serviço separado e pode ser acessado através da rede, assim você pode armazenar objetos em um data store
 ultra-rápido, em uma localização central, e vários sistemas diferentes podem acessá-lo.
 
+Em uma configuração em rede, o APC geralmente terá um desempenho melhor do que o memcached em termos da velocidade de acesso, mas o memcached poderá
+escalar mais rápido e melhor. Se você não planeja ter múltiplo servidores executando sua aplicação, ou não precisar das
+funcionalidades extras que o memcached oferece, então o APC provavelmente é sua melhor opção para cache de objetos.
 
-
-In a networked configuration APC will usually outperform memcached in terms of access speed, but memcached will be able
-to scale up faster and further. If you do not expect to have multiple servers running your application, or do not need
-the extra features that memcached offers then APC is probably your best choice for object caching.
-
-Example logic using APC:
+Exemplo de lógica usando APC:
 
 {% highlight php %}
 <?php
-// check if there is data saved as 'expensive_data' in cache
+// verifica se existe um dado salvo como 'expensive_data' no cache
 $data = apc_fetch('expensive_data');
 if (!$data)
 {
-    // data not in cache, do expensive call and save for later use
+    // dado não está no cache, faça a chamada custosa e guarde-a para usar depois
     $data = get_expensive_data();
     apc_store('expensive_data', $data);
 }
@@ -40,10 +38,10 @@ if (!$data)
 print_r($data);
 {% endhighlight %}
 
-Learn more about popular object caching systems:
+Aprenda mais sobre sistemas populares de cache de objetos:
 
-* [APC Functions](http://php.net/manual/en/ref.apc.php)
+* [Funções APC](http://php.net/manual/en/ref.apc.php)
 * [Memcached](http://memcached.org/)
 * [Redis](http://redis.io/)
 * [XCache APIs](http://xcache.lighttpd.net/wiki/XcacheApi)
-* [WinCache Functions](http://www.php.net/manual/en/ref.wincache.php)
+* [Funções do WinCache](http://www.php.net/manual/en/ref.wincache.php)
