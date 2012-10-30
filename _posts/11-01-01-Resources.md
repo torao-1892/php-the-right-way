@@ -1,6 +1,6 @@
-# Recursos
+# Recursos {#resources_title}
 
-## A Fonte
+## Da Fonte
 
 * [Site do PHP](http://php.net/)
 * [Documentação do PHP](http://php.net/docs.php)

@@ -2,7 +2,7 @@
 isChild: true
 ---
 
-## Interface de Linha de Comando
+## Interface de Linha de Comando {#command_line_interface_title}
 
 O PHP foi criado primariamente para escrever aplicações web, mas ele também é útil para criar scripts de linha de comando (CLI). Programas PHP de linha de comando podem te ajudar a automatizar tarefas comuns como testes, publicação e administração de aplicações.
 
@@ -22,7 +22,7 @@ Vamos escrever um programa CLI "Hello, $name" simples. Para testá-lo, crie um a
 
 {% highlight php %}
 <?php
-if($argc != 2) {
+if ($argc != 2) {
     echo "Usage: php hello.php [name].\n";
     exit(1);
 }

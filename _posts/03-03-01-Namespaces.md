@@ -2,7 +2,7 @@
 isChild: true
 ---
 
-## Namespaces
+## Namespaces {#namespaces_title}
 
 Como mencionado anteriormente, a comunidade PHP tem muitos desenvolvedores criando muito código. Isso significa que o código de uma biblioteca PHP pode usar o mesmo nome de classe que uma outra biblioteca. Quando ambas bibliotecas são usadas no mesmo namespace, elas colidem e causam problemas.
 

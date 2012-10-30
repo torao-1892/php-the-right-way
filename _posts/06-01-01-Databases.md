@@ -2,7 +2,7 @@
 title: Databases
 ---
 
-# Bancos de Dados
+# Bancos de Dados {#databases_title}
 
 Muitas vezes o seu código PHP usará um banco de dados para persistir informações. Você tem algumas opções para conectar e interagir
 como seu banco de dados. A opção recomendada _até o PHP 5.1.0_ era usar os drivers nativos, como o [mysql][mysql], o [mysqli][mysqli], o [pgsql][pgsql] etc.

@@ -2,7 +2,7 @@
 isChild: true
 ---
 
-## Cache de Objetos
+## Cache de Objetos {#object_caching_title}
 
 Existem momentos onde pode ser benéfico fazer cache de objetos individuais no seu código, como em dados que são custosos
 de conseguir ou em chamadas de bancos de dados cujo resultado dificilmente se modifica. Você pode usar um software de cache de objetos para armazenar esses

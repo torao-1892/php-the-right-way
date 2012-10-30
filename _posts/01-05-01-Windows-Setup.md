@@ -2,7 +2,7 @@
 isChild: true
 ---
 
-## Instalação no Windows
+## Instalação no Windows {#windows_setup_title}
 
 O PHP está disponível de diversas maneiras no Windows. Você pode [baixar os binários](php-downloads) e até recentemente você podia usar um instalador '.msi'. O instalador não é mais suportado e parou no PHP 5.3.0.
 

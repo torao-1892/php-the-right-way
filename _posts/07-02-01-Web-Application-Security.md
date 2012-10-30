@@ -2,7 +2,7 @@
 isChild: true
 ---
 
-## Segurança em uma Aplicação Web
+## Segurança em uma Aplicação Web {#web_application_security_title}
 
 Existem pessoas ruins prontas e dispostas a invadir sua aplicação web. É importante que você
 tome as medidas necessárias para reforçar a segurança da sua aplicação web. Felizmente, o pessoal bacana da [Open Web Application Security Project][1] (OWASP) compilou

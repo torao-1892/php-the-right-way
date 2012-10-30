@@ -2,7 +2,7 @@
 isChild: true
 ---
 
-## Filtro de Dados
+## Filtro de Dados {#data_filtering_title}
 
 Nunca, jamais (nunca mesmo), confie em entradas externas feitas no seu código PHP. Sempre higienize(sanitize) e valide
 as entradas externas antes de utilizá-las no seu código. As funcões `filter_var` e `filter_input` podem higienizar textos e validar formatos (e.g.

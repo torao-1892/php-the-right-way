@@ -19,7 +19,7 @@ _PHP: Do Jeito Certo_ está (ou em breve estará) sendo traduzido em várias lin
 * Português (http://br.phptherightway.com)
 * Russo (Em breve)
 * [Espanhol](http://es.phptherightway.com)
-* Ucraniano (Em breve)
+* [Ucraniano](http://iflista.github.com/php-the-right-way/)
 
 ## Como contribuir
 

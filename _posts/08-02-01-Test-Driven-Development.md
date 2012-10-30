@@ -2,11 +2,11 @@
 isChild: true
 ---
 
-## Desenvolvimento Guiado por Testes
+## Desenvolvimento Guiado por Testes {#test_driven_development_title}
 
 Da [Wikipedia](http://en.wikipedia.org/wiki/Test-driven_development):
 
-> O desenvolvimento guiado por testes (TDD) é um processo de desenvolvimento que se baseia na repetição de um ciclo de desenvolvimento bem curto: primeiro o desenvolvedor escreve um caso de teste automatizado que falha, definindo uma melhoria ou uma nova função desejada, em seguida produz o código para passar no teste, e finalmente refatora o novo código pelos padrões aceitáveis. Kent Back, que é creditado como quem desenvolveu ou "redescobriu" essa técnica, afirmou em 2003 que o TDD encoraja design simples e inspira confiança.
+> O desenvolvimento guiado por testes (TDD) é um processo de desenvolvimento que se baseia na repetição de um ciclo de desenvolvimento bem curto: primeiro o desenvolvedor escreve um caso de teste automatizado que falha, definindo uma melhoria ou uma nova função desejada, em seguida produz o código para passar no teste, e finalmente refatora o novo código pelos padrões aceitáveis. Kent Beck, que é creditado como quem desenvolveu ou "redescobriu" essa técnica, afirmou em 2003 que o TDD encoraja design simples e inspira confiança.
 
 Existem vários tipos diferentes de testes que você pode fazer para sua aplicação.
 
@@ -34,6 +34,7 @@ PHP, mas existem várias alternativas:
 * [SimpleTest](http://simpletest.org)
 * [Enhance PHP](http://www.enhance-php.com/)
 * [PUnit](http://punit.smf.me.uk/)
+* [atoum](https://github.com/mageekguy/atoum)
 
 ### Testes de Integração
 

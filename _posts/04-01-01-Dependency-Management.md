@@ -1,4 +1,4 @@
-# Gerenciamento de Dependência
+# Gerenciamento de Dependência {#dependency_management_title}
 
 Existem toneladas de bibliotecas PHP, frameworks, e componentes para você escolher. Seu projeto provavelmente irá usar muitos deles - eles são as dependências do projeto. Até recentemente, o PHP não possuia uma boa forma de gerenciar essas dependências de projeto. Mesmo se você as gerenciasse manualmente, ainda assim teria que se preocupar com autoloaders. Não mais.
 

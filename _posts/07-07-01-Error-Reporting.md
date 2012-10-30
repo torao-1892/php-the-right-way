@@ -2,7 +2,7 @@
 isChild: true
 ---
 
-## Relatório de Erros
+## Relatório de Erros {#error_reporting_title}
 
 O registro de erros pode ser útil para encontrar pontos problemáticos em sua aplicação, mas isso também pode expor informações sobre
 a estrutura de sua aplicação para o mundo exterior. Para proteger efetivamente sua aplicação dos problemas que poderiam
@@ -13,8 +13,21 @@ ser causados com a exposição dessas mensagens, você precisa configurar seu se
 Para mostrar erros no seus ambiente de <strong>desenvolvimento</strong>, configure as definições a seguir no seu `php.ini`:
 
 - display_errors: On
-- error_reporting: E_ALL
+- error_reporting: -1
 - log_errors: On
+
+Do [php.net](http://php.net/manual/function.error-reporting.php):
+
+> Passar o valor -1 irá mostrar todos os erros possíveis, até mesmo quando novos níveis e constantes forem adicionados em versões futuras do PHP. A constante E_ALL também se comporta desta maneira a partir do PHP 5.4.
+
+O nível de error `E_STRICT` foi introduzido no 5.3.0 e não faz parte do `E_ALL`, contudo ele tornou-se parte do `E_ALL` no 5.4.0. O que isso significa?
+Que para mostrar todos os erros possíveis na versão 5.3 você precisa usar `-1` ou `E_ALL | E_STRICT`. 
+
+**Reportando todos os erros possíveis em diferentes versões do PHP**
+
+* &lt; 5.3 `-1` ou `E_ALL`
+* &nbsp; 5.3 `-1` ou `E_ALL | E_STRICT`
+* &gt; 5.3 `-1` ou `E_ALL`
 
 ### Produção
 

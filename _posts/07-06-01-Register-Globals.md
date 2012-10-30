@@ -2,7 +2,7 @@
 isChild: true
 ---
 
-## Register Globals
+## Register Globals {#register_globals_title}
 
 **OBSERVAÇÃO:** A partir do PHP 5.4.0 a configuração `register_globals` foi removida e não pode
 mais ser utilizada. Isto só foi incluído como um alerta para alguém no processo de atualização de uma aplicação legada.

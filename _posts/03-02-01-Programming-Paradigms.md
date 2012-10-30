@@ -2,7 +2,7 @@
 isChild: true
 ---
 
-## Paradigmas de programação
+## Paradigmas de programação {#programming_paradigms_title}
 
 O PHP é uma linguagem dinâmica e flexível, que suporta uma variedade de técnicas de programação. Ele evoluiu drasticamente com o passar dos anos, notavelmente adicionando um sólido modelo de orientação a objetos no PHP 5.0 (2004), funções anônimas e namespaces no PHP 5.3 (2009) e traits no PHP 5.4 (2012).
 
@@ -38,7 +38,7 @@ Desenvolvedores Ruby costumam dizer que o PHP carece de `method_missing`, mas el
 * [Leia sobre Reflexão][reflection]
 
 [namespaces]: http://php.net/manual/en/language.namespaces.php
-[overloading]: http://uk.php.net/manual/en/language.oop5.overloading.php
+[overloading]: http://php.net/manual/en/language.oop5.overloading.php
 [oop]: http://www.php.net/manual/en/language.oop5.php
 [anonymous-functions]: http://www.php.net/manual/en/functions.anonymous.php
 [closure-class]: http://php.net/manual/en/class.closure.php
