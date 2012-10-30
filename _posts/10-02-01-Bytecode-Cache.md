@@ -2,17 +2,17 @@
 isChild: true
 ---
 
-## Bytecode Cache
+## Cache de Bytecode
 
-When a PHP file is executed, under the hood it is first compiled to bytecode (also known as opcode) and, only then, the bytecode is executed.
-If a PHP file is not modified, the bytecode will always be the same. This means that the compilation step is a waste of CPU resources.
+Quando um arquivo PHP é executado, por baixo dos panos ele primeiro é compilado para bytecode (também conhecido como opcode) e, só aí, o bytecode é executado.
+Se o arquivo PHP não foi modificado, o bytecode será sempre o mesmo. Isso significa que o passo de compilação é um desperdício de recursos de CPU.
 
-This is where Bytecode cache comes in. It prevents redundant compilation by storing bytecode in memory and reusing it on successive calls.
-Setting up bytecode cache is a matter of minutes, and your application will speed up significantly. There's really no reason not to use it.
+É aqui que entra o cache de Bytecode. Ele previne as compilações redundantes armazenando bytecode na memória e reutilizando-o em chamadas sucessivas.
+A configuração do cache de bytecode é feita em questão de minutos, e sua aplicação irá acelerar de forma significativa. Não existe razão para não utilizá-lo.
 
-Popular bytecodes caches are:
+Caches de bytecode populares são:
 
 * [APC](http://php.net/manual/en/book.apc.php)
 * [XCache](http://xcache.lighttpd.net/)
-* [Zend Optimizer+](http://www.zend.com/products/server/) (part of Zend Server package)
-* [WinCache](http://www.iis.net/download/wincacheforphp) (extension for MS Windows Server)
+* [Zend Optimizer+](http://www.zend.com/products/server/) (parte do pacote Zend Server)
+* [WinCache](http://www.iis.net/download/wincacheforphp) (extensão para o MS Windows Server)
