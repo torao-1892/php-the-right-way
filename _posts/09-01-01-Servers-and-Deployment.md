@@ -1,3 +1,3 @@
-# Servers and Deployment
+# Servidores e Publicação
 
-PHP applications can be deployed and run on production web servers in a number of ways.
+As aplicações PHP podem ser publicadas e executadas em servidores web de produção de diversas formas.
