@@ -16,7 +16,7 @@ _PHP: Do Jeito Certo_ está (ou em breve estará) sendo traduzido em várias lin
 * [Chinês](http://wulijun.github.com/php-the-right-way)
 * [Japonês](http://ja.phptherightway.com)
 * Polonês (Em breve)
-* Português (http://br.phptherightway.com)
+* [Português](http://br.phptherightway.com)
 * Russo (Em breve)
 * [Espanhol](http://es.phptherightway.com)
 * [Ucraniano](http://iflista.github.com/php-the-right-way/)
@@ -31,5 +31,5 @@ _PHP: Do Jeito Certo_ possui banners que você pode usar em seu site. Para mostr
 
 [Banners][2]
 
-[1]: https://github.com/codeguy/php-the-right-way/tree/gh-pages
+[1]: https://github.com/klaussilveira/php-the-right-way/tree/gh-pages
 [2]: /banners.html
