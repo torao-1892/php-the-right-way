@@ -4,7 +4,9 @@ isChild: true
 
 ## Desenvolvimento Guiado por Comportamentos {#behavior_driven_development_title}
 
-Existem dois tipos diferentes de Desenvolvimento Guiado por Comportamentos (BDD): o SpecBDD e o StoryBDD. O SpecBDD foca nos comportamentos técnicos, no código, enquanto que o StoryBDD foca nos comportamentos de negócio e de funcionalidades, nas interações. O PHP possui frameworks para ambos os tipos de BDD.
+Existem dois tipos diferentes de Desenvolvimento Guiado por Comportamentos (BDD): o SpecBDD e o StoryBDD. O SpecBDD
+foca nos comportamentos técnicos, no código, enquanto que o StoryBDD foca nos comportamentos de negócio e de
+funcionalidades, nas interações. O PHP possui frameworks para ambos os tipos de BDD.
 
 No StoryBDD, você escreve estórias humanamente legíveis que descrevem o comportamento da sua aplicação. Essas estórias
 podem então ser executadas como testes reais em sua aplicação. O framework usado nas aplicações PHP para StoryBDD
@@ -12,8 +14,8 @@ podem então ser executadas como testes reais em sua aplicação. O framework us
 para descrever o comportamento das funcionalidades.
 
 No SpecBDD, você escreve as especificações que descrevem como seu código real deveria se comportar. Em vez de escrever
-uma função ou método, você descreve como a função ou o método deveriam se comportar. O PHP fornece o framework PHPSpec para esse propósito. Esse framework foi inspirado
-no [projeto RSpec](http://rspec.info/) do Ruby.
+uma função ou método, você descreve como a função ou o método deveriam se comportar. O PHP fornece o framework
+PHPSpec para esse propósito. Esse framework foi inspirado no [projeto RSpec](http://rspec.info/) do Ruby.
 
 ### Links sobre BDD
 

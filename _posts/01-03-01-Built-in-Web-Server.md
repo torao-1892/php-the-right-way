@@ -5,7 +5,8 @@ isChild: true
 
 ## Servidor web embutido {#builtin_web_server_title}
 
-Você pode começar a aprender PHP sem os problemas de instalar e configurar um servidor web (mas você precisa do PHP 5.4). Para iniciar o servidor, rode o seguinte comando do seu terminal na raiz de seu projeto:
+Você pode começar a aprender PHP sem os problemas de instalar e configurar um servidor web (mas você precisa do
+PHP 5.4). Para iniciar o servidor, rode o seguinte comando do seu terminal na raiz de seu projeto:
 
     > php -S localhost:8000
 

@@ -4,9 +4,12 @@ isChild: true
 
 ## Interface de Linha de Comando {#command_line_interface_title}
 
-O PHP foi criado primariamente para escrever aplicações web, mas ele também é útil para criar scripts de linha de comando (CLI). Programas PHP de linha de comando podem te ajudar a automatizar tarefas comuns como testes, publicação e administração de aplicações.
+O PHP foi criado primariamente para escrever aplicações web, mas ele também é útil para criar scripts de linha de
+comando (CLI). Programas PHP de linha de comando podem te ajudar a automatizar tarefas comuns como testes, publicação
+e administração de aplicações.
 
-Programas PHP CLI são poderosos pois você pode usar o código de sua aplicação diretamente sem precisar criar e proteger uma GUI web para isso. Apenas tenha a certeza de não colocar seus scripts PHP CLI no seu web root público!
+Programas PHP CLI são poderosos pois você pode usar o código de sua aplicação diretamente sem precisar criar e
+proteger uma GUI web para isso. Apenas tenha a certeza de não colocar seus scripts PHP CLI no seu web root público!
 
 Tente executar o PHP a partir da sua linha de comando:
 
@@ -16,9 +19,11 @@ Tente executar o PHP a partir da sua linha de comando:
 
 A opção `-i` irá mostrar a sua configuração do PHP da mesma forma que a função [`phpinfo`][phpinfo].
 
-A opção `-a` fornece um shell interativo, similar ao IRB do ruby e ao shell interativo do python. Também existe um número de outras [opções de linha comando][cli-options] úteis.
+A opção `-a` fornece um shell interativo, similar ao IRB do ruby e ao shell interativo do python. Também existe um
+número de outras [opções de linha comando][cli-options] úteis.
 
-Vamos escrever um programa CLI "Hello, $name" simples. Para testá-lo, crie um arquivo chamado `hello.php`, como mostrado a seguir.
+Vamos escrever um programa CLI "Hello, $name" simples. Para testá-lo, crie um arquivo chamado `hello.php`, como
+mostrado a seguir.
 
 {% highlight php %}
 <?php
@@ -30,9 +35,12 @@ $name = $argv[1];
 echo "Hello, $name\n";
 {% endhighlight %}
 
-O PHP define duas variáveis especiais baseadas nos argumentos que seu script receber. [`$argc`][argc] é uma variável integer que contém a *quantidade* de argumentos e [`$argv`][argv] é uma variável array que contém o *valor* de cada argumento. O primeiro argumento sempre é o nome do arquivo PHP do seu programa, no caso `hello.php`.
+O PHP define duas variáveis especiais baseadas nos argumentos que seu script receber. [`$argc`][argc] é uma variável
+integer que contém a *quantidade* de argumentos e [`$argv`][argv] é uma variável array que contém o *valor* de cada
+argumento. O primeiro argumento sempre é o nome do arquivo PHP do seu programa, no caso `hello.php`.
 
-A expressão `exit()` é usada com um número diferente de zero para informar ao shell que o comando falhou. Códigos de saída normalmente usados podem ser encontrados [aqui][exit-codes].
+A expressão `exit()` é usada com um número diferente de zero para informar ao shell que o comando falhou. Códigos de
+saída normalmente usados podem ser encontrados [aqui][exit-codes].
 
 Para executar nosso script acima, a partir da linha de comando:
 
