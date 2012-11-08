@@ -4,9 +4,11 @@ isChild: true
 
 ## Segurança em uma Aplicação Web {#web_application_security_title}
 
-Existem pessoas ruins prontas e dispostas a invadir sua aplicação web. É importante que você
-tome as medidas necessárias para reforçar a segurança da sua aplicação web. Felizmente, o pessoal bacana da [Open Web Application Security Project][1] (OWASP) compilou
-uma lista abrangente dos problemas de segurança conhecidos e dos métodos para se proteger contra eles. É uma leitura obrigatória para o desenvolvedor preocupado com segurança.
+Existem pessoas ruins prontas e dispostas a invadir sua aplicação web. É importante que você tome as medidas
+necessárias para reforçar a segurança da sua aplicação web. Felizmente, o pessoal bacana da
+[Open Web Application Security Project][1] (OWASP) compilou uma lista abrangente dos problemas de segurança
+conhecidos e dos métodos para se proteger contra eles. É uma leitura obrigatória para o desenvolvedor preocupado com
+segurança.
 
 * [Leia o Guia OWASP de Segurança][2]
 

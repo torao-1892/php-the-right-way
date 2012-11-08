@@ -4,11 +4,13 @@ isChild: true
 
 ## Cache de Bytecode {#bytecode_cache_title}
 
-Quando um arquivo PHP é executado, por baixo dos panos ele primeiro é compilado para bytecode (também conhecido como opcode) e, só aí, o bytecode é executado.
-Se o arquivo PHP não foi modificado, o bytecode será sempre o mesmo. Isso significa que o passo de compilação é um desperdício de recursos de CPU.
+Quando um arquivo PHP é executado, por baixo dos panos ele primeiro é compilado para bytecode (também conhecido como
+opcode) e, só aí, o bytecode é executado.  Se o arquivo PHP não foi modificado, o bytecode será sempre o mesmo. Isso
+significa que o passo de compilação é um desperdício de recursos de CPU.
 
-É aqui que entra o cache de Bytecode. Ele previne as compilações redundantes armazenando bytecode na memória e reutilizando-o em chamadas sucessivas.
-A configuração do cache de bytecode é feita em questão de minutos, e sua aplicação irá acelerar de forma significativa. Não existe razão para não utilizá-lo.
+É aqui que entra o cache de Bytecode. Ele previne as compilações redundantes armazenando bytecode na memória e
+reutilizando-o em chamadas sucessivas. A configuração do cache de bytecode é feita em questão de minutos, e sua
+aplicação irá acelerar de forma significativa. Não existe razão para não utilizá-lo.
 
 Caches de bytecode populares são:
 

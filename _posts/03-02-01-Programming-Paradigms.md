@@ -4,11 +4,14 @@ isChild: true
 
 ## Paradigmas de programação {#programming_paradigms_title}
 
-O PHP é uma linguagem dinâmica e flexível, que suporta uma variedade de técnicas de programação. Ele evoluiu drasticamente com o passar dos anos, notavelmente adicionando um sólido modelo de orientação a objetos no PHP 5.0 (2004), funções anônimas e namespaces no PHP 5.3 (2009) e traits no PHP 5.4 (2012).
+O PHP é uma linguagem dinâmica e flexível, que suporta uma variedade de técnicas de programação. Ele evoluiu
+drasticamente com o passar dos anos, notavelmente adicionando um sólido modelo de orientação a objetos no PHP 5.0 
+2004), funções anônimas e namespaces no PHP 5.3 (2009) e traits no PHP 5.4 (2012).
 
 ### Programação orientada a objetos
 
-O PHP possui um conjunto completo de funcionalidades de programação orientada a objetos, incluindo suporte à classes, classes abstratas, interfaces, herança, construtores, clonagem, exceções e muito mais.
+O PHP possui um conjunto completo de funcionalidades de programação orientada a objetos, incluindo suporte à classes,
+classes abstratas, interfaces, herança, construtores, clonagem, exceções e muito mais.
 
 * [Leia sobre PHP orientado a objetos][oop]
 * [Leia sobre Traits][traits]
