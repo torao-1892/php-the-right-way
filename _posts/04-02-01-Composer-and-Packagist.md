@@ -8,8 +8,8 @@ O Composer é um gerenciador de dependências **brilhante** para o PHP. Liste as
 arquivo `composer.json` e, com poucos comandos simples, o Composer irá fazer o download das dependências do seu
 projeto automaticamente e configurará o autoloading para você.
 
-Já existem várias bibliotecas PHP que são compatíveis com o Composer, prontas para usar no seu projeto. Esses "pacote
-" estão listados no [Packagist][1], o repositório oficial das bibliotecas PHP compatíveis com o Composer.
+Já existem várias bibliotecas PHP que são compatíveis com o Composer, prontas para usar no seu projeto. Esses "pacotes"
+estão listados no [Packagist][1], o repositório oficial das bibliotecas PHP compatíveis com o Composer.
 
 ### Como Instalar o Composer
 
