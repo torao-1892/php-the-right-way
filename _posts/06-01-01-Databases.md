@@ -44,7 +44,7 @@ $pdo = new PDO('sqlite:users.db');
 $pdo->query("SELECT name FROM users WHERE id = " . $_GET['id']); // <-- NO!
 {% endhighlight %}
 
-Esse código é péssimo. Você está inserindo um parâmetro bruto na sua consulta SQL. Isso fará você ser hackeado numérico
+Esse código é péssimo. Você está inserindo um parâmetro bruto na sua consulta SQL. Isso fará você ser hackeado num
 piscar de olhos. Apenas imagine se um hacker passar como parâmetro um `id` criativo chamando uma URL como
 `http://domain.com/?id=1%3BDELETE+FROM+users`. Isso irá definir a variável `$_GET['id']` como `id=1;DELETE FROM users`,
 o que irá excluir todos os seus usuários. Em vez disso, você deveria higienizar (sanitize) a entrada do ID usando
