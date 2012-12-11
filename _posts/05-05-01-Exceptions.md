@@ -11,9 +11,9 @@ não puder ser encontrada, o Ruby (ou suas bibliotecas que estiverem sendo utili
 a tela, assim você saberá imediatamente que algo está errado.
 
 O PHP por si só é bastante relaxado com isso, e uma chamada para `file_get_contents()` irá resultar apenas em um `FALSE`
-e um alerta. Várias programadores de frameworks PHP antigas como o CodeIgniter irão apenas retornar um falso, registrar
-uma mensagem para seus logs proprietários e talvez deixar que você use um método como `$this->upload->get_error()` para
-ver oque houve de errado. O problema aqui é você tem que sair procurando por um erro e verificar na documentação para
+e um alerta. Muitos frameworks antigos, como CodeIgniter, irão apenas retornar um `FALSE`, registrar
+uma mensagem em seus logs proprietários e talvez deixar que você use um método como `$this->upload->get_error()` para
+ver o que houve de errado. O problema, aqui, é você tem que sair procurando por um erro e verificar na documentação para
 saber como achar o método que retorna o erro para essa classe, em vez de ter isso de forma extremamente óbvia.
 
 Outro problema é quando as classes automaticamente disparam um erro para a tela e finalizam o processo. Quando você
