@@ -17,8 +17,8 @@ ver o que houve de errado. O problema, aqui, é você tem que sair procurando po
 saber como achar o método que retorna o erro para essa classe, em vez de ter isso de forma extremamente óbvia.
 
 Outro problema é quando as classes automaticamente disparam um erro para a tela e finalizam o processo. Quando você
-faz isso você impede que outro programador seja capaz de dinamicamente lhe dar com o erro. Exceções devem ser disparadas
-para que os desenvolvedores ficam a par do erro, para então decidirem como lhe dar com ele. Ex:
+faz isso você impede que outro programador seja capaz de dinamicamente lidar com o erro. Exceções devem ser disparadas
+para que os desenvolvedores fiquem a par do erro, para então decidirem como lidar com ele. Ex:
 
 {% highlight php %}
 <?php
@@ -51,7 +51,7 @@ próprio nome:
 class ValidationException extends Exception {}
 {% endhighlight %}
 
-Isso significa que você pode adicionar múltiplos blocos de captura para lhe dar com diferentes Exceções. Isso pode lhe
+Isso significa que você pode adicionar múltiplos blocos de captura para lidar com diferentes Exceções. Isso pode lhe
 levar a criação de <em>muitas</em> exceções customizadas, e algumas delas poderiam ter sido evitadas como o uso das
 SPL Exceptions (exceções da biblioteca padrão) que estão disponíveis em [SPL extension][splext].
 
