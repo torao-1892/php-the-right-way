@@ -27,7 +27,7 @@ extensão mysql: use a [extensão MySQLi][mysqli], ou use a PDO._
 ## PDO
 
 A PDO é uma biblioteca para abstração de conexões a bancos de dados &mdash; embutida no PHP desde a versão 5.1.0 
-mdash; que fornece uma interface comum para conversar com vários bancos de dados diferentes. A PDO não irá traduzir
+&mdash; que fornece uma interface comum para conversar com vários bancos de dados diferentes. A PDO não irá traduzir
 suas consultas SQL ou emular funcionalidades que não existem; ela é feita puramente para conectar múltiplos tipos de
 bancos de dados com a mesma API.
 
