@@ -10,8 +10,8 @@ o [mysql][mysql], o [mysqli][mysqli], o [pgsql][pgsql] etc.
 
 Drivers nativos são excelentes se você estiver usando apenas UM banco de dados na sua aplicação, mas se, por exemplo,
 você estiver usando o MySQL e um pouco de MSSQL, ou você precisar conectar em um banco de dados Oracle, aí você não
-poderá usar os mesmos drivers. Você precisará aprender um API totalmente nova para cada um dos bancos de dados &mdas
-; e isso pode ficar chato.
+poderá usar os mesmos drivers. Você precisará aprender um API totalmente nova para cada um dos bancos de dados &mdash;
+e isso pode ficar chato.
 
 Uma observação adicional sobre os drivers nativos: a extensão mysql para o PHP não está mais em desenvolvimento ativ
 , e a situação oficial desde o PHP 5.4.0 é "Long term deprecation", ou "Obsoleta no longo prazo". Isso significa que
