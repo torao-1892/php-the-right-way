@@ -13,7 +13,7 @@ você estiver usando o MySQL e um pouco de MSSQL, ou você precisar conectar em 
 poderá usar os mesmos drivers. Você precisará aprender um API totalmente nova para cada um dos bancos de dados &mdash;
 e isso pode ficar chato.
 
-Uma observação adicional sobre os drivers nativos: a extensão mysql para o PHP não está mais em desenvolvimento ativ
+Uma observação adicional sobre os drivers nativos: a extensão mysql para o PHP não está mais em desenvolvimento ativo
 , e a situação oficial desde o PHP 5.4.0 é "Long term deprecation", ou "Obsoleta no longo prazo". Isso significa que
 ela será removida dentro de alguns lançamentos das próximas versões, assim, por volta do PHP 5.6 (ou o que venha
 depois do 5.5), ela pode muito bem ter desaparecido. Se você estiver usando `mysql_connect()` e `mysql_query()` nas
