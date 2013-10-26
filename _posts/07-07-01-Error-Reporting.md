@@ -24,7 +24,7 @@ Do [php.net](http://php.net/manual/function.error-reporting.php):
 
 O nível de error `E_STRICT` foi introduzido no 5.3.0 e não faz parte do `E_ALL`, contudo ele tornou-se parte do `E_AL
 ` no 5.4.0. O que isso significa?  Que para mostrar todos os erros possíveis na versão 5.3 você precisa usar `-1` ou 
-E_ALL | E_STRICT`. 
+`E_ALL | E_STRICT`. 
 
 **Reportando todos os erros possíveis em diferentes versões do PHP**
 
