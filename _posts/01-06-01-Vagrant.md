@@ -4,29 +4,31 @@ isChild: true
 
 ## Vagrant {#vagrant_title}
 
-Running your application on different environments in development and production can lead to strange bugs 
-popping up when you go live. It's also tricky to keep different development environments up to date with the same 
-version for all libraries used when working with a team of developers. 
+Rodar sua aplicação em ambientes diferentes entre desenvolvimento e produção pode levar a estranhos bugs quando
+a aplicação estiver no ar. Também é complicado manter diferentes ambientes de desenvolvimento atualizados com as
+mesmas versões de bibliotécas enquanto estiver trabalhando em uma equipe de desenvolvedores.
 
-If you are developing on Windows and deploying to Linux (or anything non-Windows) or are developing in a team, you 
-should consider using a virtual machine. This sounds tricky, but using [Vagrant][vagrant] you can set up a simple 
-virtual machine with only a few steps. These base boxes can then be set up manually, or you can use "provisioning" 
-software such as [Puppet][puppet] or [Chef][chef] to do this for you. Provisioning the base box is a great way to 
-ensure that multiple boxes are set up in an identical fashion and removes the need for you to maintain complicated 
-"set up" command lists. You can also "destroy" your base box and recreate it without many manual steps, making it
-easy to create a "fresh" installation.
+Se você estiver desenvolvendo em Windows e publicando em Linux (ou qualquer coisa que não seja Windows) ou se está
+desenvolvendo em uma equipe, você deveria considerar o uso de uma máquina virtual. Pode parecer complicado, mas
+usando o [Vagrant][vagrant] você poderá configurar uma máquina virtual simples com apenas alguns passos. As máquinas
+virtuais base (box) podem ser configuradas manualmente, ou você pode usar um software de "provisionamento" como o
+[Puppet][puppet] ou o [Chef][chef] para fazer isso por você. Provisionar o box é uma ótima maneira de garantir que
+as múltiplas máquinas virtuais sejam configuradas de forma idêntica e que você não necessite manter complicadas
+listas de comandos de configuração. Você pode também destruir (destroy) o box base e recriá-lo sem muitos passos
+manuais, tornando fácil criar instalações novas.
 
-Vagrant creates shared folders used to share your code between your host and your virtual machine, meaning you can 
-create and edit your files on your host machine and then run the code inside your virtual machine.
+O Vagrant cria pastas compartilhadas para compartilhar seu código entre sua máquina e a máquina virtual, assim você
+pode criar e editar seus arquivos na sua máquina e então executar seu código dentro da máquina virtual.
 
-### A little help
+### Uma pequena ajuda
 
-If you need a little help to start using Vagrant there are two services that might be useful:
+Se você precisa de uma pequena ajuda para inciar o uso do Vagrant existem dois serviços que podem ser úteis:
 
-- [Rove][rove]: service that allows you to pregenerate typical Vagrant builds, PHP among the options. The
-  provisioning is made with Chef.
-- [Puphpet][puphpet]: simple GUI to set up virtual machines for PHP development. **Heavily focused in PHP**. Besides
-  local VMs, can be used to deploy to cloud services as well. The provisioning is made with Puppet.
+- [Rove][rove]: serviço que permite que você gere configurações típicas do Vagrant, sendo o PHP uma das opções. O
+  provisionamento é realizado com Chef.
+- [Puphpet][puphpet]: interface gráfica simples para configurar máquinas virtuais para o desenvolvimento com PHP.
+  **Altamente focado em PHP**. Além de máquinas virtuais locais, pode ser usado para configurar máquinas em serviços
+  de cloud. O provisionamento é feito com Puppet.
 
 [vagrant]: http://vagrantup.com/
 [puppet]: http://www.puppetlabs.com/
