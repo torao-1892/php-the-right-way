@@ -19,12 +19,6 @@ performance. Você pode usar o [phpmanager][phpmanager] (um plugin GUI para o II
 gerenciamento do PHP mais simples. O IIS7 vem com o FastCGI embutido e pronto para uso, você só precisa configurar o
 PHP como handler. Para suporte e mais recursos, existe uma [área dedicada no iis.net][php-iis] ao PHP.
 
-Geralmente, rodar sua aplicação em ambientes de desenvolvimento e produção diferentes pode levar a bugs estranhos
-quando você publica. Se você está desenvolvendo em Windows e publicando em Linux (ou qualquer coisa não-Windows),
-então você deveria considerar usar uma Máquina Virtual. Isto pode parecer difícil, mas usando o [Vagrant][vagrant]
-você pode configurar pequenos wrappers, e usando o [Puppet][puppet] ou o [Chef][chef] você pode prover essas boxes e
-compartilhá-las com colegas, garantindo que todos estão trabalhando da mesma forma. Logo falaremos mais sobre isso.
-
 [php-downloads]: http://windows.php.net
 [phpmanager]: http://phpmanager.codeplex.com/
 [wpi]: http://www.microsoft.com/web/downloads/platform.aspx
@@ -32,6 +26,3 @@ compartilhá-las com colegas, garantindo que todos estão trabalhando da mesma f
 [xampp]: http://www.apachefriends.org/en/xampp.html
 [wamp]: http://www.wampserver.com/
 [php-iis]: http://php.iis.net/
-[vagrant]: http://vagrantup.com/
-[puppet]: http://www.puppetlabs.com/
-[chef]: http://www.opscode.com/
