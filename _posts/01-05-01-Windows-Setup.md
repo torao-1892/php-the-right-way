@@ -7,7 +7,7 @@ isChild: true
 O PHP está disponível de diversas maneiras no Windows. Você pode [baixar os binários](php-downloads) e até recentemente
 você podia usar um instalador '.msi'. O instalador não é mais suportado e parou no PHP 5.3.0.
 
-Para aprender e desenvolver localmente, você pode utilizar o servidor web embutido do PHP 5.4, de forma que você não
+Para aprender e desenvolver localmente, você pode utilizar o servidor web embutido do PHP 5.4+, de forma que você não
 precisa se preocupar em configurá-lo. Se você prefere um "pacote completo" que inclui um servidor web e MySQL, então
 ferramentas como o [Web Platform Installer][wpi], o [Zend Server CE][zsce], o [XAMPP][xampp] e o [WAMP][wamp] irão
 ajudá-lo a montar rapidamente um ambiente de desenvolvimento em Windows. Dito isso, estas ferramentas serão um pouco
