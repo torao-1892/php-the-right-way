@@ -22,6 +22,10 @@ instalado. O memcached por outro lado é instalado como um serviço separado e p
 você pode armazenar objetos em um data store ultra-rápido, em uma localização central, e vários sistemas diferentes
 podem acessá-lo.
 
+Note que se estiver rodando o PHP como uma aplicação (Fast-)CGI dentro do seu servidor web, cada processo do PHP terá
+seu próprio cache, ou seja, os dados de APCu não são compartilhados entre diferentes processos. Nesse caso você deve
+considerar usar mecached em seu lugar, já que ele não está ligado aos processos do PHP.
+
 Em uma configuração em rede, o APC geralmente terá um desempenho melhor do que o memcached em termos da velocidade de
 acesso, mas o memcached poderá escalar mais rápido e melhor. Se você não planeja ter múltiplo servidores executando
 sua aplicação, ou não precisar das funcionalidades extras que o memcached oferece, então o APC provavelmente é sua
@@ -43,8 +47,13 @@ if (!$data)
 print_r($data);
 {% endhighlight %}
 
+Note que, antes do PHP 5.5, APC possui tanto um cache de objetos quanto um cache de bytecode. APCu é um projeto que tem
+como objetivo trazer o cache de objetos do APC para o PHP 5.5, já que o PHP agora possui um cache bytecode nativo
+(OPcache).
+
 Aprenda mais sobre sistemas populares de cache de objetos:
 
+* [APCu](https://github.com/krakjoe/apcu)
 * [Funções APC](http://php.net/manual/en/ref.apc.php)
 * [Memcached](http://memcached.org/)
 * [Redis](http://redis.io/)
