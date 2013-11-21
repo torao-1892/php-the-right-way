@@ -63,6 +63,14 @@ antes de ser introduzida no banco de dados, prevenindo contra potenciais ataques
 
 * [Leia sobre a PDO][1]
 
+Você também deve estar ciente de que usam recursos do servidor e não é raro ter esses recursos esgotados se essas
+conexões não forem implicitamente fechadas, entretanto isso é mais comum em outras linguagens. Com PDO você pode
+implicitamente fechar as conexões pela destruição dos objetos garantindo que todas as referencias a ele forem excluidas,
+ex. atribuindo NULL a elas. Se você não fizer isso explicitamente o PHP irá fechar todas as conexões quando seu script
+terminar, a não ser é claro que você esteja usando conexões persistentes.
+
+* [Leia mais sobre conexões PDO][5]
+
 ## Camadas de Abstração
 
 Muitos frameworks fornecem sua própria camada de abstração que pode ou não ser baseada na PDO. Elas frequentemente
@@ -74,6 +82,7 @@ o SQLite então uma pequena sobrecarga valerá a pena em função da clareza no 
 Algumas camadas de abstração foram construídas usando o padrão de namespaces PSR-0, por isso podem ser instaladas em
 qualquer aplicação que você quiser:
 
+* [Aura SQL][6]
 * [Doctrine2 DBAL][2]
 * [ZF2 Db][4]
 * [ZF1 Db][3]
@@ -82,6 +91,8 @@ qualquer aplicação que você quiser:
 [2]: http://www.doctrine-project.org/projects/dbal.html
 [3]: http://framework.zend.com/manual/en/zend.db.html
 [4]: http://packages.zendframework.com/docs/latest/manual/en/index.html#zend-db
+[5]: http://php.net/manual/en/pdo.connections.php
+[6]: https://github.com/auraphp/Aura.Sql
 
 [mysql]: http://uk.php.net/mysql
 [mysqli]: http://uk.php.net/mysqli
