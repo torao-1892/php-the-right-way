@@ -18,24 +18,32 @@ classes abstratas, interfaces, herança, construtores, clonagem, exceções e mu
 
 ### Programação funcional
 
-PHP possui funções anônimas desde o PHP 5.3:
+PHP suporta funções d eprimeira classe, o que significa que funções podem ser atribuidas a variáveis. Tanto funcções
+nativas como funções definidas por usuários podem ser referenciadas por uma variável e invocadas dinamicamente. Funções
+também pode ser passadas como argumentos para outras funções (funcionalidade chamada de funções de ordem superior) e
+funções podem retornar outras funções.
 
-{% highlight php %}
-<?php
-$saudacao = function($nome)
-{
-    print("Oi {$nome}");
-};
+Recursão, uma funcionalidade que permite que funções realizem chamadas para elas mesmas também é suportada pela
+linguagem, mas a maioria dos códigos em PHP tem foco em iteração.
 
-$saudacao('Mundo');
-{% endhighlight %}
+Novas funções anonimas (incluindo suporte para closures) também estão presentes de o PHP 5.3 (2009).
 
-* [Leia sobre Funções anônimas][anonymous-functions]
-* [Leia sobre invocar funções dinamicamente com `call_user_func_array`][call-user-func-array]
+PHP 5.4 inclui a habilidade teh vincluar closures com o escopo de objetos e também melhorou o suporte para invocaveis
+(callables) tanto que que elas podem ser usadas indistintamente com funções anónimas na maioria dos casos.
+
+* Continue lendo em [Programação Funcional em PHP](/pages/Functional-Programming.html)
+* [Leia mais sobre Funções Anônimas][anonymous-functions]
+* [Leia mais sobre Closures][closure-class]
+* [Mais detalhes na RFC sobre Closures][closures-rfc]
+* [Leia mais sobre invocáveis (callables)][callables]
+* [Leia sobre invocamento dinâmico de funções com `call_user_func_array`][call-user-func-array]
 
 ### Meta Programação
 
-Desenvolvedores Ruby costumam dizer que o PHP carece de `method_missing`, mas ela está disponível como `__call()`. Existem muitos outros Métodos Mágicos disponíveis, como  `__get()`, `__set()`, `__clone()`, `__toString()`, etc.
+PHP suporta varias formas de meta-programação atraves de macanismos como a API de reflexao e métodos mágicos. Existem
+vários métodos mágicos disponíveis como __get(), __set(), __clone(), __toString(), __invoke(), etc. Isso permite que
+desenvolvedores alterem o comportamento das classes. Desenvolvedores Ruby costumam dizer que o PHP carece de
+`method_missing`, mas ele está disponível com `__call()` e __callStatic().
 
 * [Leia sobre Métodos Mágicos][magic-methods]
 * [Leia sobre Reflexão][reflection]
