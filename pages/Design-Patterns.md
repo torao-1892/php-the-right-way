@@ -3,7 +3,7 @@ layout: page
 title: Design Patterns
 ---
 
-# Padrões de Design
+# Design Patterns (Padrões de Projeto)
 
 Existem inumeros jeitos de estruturar o código e o projeto da sua aplicação web, e você pode dispender muito ou pouco
 esforço pensando na sua arquitetura. Mas é geralmente uma boa ideia seguir à padrões comuns pois isso irá fazer com que
