@@ -5,7 +5,7 @@ title: Programação Funcional em PHP
 
 # Programação Funcional em PHP
 
-O PHP suport funções de primeira classe, o que significa que uma função pode ser atribuída a uma variável. Ambas
+O PHP suporta funções de primeira classe, o que significa que uma função pode ser atribuída a uma variável. Ambas
 definidas pelo usuário e as funções embutidas podem ser referenciadas como uma variável e invocadas dinamicamente.
 As Funções podem ser passadas como argumentos para outras funções (um recurso chamado de funções de ordem-superior)
 e uma função pode retornar outras funções.
@@ -13,12 +13,12 @@ e uma função pode retornar outras funções.
 Recursão, um recurso que permite uma função chamar ela mesma, é suportado pela linguagem, mas a maior parte do código
 PHP é focado em iteração.
 
-Funções Anônimas (com suporte para closures) estão presentes desde a versão 5.3+ do PHP (2009).
+Funções Anônimas (com suporte para closures) estão presentes desde a versão 5.3 do PHP (2009).
 
-No PHP 5.4+ foi adicionada a capacidade de plugar closures no escopo de um objetos e também melhorou o suporte
+No PHP 5.4+ foi adicionada a capacidade de atribuir closures no escopo de um objetos e também melhorou o suporte
 para funções chamáveis de tal forma podem ser usadas como sinônimo de funções anônimas em quase todos os casos.
 
-O uso mais comum de funções de ordem superior é quando implementa o padrão de Estratégia (Strategy). A função embutida
+O uso mais comum de funções de ordem superior ocorre na implementação do padrão Estratégia (Strategy). A função embutida
 `array_filter` pede a entrada de array (data) e uma função (uma estratégia ou um callback) usada como um filtro para
 cada item do array.
 
