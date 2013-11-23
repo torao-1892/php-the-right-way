@@ -6,8 +6,8 @@ isChild: true
 
 Se você se pegar fazendo alterações manuais no seu esquema do banco de dados ou rodando seus testes manualmente antes de
 alterar seus arquivos (manualmente), pense duas vezes! A cada tarefa manual adicional necessária para implementar uma
-nova versão da sua aplicação as chances de erros fatais são potencialmente maiores. Esteja você lidando com uma simples
-atualização, um processo completo de implementação ou até mesmo uma estratégia de integração contínua,
+nova versão da sua aplicação as chances de erros fatais são potencialmente maiores, Seja lidando com uma simples
+atualização, um processo completo de implementação ou até mesmo uma estratégia de integração contínua, a
 [Automação de Compilação](http://en.wikipedia.org/wiki/Build_automation) é sua amiga.
 
 Entre as tarefas que talvez você deseja automatizar estão:
@@ -59,14 +59,14 @@ Leitura Adicional:
 ### Integração Contínua
 
 > Integração Contínua é uma prática de desenvolvimento de software onde membros de um time integram seu trabalho com
-> frequencia, geralmente cada pessoa integra pelo menos diariamente - levando a muitas integrações de código por dia.
-> Muitos times acreditam que essa bordagem leva a reduções significativas dos problemas de integração e permite que o
-> time desenvolva software de forma coesa é rápida.
+> frequência, geralmente essa integração ocorre diariamente - levando a muitas integrações de código por dia. Muitos
+> times acreditam que essa abordagem leva a reduções significativas dos problemas de integração e permite que o time
+> desenvolva software de forma coesa e rápida.
 
 *-- Martin Fowler*
 
-Existem diferentes formar de se implementar integração continua com PHP. Recentemente [Travis CI](https://travis-ci.org/)
-tem feito um ótimo trabalho ao fazer da integração contínua uma realidade mesmo para pequenos projetos. Travis CI é um
+Existem diferentes formas de se implementar integração contínua com PHP. Recentemente o [Travis CI](https://travis-ci.org/)
+tem feito um ótimo trabalho ao fazer da integração contínua uma realidade mesmo para pequenos projetos. O Travis CI é um
 sistema de integração contínua na nuvem desenvolvido pela comunidade de código livre. Esta integrado com GitHub e oferece
 suporte de primeira classe para muitas linguagens incluindo PHP.
 
