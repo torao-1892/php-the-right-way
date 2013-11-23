@@ -26,9 +26,44 @@ _PHP: Do Jeito Certo_ possui banners que você pode usar em seu site. Para mostr
     * Faça o build do projeto `jekyll server`
 3. Envie um pull request para análise
 
+### Contributor Style Guide
+
+1. Use American English spelling (*primary English repo only*)
+2. Use four (4) spaces to indent text; do not use tabs.
+3. Wrap all text to 120 characters.
+4. Code samples should adhere to PSR-1 or higher.
+
 ## Onde
 
 <http://www.phptherightway.com>
+
+* [English](http://www.phptherightway.com)
+* [Catalan] (http://ca.phptherightway.com)
+* [Chinese](http://wulijun.github.com/php-the-right-way)
+* [Japanese] (http://ja.phptherightway.com)
+* [Korean] (http://wafe.github.io/php-the-right-way)
+* [Italian] (http://it.phptherightway.com)
+* [Polish](http://pl.phptherightway.com)
+* [Portuguese](http://br.phptherightway.com)
+* [Russian] (http://getjump.github.io/ru-php-the-right-way)
+* [Spanish] (http://es.phptherightway.com)
+* [Ukrainian](http://iflista.github.com/php-the-right-way)
+* [Bulgarian](http://bg.phptherightway.com)
+* [German] (http://rwetzlmayr.github.io/php-the-right-way)
+* [Turkish](http://hkulekci.github.io/php-the-right-way/)
+
+### Translations
+
+If you are interested in translating _PHP: The Right Way_, fork this repo on GitHub and publish your localized fork to your own GitHub Pages account. We'll link to your translation from the primary document.
+
+To avoid fragmentation and reader confusion, please choose one of these options:
+
+1. We link to your GitHub Pages fork with `[username].github.com/php-the-right-way`
+2. We link to your GitHub Pages fork with a subdomain (e.g. "ru.phptherightway.com")
+
+If you use a subdomain, enter the subdomain into the `CNAME` file, and ask us to setup DNS for you. If you do not use a subdomain, remove the `CNAME` file entirely else your fork will not build when pushed.
+
+When your translation is ready, open an issue on the Issue Tracker to let us know.
 
 ## Porque?
 
