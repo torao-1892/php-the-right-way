@@ -26,9 +26,46 @@ _PHP: Do Jeito Certo_ possui banners que você pode usar em seu site. Para mostr
     * Faça o build do projeto `jekyll server`
 3. Envie um pull request para análise
 
+### Guia de Estilo para o Contribuidor
+
+1. Use a ortografia do Português Brasileiro neste repositório.
+2. Use quatro (4) espaços para identar o texto; não use TAB.
+3. Limite o texto em 120 caracteres.
+4. Os exemplos de código devem seguir a [PSR-1](http://www.php-fig.org/psr/psr-1/) ou superior.
+
 ## Onde
 
 <http://www.phptherightway.com>
+
+* [Inglês](http://www.phptherightway.com)
+* [Catalão] (http://ca.phptherightway.com)
+* [Chinês](http://wulijun.github.com/php-the-right-way)
+* [Japanês] (http://ja.phptherightway.com)
+* [Coreano] (http://wafe.github.io/php-the-right-way)
+* [Italiano] (http://it.phptherightway.com)
+* [Polonês](http://pl.phptherightway.com)
+* [Português Brasileiro](http://br.phptherightway.com)
+* [Russo] (http://getjump.github.io/ru-php-the-right-way)
+* [Espanhol] (http://es.phptherightway.com)
+* [Ucraniano](http://iflista.github.com/php-the-right-way)
+* [Búlgaro](http://bg.phptherightway.com)
+* [Alemão] (http://rwetzlmayr.github.io/php-the-right-way)
+* [Turco](http://hkulekci.github.io/php-the-right-way/)
+
+### Traduções
+
+Se você tem interesse em traduzir _PHP: The Right Way_, faça o fork do repo no GitHub e publique seu fork para sua
+própria conta do GitHub. Nós vamos vincular sua tradução a partir do documento principal.
+
+Para evitar fragmentação e confusão para o leitor, por favor escolha uma destas opções:
+
+1. Vincularemos seu fork com a sua GitHub Page `[username].github.com/php-the-right-way`
+2. Vincularemos seu fork com a sua GitHub Page com um subdomínio (por exemplo, "br.phptherightway.com")
+
+Se você usa um subdomínio, coloque-o no arquivo `CNAME`, e avíse-nos para configurar o DNS para você. Se não usa um
+subdomínio, apague o arquivo `CNAME` senão seu fork não vai fazer o build quando for publicado.
+
+Quando sua tradução estiver pronta, abra uma issue no Isse Tracker para nos avisar.
 
 ## Porque?
 
