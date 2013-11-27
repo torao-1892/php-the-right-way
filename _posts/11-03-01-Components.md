@@ -10,8 +10,8 @@ e implementação de código compartilhado. Existem vários repositórios de com
 * [Packagist](/#composer_and_packagist)
 * [PEAR](/#pear)
 
-Ambos destes repositórios possuem ferramentas de linha de comando para ajudar a instalação e processos de atualização,
-e forem explicados com mais detalhes na seção [Gerenciamento de Dependência][dm]
+Ambos repositórios possuem ferramentas de linha de comando para ajudar a instalação e processos de atualização,
+e foram explicados com mais detalhes na seção [Gerenciamento de Dependência][dm]
 
 Há também frameworks baseados em componentes, permite que você use seus componentes com os requisistos mínimos (ou
 nenhum requisito). Por exemplo, você pode usar o  [FuelPHP Validation package][fuelval] sem precisar usar o framework
