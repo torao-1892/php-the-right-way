@@ -2,7 +2,7 @@
 isChild: true
 ---
 
-## Serilize {#serialize_title}
+## Serialize {#serialize_title}
 
 Como armazenar ou transmitir valores PHP sem perder sua naturalidade e sua estrutura? 
 Por exemplo, você possui um objeto já com seus atributos definidos e deseja armazenar esse estado que ele se encontra agora para poder usar uma outra hora.
