@@ -1,8 +1,9 @@
 ---
+title: Desenvolvimento Guiado por Comportamentos
 isChild: true
 ---
 
-## Desenvolvimento Guiado por Comportamentos {#behavior_driven_development_title}
+## Desenvolvimento Guiado por Comportamentos {#desenvolvimento_guiado_por_comportamentos_title}
 
 Existem dois tipos diferentes de Desenvolvimento Guiado por Comportamentos (BDD): o SpecBDD e o StoryBDD. O SpecBDD
 foca nos comportamentos técnicos, no código, enquanto que o StoryBDD foca nos comportamentos de negócio e de

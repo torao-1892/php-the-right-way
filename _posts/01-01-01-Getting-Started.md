@@ -1,2 +1,5 @@
-# Começando {#getting_started_title}
+---
+title: Começando
+---
+# Começando {#comecando_title}
 

@@ -1,8 +1,9 @@
 ---
+title: Desenvolvimento Guiado por Testes
 isChild: true
 ---
 
-## Desenvolvimento Guiado por Testes {#test_driven_development_title}
+## Desenvolvimento Guiado por Testes {#desenvolvimento_guiado_por_testes_title}
 
 Da [Wikipedia](http://en.wikipedia.org/wiki/Test-driven_development):
 

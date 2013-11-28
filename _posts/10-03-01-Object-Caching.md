@@ -1,8 +1,9 @@
 ---
+title: Cache de Objetos
 isChild: true
 ---
 
-## Cache de Objetos {#object_caching_title}
+## Cache de Objetos {#cache_de_objetos_title}
 
 Existem momentos onde pode ser benéfico fazer cache de objetos individuais no seu código, como em dados que são
 custosos de conseguir ou em chamadas de bancos de dados cujo resultado dificilmente se modifica. Você pode usar um

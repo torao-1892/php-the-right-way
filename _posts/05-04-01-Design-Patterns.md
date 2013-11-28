@@ -1,4 +1,5 @@
 ---
+title: Design Patterns
 isChild: true
 ---
 
