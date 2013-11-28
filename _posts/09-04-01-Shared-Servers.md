@@ -1,8 +1,9 @@
 ---
+title: Servidores Compartilhados
 isChild: true
 ---
 
-## Servidores Compartilhados {#shared_servers_title}
+## Servidores Compartilhados {#servidores_compartilhados_title}
 
 O PHP tem que agradecer aos servidores compartilhados por sua popularidade. É difícil encontrar uma hospedagem que
 não tenha o PHP instalado, mas certifique-se de que seja a última versão. Servidores compartilhados permitem que você

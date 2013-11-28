@@ -1,8 +1,9 @@
 ---
+title: Ferramentas Complementares para Testes
 isChild: true
 ---
 
-## Ferramentas Complementares para Testes {#complementary_testing_tools_title}
+## Ferramentas Complementares para Testes {#ferramentas_complementares_para_testes_title}
 
 Além dos testes individuais e dos frameworks guiados por comportamentos, também existe uma série de frameworks
 genéricos e bibliotecas helpers úteis para qualquer das abordagem escolhidas.

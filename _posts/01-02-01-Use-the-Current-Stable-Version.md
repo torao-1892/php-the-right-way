@@ -3,7 +3,7 @@ title: Use a versão estável atual (5.5)
 isChild: true
 ---
 
-## Use a versão estável atual (5.5) {#use_the_current_stable_version_55_title}
+## Use a versão estável atual (5.5) {#use_a_versão_estável_atual_55_title}
 
 Se você está começando com o PHP, certifique-se de começar com a versão estável atual do [PHP 5.5][php-release]. O PHP
 fez grandes avanços adicionando [novas funcionalidades](#language_highlights) poderosas nos últimos anos. Não deixe que

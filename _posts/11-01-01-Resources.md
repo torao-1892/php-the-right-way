@@ -1,4 +1,8 @@
-# Recursos {#resources_title}
+---
+title: Recursos
+---
+
+# Recursos {#recursos_title}
 
 ## Da Fonte
 

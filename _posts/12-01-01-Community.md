@@ -1,4 +1,8 @@
-# Comunidade {#community_title}
+---
+title: Comunidade
+---
+
+# Comunidade {#comunidade_title}
 
 A comunidade PHP é tão diversa quanto é grande, e seus membros estão prontos e dispostos para a apoiar novos
 programadores PHP. Considere se juntar ao grupo de usuários PHP (PUG) de sua localidade ou participar das grandes

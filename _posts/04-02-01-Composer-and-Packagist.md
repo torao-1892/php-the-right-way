@@ -1,8 +1,9 @@
 ---
+title: Composer e Packagist
 isChild: true
 ---
 
-## Composer e Packagist {#composer_and_packagist_title}
+## Composer e Packagist {#composer_e_packagist_title}
 
 O Composer é um gerenciador de dependências **brilhante** para o PHP. Liste as dependências do seu projeto em um
 arquivo `composer.json` e, com poucos comandos simples, o Composer irá fazer o download das dependências do seu

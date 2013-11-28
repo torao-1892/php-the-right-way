@@ -1,4 +1,8 @@
-# Testes {#testing_title}
+---
+title: Testes
+---
+
+# Testes {#testes_title}
 
 Escrever testes automatizados para o seu código PHP é considerado uma boa prática, e leva a aplicações bem escritas.
 Testes automatizados são uma excelente ferramenta para garantir que sua aplicação não irá quebrar quando você estiver

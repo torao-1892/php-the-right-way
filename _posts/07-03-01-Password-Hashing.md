@@ -1,8 +1,9 @@
 ---
+title: Hash de Senhas
 isChild: true
 ---
 
-## Hash de Senhas {#password_hashing}
+## Hash de Senhas {#hash_de_senhas_title}
 
 No fim, todos construímos aplicações PHP que dependem de login dos usuários. Usuários e senhas (com hash) são
 armazenadas em um banco de dados e posteriormente são usados para autenticar os usuários no login.

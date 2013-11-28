@@ -2,5 +2,5 @@
 title: Erros e Exceções
 ---
 
-# Erros e Exceções {#errors_and_exceptions_title}
+# Erros e Exceções {#erros_e_exceções_title}
 
