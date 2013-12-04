@@ -33,6 +33,20 @@ _PHP: Do Jeito Certo_ possui banners que você pode usar em seu site. Para mostr
 3. Limite o texto em 120 caracteres.
 4. Os exemplos de código devem seguir a [PSR-1](http://www.php-fig.org/psr/psr-1/) ou superior.
 
+
+### Traduzir ou não traduzir?
+
+Tendo em vista que o projeto tem caráter didático, vale traduzir tudo que se entender importante.
+
+Exemplos de coisas possíveis de se traduzir:
+
+- comentários explicativos
+- conteúdo de strings, heredocs ou nowdocs quando for julgado necessário etc.
+
+Sempre avaliar o que vale ou não, pensando no caratér didático da tradução.
+
+Reforçar que nunca se deve alterar o sentido dos textos, nem colocar informações complementares que não existem na versão original (exceto talvez alguma nota do tradutor)
+
 ## Onde
 
 <http://www.phptherightway.com>
