@@ -1,30 +1,35 @@
 ---
+title: Problema Complexo
 isChild: true
 ---
 
-## Complex Problem {#complex_problem_title}
+## Problema Complexo {#problema_complexo_title}
 
-If you have ever read about Dependency Injection then you have probably seen the terms *"Inversion of Control"* or *"Dependency Inversion Principle"*.
-These are the complex problems that Dependency Injection solves.
+Se você já leu sobre Inversão de Dependência, então você provavelmente viu os termos *"Inversão de Controle"* ou
+*"Princípio da Inversão de Dependência"*.
+Estes são os problemas complexos que a Inversão de Dependência resolve.
 
-### Inversion of Control
+### Inversão de Controle
 
-Inversion of Control is as it says, "inverting the control" of a system by keeping organisational control entirely separate from our objects.
-In terms of Dependency Injection, this means loosening our dependencies by controlling and instantiating them elsewhere in the system.
+Inversão de controle é como se diz, "invertendo o controle" de um sistema para manter o controle organizacional
+totalmente separados dos seus objetos.
+Em termos de Injeção de Dependência, isto significa afrouxar nossas dependências para controlá-las e instanciá-las em
+outro lugar no sistema.
 
-For years, PHP frameworks have been achieving Inversion of Control, however, the question became, which part of control
-are you inverting, and where to? For example, MVC frameworks would generally provide a super object or base controller that other
-controllers must extend to gain access to its dependencies. This **is** Inversion of Control, however, instead of loosening
-dependencies, this method simply moved them.
+Por anos, os frameworks PHP alcançaram a Inversão de Controle, no entanto, a questão tornou-se, que parte do controle
+está invertendo, e onde? Por exemplo, frameworks MVC, em geral, fornecem um super objeto ou um controlador base que
+outros controladores devem extender para obter acesso as suas dependências. Isto **é** Inversão de Controle, no entanto,
+em vez de afrouxar as dependências, este método simplesmente as mudou.
 
-Dependency Injection allows us to more elegantly solve this problem by only injecting the dependencies we need, when we need them,
-without the need for any hard coded dependencies at all.
+Injeção de Dependência permite resolver de forma mais elegante este problema apenas injetando a dependência que
+precisamos, quando precisamos dela, sem a necessidade de quaisquer dependências no código.
 
-### Dependency Inversion Principle
+### Princípio da Inversão de Dependência
 
-Dependency Inversion Principle is the "D" in the S.O.L.I.D set of object oriented design principles that states one should
-*"Depend on Abstractions. Do not depend on concretions."*. Put simply, this means our dependencies should be interfaces/contracts or abstract
-classes rather than concrete implementations. We can easily refactor the above example to follow this principle.
+O Princípio da Inversão de Dependência é o "D", no S.O.L.I.D, define o princípio de design da orientação a objeto
+que afirma que deve *"Depende de uma Abstração. Não depende de Objetos concretos"*. Simplificando, isto significa que
+nossas dependências devem ser classes de interfaces/contratos ou class abstratas em vez de implementações concretas.
+Podemos facilmente refatorar o exemplo abaixo para seguir este princípio.
 
 {% highlight php %}
 <?php
@@ -45,12 +50,13 @@ interface AdapterInterface {}
 class MysqlAdapter implements AdapterInterface {}
 {% endhighlight %}
 
-There are several benefits to the `Database` class now depending on an interface rather than a concretion.
+Existem vários benefícios para a classe `Database`, agora, dependendo de uma interface em vez de um objeto concreto.
 
-Consider that you are working in a team and the adapter is being worked on by a colleague. In our first example, we would have
-to wait for said colleague to finish the adapter before we could properly mock it for our unit tests. Now that the dependency
-is an interface/contract we can happily mock that interface knowing that our colleague will build the adapter based on that contract.
+Considerando que você trabalha em uma equipe e o adaptador está sendo trabalhado por um colega. No primeiro exemplo,
+teriamos que esperar o colega dizer que terminou o adaptador antes que pudéssemos simulá-la(mock) nos testes unitários.
+Agora, que a denpendência é uma interface/contrato podemos alegremente simulá-la (mock) sabendo que o colega vai
+construir o adaptador com base neste contrato.
 
-An even bigger benefit to this method is that our code is now much more scalable. If a year down the line we decide that we
-want to migrate to a different type of database, we can write an adapter that implements the original interface and inject that instead,
-no more refactoring would be required as we can ensure that the adapter follows the contract set by the interface.
+Um benefício ainda maior para este método é que nosso código, agora, está mais escalável. Se um ano depois decidir
+migrar para um banco de dados diferente, podemos escrever um novo adaptador que implementa a interface original e
+injetá-lo, não seria preciso nenhuma refatoração, pois o adaptador segue o contrato definido pela interface.
