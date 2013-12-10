@@ -1,13 +1,14 @@
 ---
-title: Dependency Injection
+title: Injeção de Dependência
 ---
 
-# Dependency Injection {#dependency_injection_title}
+# Injeção de Dependência {#injeção_de_dependência_title}
 
-From [Wikipedia](http://en.wikipedia.org/wiki/Dependency_injection):
+Fonte [Wikipedia](http://en.wikipedia.org/wiki/Dependency_injection):
 
-> Dependency injection is a software design pattern that allows the removal of hard-coded dependencies and makes it 
-> possible to change them, whether at run-time or compile-time.
+> Injeção de Dependência é um Design Pattern que permite retirar as dependências hard-coded e torna possível
+> mudá-las, seja em tempo de excução ou em tempo de compilação.
 
-This quote makes the concept sound much more complicated than it actually is. Dependency Injection is providing a component 
-with it's dependencies either through constructor injection, method calls or the setting of properties. It is that simple.
+Esta citação torna o conceito muito mais complicado do que realmente é. Injeção de Dependência fornece um componente
+com suas dependências, seja por injeção no contrutor, chamada de método ou na definição de propriedades. É simples
+assim.
