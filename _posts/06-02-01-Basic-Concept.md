@@ -28,7 +28,7 @@ class Database
 class MysqlAdapter {}
 {% endhighlight %}
 
-Este código pode ser refatorado para usar a Injeção de Dependência para afrouxar a dependência.
+Este código pode ser refatorado para usar a Dependency Injection para afrouxar a dependência.
 
 {% highlight php %}
 <?php

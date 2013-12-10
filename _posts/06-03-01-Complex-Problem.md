@@ -13,7 +13,7 @@ Estes são os problemas complexos que a Inversão de Dependência resolve.
 
 Inversão de controle é como se diz, "invertendo o controle" de um sistema para manter o controle organizacional
 totalmente separados dos seus objetos.
-Em termos de Injeção de Dependência, isto significa afrouxar nossas dependências para controlá-las e instanciá-las em
+Em termos de Dependency Injection, isto significa afrouxar nossas dependências para controlá-las e instanciá-las em
 outro lugar no sistema.
 
 Por anos, os frameworks PHP alcançaram a Inversão de Controle, no entanto, a questão tornou-se, que parte do controle
@@ -21,7 +21,7 @@ está invertendo, e onde? Por exemplo, frameworks MVC, em geral, fornecem um sup
 outros controladores devem extender para obter acesso as suas dependências. Isto **é** Inversão de Controle, no entanto,
 em vez de afrouxar as dependências, este método simplesmente as mudou.
 
-Injeção de Dependência permite resolver de forma mais elegante este problema apenas injetando a dependência que
+Dependency Injection permite resolver de forma mais elegante este problema apenas injetando a dependência que
 precisamos, quando precisamos dela, sem a necessidade de quaisquer dependências no código.
 
 ### Princípio da Inversão de Dependência
