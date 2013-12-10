@@ -7,9 +7,9 @@ isChild: true
 
 Demostraremos o conceito com um simples exemplo.
 
-Temos uma classe `Database` que requer um adaptador para se comunicar com o banco de dados. Intanciaremos o adaptador
-no construtor e criando uma forte de dependência. Isto dificulta os testes e significa que a classe `Database` está
-fortemente acoplado ao adaptador.
+Temos uma classe `Database` que requer um adaptador para se comunicar com o banco de dados. Instanciaremos o adaptador
+no construtor e assim criamos uma forte de dependência. Isto dificulta os testes e significa que a classe `Database`
+está fortemente acoplada ao adaptador.
 
 {% highlight php %}
 <?php
@@ -28,7 +28,7 @@ class Database
 class MysqlAdapter {}
 {% endhighlight %}
 
-Este código pode ser refatorado para usar a Dependency Injection para afrouxar a dependência.
+Este código pode ser refatorado para usar a Dependency Injection para desacoplar a dependência.
 
 {% highlight php %}
 <?php
@@ -47,6 +47,6 @@ class Database
 class MysqlAdapter {}
 {% endhighlight %}
 
-Agora, damos a classe `Database` a sua dependência ao invés de criar dentro dela. Poderiamos também, criar um método
+Agora, damos a classe `Database` a sua dependência em vez de criar dentro dela. Poderiamos também, criar um método
 que aceitaria um argumento da dependência e defini-la dessa forma, ou definir a propriedade `$adapter` como `public`
 para defini-la diretamente.
