@@ -155,7 +155,7 @@ necessita de conhecimento sobre uma classe concretamente definida.
 
 Com o padrão "Strategy" (Estratégia) voce encapsula famílias específicas de algoritimos permitindo com que a classe
 cliente responsável por instanciar esse algoritimo em particular não necessite de conhecimento sobre sua implementação
-atual. Existem várias variações do padrão "Startegy" o mais simples deles é apresnetado abaico:
+atual. Existem várias variações do padrão "Startegy" o mais simples deles é apresentado abaixo:
 
 O primeiro bloco de código apresenta uma familia de algorítimos; você pode querer uma array serializado, um JSON ou
 talvez somente um array de dados:
