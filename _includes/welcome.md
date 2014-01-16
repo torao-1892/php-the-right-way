@@ -2,7 +2,7 @@
 
 Existe muita informação obsoleta na Web que desnorteia novos programadores PHP,
 espalhando más práticas e códigos inseguros. _PHP: Do Jeito Certo_ é uma referência
-rápida e fácil de ler, introduzindo desenvolvedores as melhores práticas, renomados
+rápida e fácil de ler, introduzindo desenvolvedores às melhores práticas, renomados
 padrões de código e links para tutoriais competentes pela Web.
 
 É importante entender que _não existe uma maneira canônica de usar PHP_. Essa é a
@@ -41,7 +41,7 @@ Ajude a tornar este site o melhor recurso para novos programadores PHP! [Contrib
 
 ## Espalhe a palavra!
 
-_PHP: Do Jeito Certo_ possui banners que você pode usar em seu site. Mostre seu apoio, e deixe que novos desenvolvedores PHP saibam onde encontrar boas informações!
+_PHP: Do Jeito Certo_ possui banners que você pode usar em seu site. Mostre seu apoio e deixe que novos desenvolvedores PHP saibam onde encontrar boas informações!
 
 [Banners][2]
 
