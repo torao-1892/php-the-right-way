@@ -15,16 +15,23 @@ _PHP: Do Jeito Certo_ possui banners que você pode usar em seu site. Para mostr
 
 [Banners](http://www.phptherightway.com/banners.html)
 
+## Instruções de Instalação
+
+### Localmente
+
+* Instale opicionalmente [Ruby](https://rvm.io/rvm/install/) com [Jekyll](https://github.com/mojombo/jekyll/) gem para visualizar
+
+### Vagrant
+
+* Instale [Vagrant](http://www.vagrantup.com/) e [VirtualBox](https://www.virtualbox.org/)
+* Execute o comando `vagrant up` no diretório do projeto
+* Quando o provisionamento terminar, [visualize localmente](http://localhost:4000)
+
 ## Como contribuir
 
-1. Faça fork e edite
-2. Opcionalmente, instale o [Ruby](https://rvm.io/rvm/install/) com a gem [Jekyll](https://github.com/mojombo/jekyll/) para prever localmente
-    * Instale o [Vagrant](http://www.vagrantup.com/) e o [VirtualBox](https://www.virtualbox.org/)
-    * No diretório deste projeto, execute `vagrant up`
-    * Após o termino do provisionamento `vagrant ssh`
-    * Vá ao diretório `cd /vagrant`
-    * Faça o build do projeto `jekyll server`
-3. Envie um pull request para análise
+* Fork e edite
+* Visualize suas atualizações (com vagrant, execute `vagrant ssh -c 'cd /vagrant && jekyll build'`)
+* Envie um pull request para análise
 
 ### Guia de Estilo para o Contribuidor
 
