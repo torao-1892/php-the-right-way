@@ -18,7 +18,7 @@ Você pode instalar o Composer localmente (no seu diretório de trabalho atual; 
 ou globalmente (e.g. /usr/local/bin). Vamos assumir que você queira instalar o Composer localmente. A partir do
 diretório raiz do seu projeto:
 
-    curl -s http://getcomposer.org/installer | php
+    curl -s https://getcomposer.org/installer | php
 
 Isso irá baixar o `composer.phar` (um arquivo PHP binário). Você pode executá-lo com o `php` para gerenciar as
 dependências do seu projeto. <strong>Por favor, Observe:</strong> Se você passar o código baixado diretamente para um
@@ -39,39 +39,34 @@ sua instalação do PHP para garantir que:
 Como uma instalação manual não executa nenhuma dessas verificações, você precisa decidir se o custo valerá a pena
 para você. Se sim, segue abaixo como obter o Composer manualmente:
 
-    curl -s http://getcomposer.org/composer.phar -o $HOME/local/bin/composer
+    curl -s https://getcomposer.org/composer.phar -o $HOME/local/bin/composer
     chmod +x $HOME/local/bin/composer
 
 O caminho `$HOME/local/bin` (ou um diretório de sua escolha) deve estar na sua variável de ambiente `$PATH`. Isso
 fará com que o comando `composer` fique disponível.
 
-Quando você vir a documentação dizendo para executar o Composer como `php composer.phar install`, você pode
+Quando você vir a documentação dizendo para executar o Composer como `php composer install`, você pode
 substituir por isso:
 
     composer install
 
+Esta seção assumirá que você tem globalmente instalado o composer.
+
 ### Como Definir e Instalar Dependências
 
-Primeiramente, crie um arquivo `composer.json` no mesmo diretório do `composer.phar`. Aqui está um exemplo que lista
-o [Twig][2] como uma dependência do projeto.
 O Composer mantém o controle de dependências do seu projeto em um arquivo chamado `composer.json`. Você pode
-controlá-lo na mão se preferir ou usar o próprio Composer. O comando `php composer.phar require` adiciona um
-dependência do projeto e se você não tem um arquivo `composer.json`, ele será criado. Aqui está um exemplo que adiciona
-o [Twig][2] como uma dependência do seu projeto. Execute no diretório raiz do seu projeto onde baixou o
-`composer.phar`:
+controlá-lo na mão se preferir ou usar o próprio Composer. O comando `composer require` adiciona uma dependência do
+projeto e se você não tem um arquivo `composer.json`, ele será criado. Aqui está um exemplo que adiciona
+o [Twig][2] como uma dependência do seu projeto.
 
-    {
-        "require": {
-            "twig/twig": "1.8.*"
-        }
-    }
+    composer require twig/twig:~1.8
 
-Outra alternativa é o comando `php composer.phar init` que guiará a criação completa do arquivo `composer.json` para
+Outra alternativa é o comando `composer init` que guiará a criação completa do arquivo `composer.json` para
 seu projeto. De qualquer maneira, uma vez criado o arquivo `composer.json` você pode chamar o Composer para baixar suas
 dependências para o diretório `vendors/`. Isto também se aplica para projetos baixados que fornecem um arquivo
 `composer.json`:
 
-    php composer.phar install
+    composer install
 
 Em seguida, adicione esta linha ao arquivo PHP principal da sua aplicação; isso dirá ao PHP para usar o autoloader do
 Composer para as dependências do seu projeto.
@@ -86,23 +81,29 @@ Agora você pode usar as dependências do seu projeto, e elas serão carregadas 
 ### Atualizando suas dependências
 
 O Composer cria um arquivo chamado `composer.lock` que armazena a versão exata de cada pacote baixado quando você
-executou `php composer.phar install`. Se você compartilhar seu projeto com outros desenvolvedores e o arquivo
-`composer.lock` é parte da sua distribuição, quando eles executarem `php composer.phar install` receberão as mesmas
+executou `composer install`. Se você compartilhar seu projeto com outros desenvolvedores e o arquivo
+`composer.lock` é parte da sua distribuição, quando eles executarem `composer install` receberão as mesmas
 versões como você.
-Para atualizar suas dependências, execute `php composer.phar update`.
+Para atualizar suas dependências, execute `php composer update`.
 Isso é muito útil quando você define as versões requiridas. Por exemplo, a versão requerida de ~1.8 significa "qualquer
 coisa mais recente que 1.8.0, mas menos do que 2.0.x-dev". Você também pode usar o `*` curinga como `1.8.*`. Agora
-o comando `php composer.phar update` do Composer atualizará todas as suas dependências para a versão mais recente que
+o comando `php composer update` do Composer atualizará todas as suas dependências para a versão mais recente que
 se encaixa às restrições definidas.
+
+### Notificações de Atualização
+
+Para receber notificações sobre novas versões você pode se inscrever no [VersionEye][3], um serviço web que pode
+monitorar sua conta GitHub e BitBucket para arquivos `composer.json` e envia emails com as novas versões do pacote.
 
 ### Verificando suas dependências para as questões de segurança
 
-O [Security Advisories Checker][3] é um serviço web e uma ferramenta de linha de comando, ambos examinarão seu arquivo
+O [Security Advisories Checker][4] é um serviço web e uma ferramenta de linha de comando, ambos examinarão seu arquivo
 `composer.lock` e diz se você precisa atualizar alguma das dependências.
 
-* [Aprenda sobre o Composer][4]
+* [Aprenda sobre o Composer][5]
 
 [1]: http://packagist.org/
 [2]: http://twig.sensiolabs.org
-[3]: https://security.sensiolabs.org/
-[4]: http://getcomposer.org/doc/00-intro.md
+[3]: https://www.versioneye.com/
+[4]: https://security.sensiolabs.org/
+[5]: http://getcomposer.org/doc/00-intro.md
