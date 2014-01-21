@@ -65,7 +65,7 @@ antes de ser introduzida no banco de dados, prevenindo contra potenciais ataques
 
 Você também deve estar ciente de que usam recursos do servidor e não é raro ter esses recursos esgotados se essas
 conexões não forem implicitamente fechadas, entretanto isso é mais comum em outras linguagens. Com PDO você pode
-implicitamente fechar as conexões pela destruição dos objetos garantindo que todas as referencias a ele forem excluidas,
+implicitamente fechar as conexões pela destruição dos objetos garantindo que todas as referências a ele forem excluídas,
 ex. atribuindo NULL a elas. Se você não fizer isso explicitamente o PHP irá fechar todas as conexões quando seu script
 terminar, a não ser é claro que você esteja usando conexões persistentes.
 
