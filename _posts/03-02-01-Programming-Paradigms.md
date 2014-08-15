@@ -19,7 +19,7 @@ classes abstratas, interfaces, herança, construtores, clonagem, exceções e mu
 
 ### Programação funcional
 
-PHP suporta funções de primeira classe, o que significa que funções podem ser atribuidas a variáveis. Tanto funcções
+PHP suporta funções de primeira classe, o que significa que funções podem ser atribuidas a variáveis. Tanto funções
 nativas como funções definidas por usuários podem ser referenciadas por uma variável e invocadas dinamicamente. Funções
 também pode ser passadas como argumentos para outras funções (funcionalidade chamada de funções de ordem superior) e
 funções podem retornar outras funções.
