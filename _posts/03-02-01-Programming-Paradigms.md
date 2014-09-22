@@ -30,7 +30,7 @@ linguagem, mas a maioria dos códigos em PHP tem foco em iteração.
 Novas funções anônimas (incluindo suporte para closures) também estão presentes de o PHP 5.3 (2009).
 
 PHP 5.4 inclui a habilidade de vincular closures com o escopo de objetos e também melhorou o suporte para invocaveis
-(callables) tanto que que elas podem ser usadas indistintamente com funções anónimas na maioria dos casos.
+(callables) tanto que elas podem ser usadas indistintamente com funções anónimas na maioria dos casos.
 
 * Continue lendo em [Programação Funcional em PHP](/pages/Functional-Programming.html)
 * [Leia mais sobre Funções Anônimas][anonymous-functions]
@@ -41,7 +41,7 @@ PHP 5.4 inclui a habilidade de vincular closures com o escopo de objetos e tamb�
 
 ### Meta Programação
 
-PHP suporta varias formas de meta-programação atraves de macanismos como a API de reflexão e métodos mágicos. Existem
+PHP suporta varias formas de meta-programação através de mecanismos como a API de reflexão e métodos mágicos. Existem
 vários métodos mágicos disponíveis como __get(), __set(), __clone(), __toString(), __invoke(), etc. Isso permite que
 desenvolvedores alterem o comportamento das classes. Desenvolvedores Ruby costumam dizer que o PHP carece de
 `method_missing`, mas ele está disponível com `__call()` e __callStatic().
