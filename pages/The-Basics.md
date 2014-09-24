@@ -3,7 +3,7 @@ layout: page
 title: The Basics
 ---
 
-# O Basico
+# O Básico
 
 ## Operadores de Comparação
 
@@ -40,7 +40,7 @@ if (strpos('testing', 'test') !== false) {    // true, já que uma comparação 
 
 ### Estruturas Condicionais
 
-Quando as declarações 'if/else' são usadas em uma função ou classe, é um equivoco comum pensar que 'else' precisa ser
+Quando as declarações 'if/else' são usadas em uma função ou classe, é um equívoco comum pensar que 'else' precisa ser
 usado em conjunto para declarar resultados em potencial. Entretanto se o resultado serve para definir o valor a ser
 retornado 'else' não é necessário já que 'return' irá terminar a função, fazendo com que o uso de 'else' se torne
 discutível.
@@ -107,7 +107,7 @@ function test($a)
 ## Namespace Global
 
 Quando estiver usando namespaces você pode reparar que funções internas ficam escondidas por funções que você mesmo
-escreveu. Para corrigir isso refira a funções globais atraves do uso de uma contra-barra antes do nome da função.
+escreveu. Para corrigir isso refira a funções globais através do uso de uma contra-barra antes do nome da função.
 
 {% highlight php %}
 <?php
@@ -116,7 +116,7 @@ namespace phptherightway;
 function fopen()
 {
     $file = \fopen();    // O nome da nossa função é igual a de uma função interna.
-                         // Execute a função global atraves da inclusão de '\'.
+                         // Execute a função global através da inclusão de '\'.
 }
 
 function array()
@@ -155,13 +155,13 @@ $a = 'Multi-line example'      // operador de concatenação (.)
 
 ### Tipos de Strings
 
-Tipos de string são uma caracteristica constante na comunidade PHP, mas talvez essa seção possa explicar as diferenças
+Tipos de string são uma característica constante na comunidade PHP, mas talvez essa seção possa explicar as diferenças
 entre os tipos de strings e seus usos e benefícios.
 
 #### Aspas Simples
 
-Usar aspas simples é o melhor jeito de definir strings e geralmente também o mais rápido. Sua velocidade se da ao fato
-do PHP não tentar interpretar essa string (suas variáveis). è a melhor aplicação quando:
+Usar aspas simples é o melhor jeito de definir strings e geralmente também o mais rápido. Sua velocidade se dá ao fato
+do PHP não tentar interpretar essa string (suas variáveis). É a melhor aplicação quando:
 
 - Strings não precisam ser interpretadas
 - Uma variável é escrita em texto plano
@@ -186,17 +186,17 @@ aplicação quando:
 
 - Escapando strings
 - Usando strings com muitas variáveis e texto plano
-- Condensando concatenação de multiplas linhas e aumentando a legibilidade
+- Condensando concatenação de múltiplas linhas e aumentando a legibilidade
 
 {% highlight php %}
 <?php
-echo 'phptherightway é ' . $adjective . '.'      // Um exemplo com aspas simples que usa concatenação multipla para
+echo 'phptherightway é ' . $adjective . '.'      // Um exemplo com aspas simples que usa concatenação múltipla para
     . "\n"                                       // variáveis e escapar strings
     . 'Eu amo aprender' . $code . '!';
 
 vs.
 
-echo "phptherightway is $adjective.\n Eu amo aprender $code!"  // Em vez de concatenação multipla, aspas duplas
+echo "phptherightway is $adjective.\n Eu amo aprender $code!"  // Em vez de concatenação múltipla, aspas duplas
                                                                // nos permitem utilizar strings interpretáveis
 {% endhighlight %}
 
@@ -227,7 +227,7 @@ echo "Eu bebi suco feito de {$juice[1]}s";   // $juice[1] será interpretado
 #### Sintaxe Nowdoc
 
 A Sintaxe Nowdoc foi introduzida no PHP 5.3 e internamente se comporta da mesma forma que as aspas simples exceto que é
-adequada para o uso de strings de multiplas linhas sem a necessidade de concatenação.
+adequada para o uso de strings de múltiplas linhas sem a necessidade de concatenação.
 
 {% highlight php %}
 <?php
@@ -242,7 +242,7 @@ EOD;                        // fechando 'EOD' precisa estar na sua própria linh
  * Saída:
  *
  * Exemplo de string
- * pulando multiplas linhas
+ * pulando múltiplas linhas
  * usando a sintaxe nowdoc.
  * $a não é interpretada.
  */
@@ -252,8 +252,8 @@ EOD;                        // fechando 'EOD' precisa estar na sua própria linh
 
 #### Sintaxe Heredoc
 
-A Sintaxe Heredoc se comporta internamento da mesma forma que as aspas duplas exceto que é adequada para o uso de strings
-de multiplas linhas sem a necessidade de concatenação.
+A Sintaxe Heredoc se comporta internamente da mesma forma que as aspas duplas exceto que é adequada para o uso de strings
+de múltiplas linhas sem a necessidade de concatenação.
 
 {% highlight php %}
 <?php
@@ -261,7 +261,7 @@ $a = 'Variáveis';
 
 $str = <<<EOD               // initialized by <<<
 Exemplo de string
-pulando multiplas linhas
+pulando múltiplas linhas
 usando a sintaxe heredoc.
 $a são interpretadas.
 EOD;                        // closing 'EOD' must be on it's own line, and to the left most point
@@ -270,7 +270,7 @@ EOD;                        // closing 'EOD' must be on it's own line, and to th
  * Output:
  *
  * Exemplo de string
- * pulando multiplas linhas
+ * pulando múltiplas linhas
  * usando a sintaxe heredoc.
  * variáveis são interpretadas.
  */
@@ -295,7 +295,7 @@ $b = 10;
 echo ($a) ? ($a == 5) ? 'yay' : 'nay' : ($b == 10) ? 'excessive' : ':(';    // excesso de agrupamento sacrifica a legibilidade
 {% endhighlight %}
 
-Para usar 'return' em um operador ternário utilise a sintaxe correta.
+Para usar 'return' em um operador ternário utilize a sintaxe correta.
 
 {% highlight php %}
 <?php
@@ -305,7 +305,7 @@ echo ($a == 5) ? return true : return false;    // esse exemplo irá disparar um
 vs.
 
 $a = 5;
-return ($a == 5) ? 'yay' : 'nope';    // ese exemplo i´ra retornar 'yay'
+return ($a == 5) ? 'yay' : 'nope';    // esse exemplo irá retornar 'yay'
 {% endhighlight %}
 
 * [Operadores Ternários](http://php.net/manual/en/language.operators.comparison.php)
@@ -314,7 +314,7 @@ return ($a == 5) ? 'yay' : 'nope';    // ese exemplo i´ra retornar 'yay'
 
 As vezes  programadores tentam tornar seu código mais limpo declarando variáveis predefinidas com um nome diferente. O
 que isso faz na realidade e dobrar o consumo de memória do script. No exemplo abaixo, digamos que uma string de exemplo
-contem 1MB de dado válido, copiando a variável você aumenta o consumo de memória durante a execução para 2MB.
+contém 1MB de dado válido, copiando a variável você aumenta o consumo de memória durante a execução para 2MB.
 
 {% highlight php %}
 <?php
