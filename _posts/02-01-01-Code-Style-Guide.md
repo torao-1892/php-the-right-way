@@ -9,7 +9,7 @@ mais próximo possível) um estilo de código comum para que desenvolvedores PHP
 seus projetos.
 
 O [Framework Interop Group][fig] propôs e aprovou uma série de recomendações de estilo, conhecidas como [PSR-0][psr0],
-[PSR-1][psr1] e [PSR-2][psr2]. Não deixe os nomes estranhos confundí-lo, estas recomendações são meramente um conjunto
+[PSR-1][psr1], [PSR-2][psr2] e [PSR-4][psr4]. Não deixe os nomes estranhos confundí-lo, estas recomendações são meramente um conjunto
 de regras que projetos como Drupal, Zend, Symfony, CakePHP, phpBB, AWS SDK, FuelPHP, Lithium etc. estão começando a
 adotar. Você pode utilizá-las para seus próprios projetos, ou continuar utilizando seu estilo pessoal.
 
@@ -21,6 +21,7 @@ com bastante código de terceiros.
 * [Leia sobre a PSR-0][psr0]
 * [Leia sobre a PSR-1][psr1]
 * [Leia sobre a PSR-2][psr2]
+* [Leia sobre a PSR-4][psr4]
 * [Leia sobre os Padrões de Código da PEAR][pear-cs]
 * [Leia sobre os Padrões de Código da Zend][zend-cs]
 
@@ -38,6 +39,7 @@ possam trabalhar nessa base de código.
 [psr0]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
 [psr1]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md
 [psr2]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
+[psr4]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md
 [pear-cs]: http://pear.php.net/manual/en/standards.php
 [zend-cs]: http://framework.zend.com/wiki/display/ZFDEV2/Coding+Standards
 [phpcs]: http://pear.php.net/package/PHP_CodeSniffer/
