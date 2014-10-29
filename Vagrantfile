@@ -8,7 +8,7 @@ sudo -i
 apt-get update
 apt-get -y install ruby1.9.3 nodejs build-essential
 gem update --no-rdoc --no-ri --quiet
-/opt/vagrant_ruby/bin/gem install jekyll rdiscount maruku --no-ri --no-rdoc
+/opt/vagrant_ruby/bin/gem install jekyll rdiscount --no-ri --no-rdoc
 cd /vagrant
 jekyll server --detach --port 4000
 SCRIPT
