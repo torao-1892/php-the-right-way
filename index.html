@@ -6,7 +6,7 @@ description: "Uma referência rápida de melhores práticas de PHP, renomados pa
 {% capture welcome_content %}{% include welcome.md %}{% endcapture %}
 {{ welcome_content|markdownify }}
 
-{% capture backtotop %}[Voltar ao topo](#top){.top}{% endcapture %}
+{% capture backtotop %}[Voltar ao topo](#top){:.top}{% endcapture %}
 {% for post in site.posts reversed %}
     {% if post.isChild != true and loop.first != true %}
     {{ backtotop|markdownify }}
