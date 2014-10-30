@@ -1,9 +1,10 @@
 ---
 title: Compilando e Implementando sua Aplicação
 isChild: true
+anchor: compilando_e_implementando_sua_aplicacao
 ---
 
-## "Compilando" e Implementando sua Aplicação {#compilando_e_implementando_sua_aplicação_title}
+## "Compilando" e Implementando sua Aplicação {#compilando_e_implementando_sua_aplicacao_title}
 
 Se você se pegar fazendo alterações manuais no seu esquema do banco de dados ou rodando seus testes manualmente antes de
 alterar seus arquivos (manualmente), pense duas vezes! A cada tarefa manual adicional necessária para implementar uma

@@ -1,6 +1,7 @@
 ---
 title: Hash de Senhas
 isChild: true
+anchor: hash_de_senhas
 ---
 
 ## Hash de Senhas {#hash_de_senhas_title}

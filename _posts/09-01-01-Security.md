@@ -1,4 +1,6 @@
 ---
 title: Segurança
+anchor: seguranca
 ---
-# Segurança {#segurança_title}
+
+# Segurança {#seguranca_title}

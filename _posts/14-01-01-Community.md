@@ -1,5 +1,6 @@
 ---
 title: Comunidade
+anchor: comunidade
 ---
 
 # Comunidade {#comunidade_title}

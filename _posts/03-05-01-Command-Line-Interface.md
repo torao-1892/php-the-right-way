@@ -1,6 +1,7 @@
 ---
 title: Interface de Linha de Comando
 isChild: true
+anchor: interface_de_linha_de_comando
 ---
 
 ## Interface de Linha de Comando {#interface_de_linha_de_comando_title}

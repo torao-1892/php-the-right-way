@@ -1,9 +1,10 @@
 ---
 title: Exceções
 isChild: true
+anchor: excecoes
 ---
 
-## Exceções {#exceções_title}
+## Exceções {#excecoes_title}
 
 Exceções são uma parte padrão da maioria das linguagens populares, mas elas sao frequentemente negligenciadas pelos
 programadores de PHP. Linguagens como Ruby usam pesadamente o sistema de Exceções, então sempre que algo de errado

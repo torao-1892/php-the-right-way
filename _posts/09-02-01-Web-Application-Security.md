@@ -1,9 +1,10 @@
 ---
 title: Segurança em uma Aplicação Web
 isChild: true
+anchor: seguranca_em_uma_aplicacao_web
 ---
 
-## Segurança em uma Aplicação Web {#segurança_em_uma_aplicação_web_title}
+## Segurança em uma Aplicação Web {#seguranca_em_uma_aplicacao_web_title}
 
 Existem pessoas ruins prontas e dispostas a invadir sua aplicação web. É importante que você tome as medidas
 necessárias para reforçar a segurança da sua aplicação web. Felizmente, o pessoal bacana da

@@ -1,9 +1,10 @@
 ---
 title: Paradigmas de programação
 isChild: true
+anchor: paradigmas_de_programacao
 ---
 
-## Paradigmas de programação {#paradigmas_de_programação_title}
+## Paradigmas de programação {#paradigmas_de_programacao_title}
 
 O PHP é uma linguagem dinâmica e flexível, que suporta uma variedade de técnicas de programação. Ele evoluiu
 drasticamente com o passar dos anos, notavelmente adicionando um sólido modelo de orientação a objetos no PHP 5.0 

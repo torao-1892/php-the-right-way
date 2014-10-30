@@ -1,9 +1,10 @@
 ---
 title: Plataforma como Serviço (PaaS)
 isChild: true
+anchor: plataforma_como_servico_pass
 ---
 
-## Plataforma como Serviço (PaaS) {#plataforma_como_serviço_paas_title}
+## Plataforma como Serviço (PaaS) {#plataforma_como_servico_paas_title}
 
 O PaaS fornece o sistema e a arquitetura de rede necessários para executar aplicações PHP na web. Isso significa não
 precisar de quase nenhuma configuração para publicar aplicações ou frameworks PHP.

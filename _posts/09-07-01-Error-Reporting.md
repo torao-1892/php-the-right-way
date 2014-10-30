@@ -1,9 +1,10 @@
 ---
 title: Relatório de Erros
 isChild: true
+anchor: relatorio_de_erros
 ---
 
-## Relatório de Erros {#relatório_de_erros_title}
+## Relatório de Erros {#relatorio_de_erros_title}
 
 O registro de erros pode ser útil para encontrar pontos problemáticos em sua aplicação, mas isso também pode expor
 informações sobre a estrutura de sua aplicação para o mundo exterior. Para proteger efetivamente sua aplicação dos

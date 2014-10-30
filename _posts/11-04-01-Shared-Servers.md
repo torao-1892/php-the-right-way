@@ -1,6 +1,7 @@
 ---
 title: Servidores Compartilhados
 isChild: true
+anchor: servidores_compatilhados
 ---
 
 ## Servidores Compartilhados {#servidores_compartilhados_title}

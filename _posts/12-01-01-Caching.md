@@ -1,5 +1,6 @@
 ---
 title: Cache
+anchor: cache
 ---
 
 # Cache {#cache_title}

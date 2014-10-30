@@ -1,6 +1,7 @@
 ---
 title: Leitura Adicional
 isChild: true
+anchor: leitura_adicional
 ---
 
 ## Leitura Adicional {#leitura_adicional_title}
