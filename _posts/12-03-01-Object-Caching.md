@@ -1,6 +1,7 @@
 ---
 title: Cache de Objetos
 isChild: true
+anchor: cache_de_objetos
 ---
 
 ## Cache de Objetos {#cache_de_objetos_title}

@@ -1,6 +1,7 @@
 ---
 title: Desenvolvimento Guiado por Comportamentos
 isChild: true
+anchor: desenvolvimento_guiado_por_comportamentos
 ---
 
 ## Desenvolvimento Guiado por Comportamentos {#desenvolvimento_guiado_por_comportamentos_title}

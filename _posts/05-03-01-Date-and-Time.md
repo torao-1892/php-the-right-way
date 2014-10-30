@@ -1,9 +1,10 @@
 ---
 title: Data e Horário
 isChild: true
+anchor: data_e_horario
 ---
 
-## Data e Horário {#data_e_horário_title}
+## Data e Horário {#data_e_horario_title}
 
 O PHP tem uma classe chamada DateTime para ajudar você com leitura, escrita, comparações e cálculos com datas e
 horários. Existem muitas funções no PHP relacionadas a datas e horários além da DateTime, mas ela fornece uma boa

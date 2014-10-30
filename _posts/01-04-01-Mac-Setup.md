@@ -1,8 +1,10 @@
 ---
+title: Instalação no Mac
 isChild: true
+anchor: instalacao_no_mac
 ---
 
-## Instalação no Mac {#mac_setup_title}
+## Instalação no Mac {#instalacao_no_mac_title}
 
 O OSX já vem com o PHP, mas ele é normalmente um pouco atrasado em relação ao último estável. O Lion vem com o
 PHP 5.3.6, Mountain Lion com o 5.3.10 e Mavericks com 5.4.17.

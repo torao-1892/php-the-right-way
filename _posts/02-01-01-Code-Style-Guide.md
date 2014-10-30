@@ -1,7 +1,9 @@
 ---
 title: Guia de estilo de código
+anchor: guia_de_estilo_de_codigo
 ---
-# Guia de estilo de código {#guia_de_estilo_de_código_title}
+
+# Guia de estilo de código {#guia_de_estilo_de_codigo_title}
 
 A comunidade PHP é grande e diversa, composta por inúmeras bibliotecas, frameworks e componentes. É comum para
 desenvolvedores PHP escolher vários destes e combiná-los em um único projeto. É importante que código PHP siga (o

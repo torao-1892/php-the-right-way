@@ -1,6 +1,7 @@
 ---
 title: Desenvolvimento Guiado por Testes
 isChild: true
+anchor: desenvolvimento_guiado_por_testes
 ---
 
 ## Desenvolvimento Guiado por Testes {#desenvolvimento_guiado_por_testes_title}

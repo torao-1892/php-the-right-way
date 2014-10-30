@@ -1,6 +1,7 @@
 ---
 title: Componentes
 isChild: true
+anchor: componentes
 ---
 
 ## Componentes {#componentes_title}

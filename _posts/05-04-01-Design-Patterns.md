@@ -1,6 +1,7 @@
 ---
 title: Design Patterns
 isChild: true
+anchor: design_patterns
 ---
 
 ## Design Patterns {#design_patterns_title}

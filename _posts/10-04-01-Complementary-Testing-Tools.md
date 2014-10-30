@@ -1,6 +1,7 @@
 ---
 title: Ferramentas Complementares para Testes
 isChild: true
+anchor: ferramentas_complementares_para_testes
 ---
 
 ## Ferramentas Complementares para Testes {#ferramentas_complementares_para_testes_title}

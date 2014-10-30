@@ -1,6 +1,7 @@
 ---
 title: Cache de Bytecode
 isChild: true
+anchor: cache_de_bytecode
 ---
 
 ## Cache de Bytecode {#cache_de_bytecode_title}
