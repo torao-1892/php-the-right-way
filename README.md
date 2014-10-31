@@ -23,7 +23,7 @@ _PHP: Do Jeito Certo_ possui banners que você pode usar em seu site. Para mostr
 
 [Instalar utilizando o Vagrant](vagrant.md)
 
-### Guia de Estilo para o Contribuidor
+## Guia de Estilo para o Contribuidor
 
 1. Use a ortografia do Português do Brasil neste repositório.
 2. Use quatro (4) espaços para identar o texto; não use TAB.
@@ -50,7 +50,7 @@ _PHP: Do Jeito Certo_ possui banners que você pode usar em seu site. Para mostr
 * [Turco](http://hkulekci.github.io/php-the-right-way/)
 * [Esloveno](http://sl.phptherightway.com)
 
-### Traduções
+## Traduções
 
 Se você tem interesse em traduzir _PHP: The Right Way_, faça o fork do repo no GitHub e publique seu fork para sua
 própria conta do GitHub. Nós vamos vincular sua tradução a partir do documento principal.
@@ -75,7 +75,7 @@ Têm havido muita discussão ultimamente sobre como a comunidade PHP carece de i
 
 Meu nome é [Josh Lockhart](http://twitter.com/codeguy). Sou o autor do [Slim Framework](http://www.slimframework.com/), e trabalho para a [New Media Campaigns](http://www.newmediacampaigns.com/).
 
-### Colaboradores
+## Colaboradores
 
 * [Kris Jordan](http://krisjordan.com/)
 * [Phil Sturgeon](http://philsturgeon.co.uk/)
