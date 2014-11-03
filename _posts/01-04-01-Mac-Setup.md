@@ -16,7 +16,7 @@ Neste ponto, você pode instalar o `php53`, `php54`, `php55` ou `php56` usando o
 
 ### Instalar PHP via phpbrew
 
-[phpbrew] é uma ferramenta para instalar e gerenciar múltiplas versões do PHP. Isto pode ser realmente útil se duas diferentes aplicações/projetos requerem diferentes versões do PHP e você não está usando máquinas virtual.
+[phpbrew] é uma ferramenta para instalar e gerenciar múltiplas versões do PHP. Isto pode ser realmente útil se duas diferentes aplicações/projetos requerem diferentes versões do PHP e você não está usando máquinas virtuais.
 
 ### Compilar o código fonte
 
