@@ -26,12 +26,13 @@ com bastante código de terceiros.
 * [Leia sobre a PSR-4][psr4]
 * [Leia sobre os Padrões de Código da PEAR][pear-cs]
 * [Leia sobre os Padrões de Código da Zend][zend-cs]
+* [Leia sobre os Padrões de Código do Symfony][symfony-cs]
 
 Você pode usar o [PHP_CodeSniffer][phpcs] para checar seu código contra qualquer uma dessas recomendações, e plugins
 para editores de texto como o [Sublime Text 2][st-cs] para fazer a verificação em tempo real.
 
 Use o [PHP Coding Standards Fixer][phpcsfixer] do Fabien Potencier para automaticamente modificar seu código para que
-ele seja compatível com os padrões, evitando fazer as alterações na mão.
+ele seja compatível com os padrões, evitando corrigir cada problema na mão.
 
 O Inglês é a linguagem preferida para todos os nomes simbólicos e para a infra-estrutura do código. Comentários devem
 ser escritos em qualquer linguagem que possa ser facilmente lida por todos os atuais e futuros desenvolvedores que
@@ -44,6 +45,7 @@ possam trabalhar nessa base de código.
 [psr4]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md
 [pear-cs]: http://pear.php.net/manual/en/standards.php
 [zend-cs]: http://framework.zend.com/wiki/display/ZFDEV2/Coding+Standards
+[symfony-cs]: http://symfony.com/doc/current/contributing/code/standards.html
 [phpcs]: http://pear.php.net/package/PHP_CodeSniffer/
 [st-cs]: https://github.com/benmatselby/sublime-phpcs
 [phpcsfixer]: http://cs.sensiolabs.org/
