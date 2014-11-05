@@ -8,7 +8,7 @@ anchor: paradigmas_de_programacao
 
 O PHP é uma linguagem dinâmica e flexível, que suporta uma variedade de técnicas de programação. Ele evoluiu
 drasticamente com o passar dos anos, notavelmente adicionando um sólido modelo de orientação a objetos no PHP 5.0 
-2004), funções anônimas e namespaces no PHP 5.3 (2009) e traits no PHP 5.4 (2012).
+(2004), funções anônimas e namespaces no PHP 5.3 (2009) e traits no PHP 5.4 (2012).
 
 ### Programação orientada a objetos
 
@@ -42,7 +42,7 @@ PHP 5.4 inclui a habilidade de vincular closures com o escopo de objetos e tamb�
 
 ### Meta Programação
 
-PHP suporta varias formas de meta-programação através de mecanismos como a API de reflexão e métodos mágicos. Existem
+PHP suporta várias formas de meta-programação através de mecanismos como a API de reflexão e métodos mágicos. Existem
 vários métodos mágicos disponíveis como __get(), __set(), __clone(), __toString(), __invoke(), etc. Isso permite que
 desenvolvedores alterem o comportamento das classes. Desenvolvedores Ruby costumam dizer que o PHP carece de
 `method_missing`, mas ele está disponível com `__call()` e __callStatic().
