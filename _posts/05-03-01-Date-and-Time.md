@@ -11,7 +11,7 @@ horários. Existem muitas funções no PHP relacionadas a datas e horários alé
 interface orientada a objetos para a maioria dos usos comuns. Ela pode tratar de fusos horários, mas isso vai além
 dessa breve introdução.
 
-Para começar a trabalhar com a DateTime, converta uma string bruta de data e hora para um objeto com o método factory
+Para começar a trabalhar com a DateTime, converta uma string bruta de data e hora para um objeto com o método _factory_
 `createFromFormat()`, ou use `new \DateTime` para obter a data e a hora atual. Use o método `format()` para converter
 um objeto DateTime de volta para uma string para saída.
 {% highlight php %}
@@ -48,20 +48,19 @@ if($start < $end) {
 {% endhighlight %}
     
 Um último exemplo para demonstrar a classe DatePeriod. Ela é usada para iterar por eventos recorrentes. Ela pode
-receber dois objetos DateTime, um início e um fim, e o intervalo para o qual ele retornará todos os eventos no meio.
+receber dois objetos DateTime, um início e um fim, e o intervalo para o qual ele retornará todos os eventos intermediários.
 {% highlight php %}
 <?php
 // mostra todas as quintas-feiras entre $start e $end
 $periodInterval = \DateInterval::createFromDateString('first thursday');
 $periodIterator = new \DatePeriod($start, $periodInterval, $end, \DatePeriod::EXCLUDE_START_DATE);
-foreach($periodIterator as $date)
-{
+foreach($periodIterator as $date) {
     //mostra cada data no período
     echo $date->format('m/d/Y') . " ";
 }
 {% endhighlight %}
 
-* [Leia sobre a DateTime][datetime]
+* [Leia sobre a classe DateTime][datetime]
 * [Leia sobre formatação de datas][dateformat] (opções aceitas para formatos de strings de data)
 
 [datetime]: http://www.php.net/manual/book.datetime.php
