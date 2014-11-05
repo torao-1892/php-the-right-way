@@ -21,7 +21,7 @@ de colisão com outras bibliotecas.
 Um modo recomendado de usar namespaces está descrito na [PSR-0][psr0], que tem como objetivo fornecer uma convenção
 padrão para arquivos, classes e namespaces, permitindo código plug-and-play.
 
-Em dezembro de 2013 o PHP-FIG (Grupo de Interoperabilidade entre Frameworks) criou um novo padrão para carregamento automático, a [PSR-4][psr4], que provavelmente vai substituir a PSR-0. Atualmente ambos são utilizáveis, pois a PSR-4 requer o PHP 5.3 e muitos projetos que usam apenas o PHP 5.2 ainda implementam a PSR-0. Se você for usar um padrão de carregamento automático para uma nova aplicação ou pacote então é quase certo que você vai querer olhar para a PSR-4.
+Em dezembro de 2013 o PHP-FIG (Framework Interop Group) criou um novo padrão para carregamento automático, a [PSR-4][psr4], que provavelmente vai substituir a PSR-0. Atualmente ambos são utilizáveis, pois a PSR-4 requer o PHP 5.3 e muitos projetos que usam apenas o PHP 5.2 ainda implementam a PSR-0. Se você for usar um padrão de carregamento automático para uma nova aplicação ou pacote então é quase certo que você vai querer olhar para a PSR-4.
 
 ```
 Nota do tradutor
