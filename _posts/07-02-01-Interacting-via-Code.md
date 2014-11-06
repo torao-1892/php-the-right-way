@@ -1,13 +1,12 @@
 ---
 isChild: true
-title: Interacting with Databases
-anchor: databases_interacting
+title: Interagindo com o banco de dados
+anchor: interagindo_com_o_banco_de_dados
 ---
 
-## Interacting with Databases {#databases_interacting_title}
+## Interagindo com o banco de dados {#interagindo_com_o_banco_de_dados_title}
 
-When developers first start to learn PHP, they often end up mixing their database interaction up with their 
-presentation logic, using code that might look like this:
+Quando os desenvolvedores começam a aprender PHP, muitas vezes acabam misturando a interação com o banco de dados com a camada de apresentação, usando código que pode parecer com isso:
 
 {% highlight php %}
 <ul>
@@ -19,11 +18,11 @@ foreach ($db->query('SELECT * FROM table') as $row) {
 </ul>
 {% endhighlight %}
 
-This is bad practice for all sorts of reasons, mainly that its hard to debug, hard to test, hard to read and it is going to output a lot of fields if you don't put a limit on there.
+Esta é uma má prática por várias razões, principalmente por ser difícil de depurar, testar, ler e ainda pode gerar na saída um monte de campos se não houver um limite.
 
-While there are many other solutions to doing this - depending on if you prefer [OOP](/#object-oriented-programming) or [functional programming](/#functional-programming) - there must be some element of separation. 
+Embora existam muitas outras soluções para fazer isso - dependendo se você preferir a [OOP](/#object-oriented-programming) ou [programação funcional](/#functional-programming) - deve haver algum elemento de separação.
 
-Consider the most basic step:
+Considere o passo mais básico:
 
 {% highlight php %}
 <?php
@@ -36,9 +35,9 @@ foreach (getAllFoos($db) as $row) {
 }
 {% endhighlight %}
 
-That is a good start. Put those two items in two different files and you've got some clean separation.
+Este é um bom começo. Coloque estes dois itens em dois arquivos diferentes e você terá alguma separação limpa.
 
-Create a class to place that method in and you have a "Model". Create a simple `.php` file to put the presentation logic in and you have a "View", which is very nearly [MVC] - a common OOP architecture for most [frameworks](/#frameworks_title).
+Crie uma classe para colocar este método e você terá um "Modelo". Criando um arquivo `.php` simples para colocar a lógica de apresentação e você terá uma "View", que é quase um [MVC] - uma arquitura OOP comum para a maioria dos [frameworks](/#frameworks_title).
 
 **foo.php**
 
@@ -47,13 +46,13 @@ Create a class to place that method in and you have a "Model". Create a simple `
 
 $db = new PDO('mysql:host=localhost;dbname=testdb;charset=utf8', 'username', 'password');
 
-// Make your model available
+// Deixe seu modelo disponível
 include 'models/FooModel.php';
 
-// Create an instance
+// Crie uma instância
 $fooList = new FooModel($db);
 
-// Show the view
+// Mostre a view
 include 'views/foo-list.php';
 {% endhighlight %}
 
@@ -85,12 +84,10 @@ class Foo()
 <? endforeach ?>
 {% endhighlight %}
 
-This is essentially the same as what most modern frameworks are doing, all be it a little more manual. You might 
-not need to do all of that every time, but mixing together too much presentation logic and database interaction can be a real problem if you ever want to [unit-test](/#unit-testing) your application.
+Isto é essenciamente o mesmo que a maioria dos frameworks modernos fazem, todos sejam eles um pouco mais manual. Você pode não precisar de tudo a todo momento, mas misturando muita lógica de apresentação e interação com o banco de dados pode ser um problema real se você quiser [testes unitários](/#unit-testing) em sua aplicação.
 
-[PHPBridge] have a great resource called [Creating a Data Class] which covers a very similar topic, and is great 
-for developers just getting used to the concept of interacting with databases.
+[PHPBridge] tem um grande recurso chamado [Criando uma classe de dados] que aborda um tópico muito similar e é ótimo para os desenvolvedores se acostumar ao o conceito de interagir com o banco de dados.
 
 [MVC]: http://code.tutsplus.com/tutorials/mvc-for-noobs--net-10488
 [PHPBridge]: http://phpbridge.org/
-[Creating a Data Class]: http://phpbridge.org/intro-to-php/creating_a_data_class
+[Criando uma classe de dados]: http://phpbridge.org/intro-to-php/creating_a_data_class
