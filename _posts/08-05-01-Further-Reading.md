@@ -1,10 +1,10 @@
 ---
 isChild: true
-title: Templating - Leitura Adicional
-anchor: templating_leitura_adicional
+title: Templates - Leitura Adicional
+anchor: templates_leitura_adicional
 ---
 
-## Leitura Adicional {#templating_leitura_adicional_title}
+## Templates - Leitura Adicional {#templates_leitura_adicional_title}
 
 ### Artigos & Tutoriais
 
