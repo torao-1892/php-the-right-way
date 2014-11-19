@@ -10,11 +10,11 @@ No fim, todos construímos aplicações PHP que dependem de login dos usuários.
 armazenadas em um banco de dados e posteriormente são usados para autenticar os usuários no login.
 
 É importante que você faça adequadamente o [_hash_][3] das senhas que são armazenadas em um banco de dados.
-Hash da senha é irreversível, uma função executada contra a senha do usuário. Isto produz uma seqüência
+Hash da senha é irreversível, uma função executada contra a senha do usuário. Isto produz uma sequência
 de comprimento fixo que não pode ser revertido. Isto significa que você pode comparar um hash contra o outro
 para determinar se ambos foram produzidos da mesma string, mas você não pode determinar o string original.
 Se as senhas não estiverm com hash, e seu banco for hackeado ou acessado por alguém não autorizado, todas as
-contas dos usuários ficarão comprometidas. Alguns usuários (inflezmente) usam a mesma senha para outros
+contas dos usuários ficarão comprometidas. Alguns usuários (infelizmente) usam a mesma senha para outros
 serviços. Por isso, é importante levar segurança a sério.
 
 **Faça o hash das senhas com `password_hash`**

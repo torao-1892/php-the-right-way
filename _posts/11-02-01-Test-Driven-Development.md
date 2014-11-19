@@ -8,7 +8,11 @@ anchor: desenvolvimento_guiado_por_testes
 
 Da [Wikipedia](http://en.wikipedia.org/wiki/Test-driven_development):
 
-> O desenvolvimento guiado por testes (TDD) é um processo de desenvolvimento que se baseia na repetição de um ciclo de desenvolvimento bem curto: primeiro o desenvolvedor escreve um caso de teste automatizado que falha, definindo uma melhoria ou uma nova função desejada, em seguida produz o código para passar no teste, e finalmente refatora o novo código pelos padrões aceitáveis. Kent Beck, que é creditado como quem desenvolveu ou "redescobriu" essa técnica, afirmou em 2003 que o TDD encoraja design simples e inspira confiança.
+> O desenvolvimento guiado por testes (TDD) é um processo de desenvolvimento que se baseia na repetição de um ciclo 
+de desenvolvimento bem curto: primeiro o desenvolvedor escreve um caso de teste automatizado que falha, definindo uma 
+melhoria ou uma nova função desejada, em seguida produz o código para passar no teste, e finalmente refatora o novo 
+código pelos padrões aceitáveis. Kent Beck, que é creditado como quem desenvolveu ou "redescobriu" essa técnica, 
+afirmou em 2003 que o TDD encoraja design simples e inspira confiança.
 
 Existem vários tipos diferentes de testes que você pode fazer para sua aplicação.
 
@@ -44,7 +48,11 @@ existem várias alternativas:
 
 Da [Wikipedia](http://en.wikipedia.org/wiki/Integration_testing):
 
-> Testes de integração (chamado às vezes de "Integração e Teste", abreviado como "I&T") é a fase do teste do software na qual módulos individuais do sistema são combinados e testados como um grupo. Ela acontece após os testes unitários e antes dos testes de validação. Os testes de integração recebem como entrada os módulos que foram testados unitariamente, os agrupa em grandes blocos, aplica testes definidos em um plano de teste de integração, e entrega como saída o sistema integrado pronto para os testes de sistema.
+> Testes de integração (chamado às vezes de "Integração e Teste", abreviado como "I&T") é a fase do teste do software 
+na qual módulos individuais do sistema são combinados e testados como um grupo. Ela acontece após os testes unitários 
+e antes dos testes de validação. Os testes de integração recebem como entrada os módulos que foram testados 
+unitariamente, os agrupa em grandes blocos, aplica testes definidos em um plano de teste de integração, e entrega como 
+saída o sistema integrado pronto para os testes de sistema.
 
 Muitos das mesmas ferramentas que são usadas para testes unitários podem ser usadas para testes de integração, pois
 muitos dos mesmos princípios são usados.

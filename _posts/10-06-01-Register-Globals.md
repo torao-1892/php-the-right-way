@@ -10,7 +10,7 @@ anchor: register_globals
 Isto só foi incluído como um alerta para alguém no processo de atualização de uma aplicação legada.
 
 Quando habilitada, a configuração `register_globals` torna disponível, no escopo global da sua aplicação, vários
-tipos de variáveis (`$_POST`, `$_GET` and `$_REQUEST`). Isso pode facilmente levar a problemas de segurança pois sua
+tipos de variáveis (`$_POST`, `$_GET` e `$_REQUEST`). Isso pode facilmente levar a problemas de segurança pois sua
 aplicação não pode dizer de forma efetiva de onde o dado está vindo.
 
 Por exemplo: `$_GET['foo']` poderia ficar disponível via `$foo`, o que poderia sobrescrever variáveis que não tiverem
