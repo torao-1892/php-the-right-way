@@ -1,7 +1,7 @@
 ---
 title: Plataforma como Serviço (PaaS)
 isChild: true
-anchor: plataforma_como_servico_paas
+anchor: plataforma_como_servico_pass
 ---
 
 ## Plataforma como Serviço (PaaS) {#plataforma_como_servico_paas_title}
