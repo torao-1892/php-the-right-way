@@ -52,11 +52,11 @@ Conteúdo sobre Chef para Desenvolvedores PHP:
 
 * [Serie em 3 partes sobre implementação de uma aplicação LAMP com Chef, Vagrant, e EC2](http://www.jasongrimes.org/2012/06/managing-lamp-environments-with-chef-vagrant-and-ec2-1-of-3/)
 * [Chef Cookbook sobre instalação e configuração de PHP 5.3 e do sistema de gerenciamento de pacotes PEAR](https://github.com/opscode-cookbooks/php)
+* [Chef - série de video tutoriais por Opscode, os criadores do chef](https://www.youtube.com/playlist?list=PLrmstJpucjzWKt1eWLv88ZFY4R1jW8amR)
 
 Leitura Adicional:
 
 * [Automatize seu projeto com Apache Ant](http://net.tutsplus.com/tutorials/other/automate-your-projects-with-apache-ant/)
-* [Maven](http://maven.apache.org/), um framework de implementação baseado em Ant e [como usá-lo com PHP](http://www.php-maven.org/)
 
 ### Integração Contínua
 
