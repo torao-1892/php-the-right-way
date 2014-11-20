@@ -10,4 +10,4 @@ anchor: leitura_adicional
 - [O que é Dependency Injection?](http://fabien.potencier.org/article/11/what-is-dependency-injection)
 - [Dependency Injection: uma analogia](http://mwop.net/blog/260-Dependency-Injection-An-analogy.html)
 - [Dependency Injection: Huh?](http://net.tutsplus.com/tutorials/php/dependency-injection-huh/)
-- [Dependency Injection como ferramenta uma para testes](http://www.happyaccidents.me/dependency-injection-as-a-tool-for-testing/)
+- [Dependency Injection como uma ferramenta para testes](http://www.happyaccidents.me/dependency-injection-as-a-tool-for-testing/)

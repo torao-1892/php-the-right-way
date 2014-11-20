@@ -28,7 +28,7 @@ quando precisamos dela, sem a necessidade de quaisquer dependências no código.
 ### Princípio da Inversão de Dependência
 
 O Princípio da Inversão de Dependência é o "D", no S.O.L.I.D, define o princípio de design da orientação a objeto que 
-afirma que *"Depende de uma Abstração. Não depende de Objetos concretos"*. Simplificando, isto significa que nossas 
+afirma que *"Dependa de uma Abstração. Não depende de Objetos concretos"*. Simplificando, isto significa que nossas 
 dependências devem ser classes de interfaces/contratos ou class abstratas em vez de implementações concretas.
 Podemos facilmente refatorar o exemplo abaixo para seguir este princípio.
 

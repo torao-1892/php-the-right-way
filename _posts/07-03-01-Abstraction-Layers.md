@@ -8,7 +8,7 @@ anchor: camadas_de_abstracao_de_banco_de_dados
 
 Muitos frameworks fornecem sua própria camada de abstração que pode ou não sobrepor o [PDO][1]. Estes muitas vezes 
 simulam características de um sistema de banco de dados que outro banco de dados não possui envolvendo suas consultas 
-em métodos PHP, dando-lhe a abstração real do banco de dados em vez de apenas a abstraçãod a conexão como o PDO oferece.
+em métodos PHP, dando-lhe a abstração real do banco de dados em vez de apenas a abstração da conexão como o PDO oferece.
 
 Isto obviamente adiciona um pequeno peso, mas se você estiver construindo uma aplicação portátil que precise trabalhar 
 com MySQL, PostgreSQL e SQLite, então este pequeno peso vai valer a pena pela limpeza e menos linhas de código.

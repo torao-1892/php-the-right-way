@@ -33,7 +33,7 @@ Novas funções anônimas (incluindo suporte para closures) também estão prese
 PHP 5.4 inclui a habilidade de vincular closures com o escopo de objetos e também melhorou o suporte para invocaveis
 (callables) tanto que elas podem ser usadas indistintamente com funções anónimas na maioria dos casos.
 
-* Continue lendo em [Programação Funcional em PHP](/pages/Functional-Programming.html)
+* Continue lendo em [Programação Funcional em PHP]({{ site.baseurl }}pages/Functional-Programming.html)
 * [Leia mais sobre Funções Anônimas][anonymous-functions]
 * [Leia mais sobre Closures][closure-class]
 * [Mais detalhes na RFC sobre Closures][closures-rfc]
