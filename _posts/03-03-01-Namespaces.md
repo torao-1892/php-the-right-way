@@ -29,7 +29,7 @@ automático para uma nova aplicação ou pacote então é quase certo que você 
 ```
 Nota do tradutor
 * Aguardando atualização do repositório oficial sobre o uso da PSR-0 que foi 
-marcada como deprecada em 21/10/2014. 
+marcada como descontinuada em 21/10/2014. 
 ```
 
 * [Leia sobre os Namespaces][namespaces]

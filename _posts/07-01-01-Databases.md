@@ -16,7 +16,7 @@ e isso pode ficar chato.
 
 ## MySQL Extension 
 
-A extensão [mysql] para o PHP não está mais em desenvolvimento ativo e foi [oficialmente deprecada no PHP 5.5.0]. Isso 
+A extensão [mysql] para o PHP não está mais em desenvolvimento ativo e foi [oficialmente descontinuada no PHP 5.5.0]. Isso 
 significa que ela será removida dentro de alguns lançamentos das próximas versões. Se você estiver usando funções que 
 inicial com `mysql_*` como a `mysql_connect()` e a `mysql_query()` em suas aplicações você irá se deparar com uma 
 reescrita em algum momento no futuro, por isso a melhor opção é substituir o uso do mysql pelo mysqli ou pela PDO na sua 
@@ -94,7 +94,7 @@ terminar - a não ser é claro que você esteja usando conexões persistentes.
 
 [Leia mais sobre a PDO]: http://www.php.net/manual/en/book.pdo.php
 [Leia mais sobre conexões PDO]: http://php.net/manual/en/pdo.connections.php
-[oficialmente deprecada no PHP 5.5.0]: http://php.net/manual/en/migration55.deprecated.php
+[oficialmente descontinuada no PHP 5.5.0]: http://php.net/manual/en/migration55.deprecated.php
 [SQL Injection]: http://wiki.hashphp.org/Validation
 
 [pdo]: http://php.net/pdo
