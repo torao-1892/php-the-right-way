@@ -1,7 +1,7 @@
 (function ($) {
     // Load contributors
     var $contributors = $('#contributors');
-    var repo_user = 'phpsp';
+    var repo_user = 'PHPSP';
     if ( $contributors.length ) {
         var fail = function () {
             $contributors.html('<p>Este projeto não seria possível sem a ajuda de <a href="https://github.com/' + repo_user + '/php-the-right-way/graphs/contributors">nossos contribuintes</a> no GitHub.</p>');
