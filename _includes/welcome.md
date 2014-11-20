@@ -50,5 +50,5 @@ PHP saibam onde encontrar boas informações!
 
 [Banners para divulgação][2]
 
-[1]: https://github.com/PHPSP/php-the-right-way/tree/gh-pages
+[1]: https://github.com/phpsp/php-the-right-way/tree/gh-pages
 [2]: /banners.html
