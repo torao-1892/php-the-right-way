@@ -16,11 +16,11 @@ e isso pode ficar chato.
 
 ## MySQL Extension 
 
-A extensão [mysql] para o PHP não está mais em desenvolvimento ativo e foi [oficialmente deprecada no PHP 5.5.0]. Isso significa que
-ela será removida dentro de alguns lançamentos das próximas versões. Se você estiver usando funções que inicial com `mysql_*` como a `mysql_connect()` e a `mysql_query()` em
-suas aplicações você irá se deparar com uma reescrita em algum momento no futuro, por isso a melhor opção é
-substituir o uso do mysql pelo mysqli ou pela PDO na sua aplicação dentro de sua própria agenda de desenvolvimento,
-assim você não terá que correr lá na frente. 
+A extensão [mysql] para o PHP não está mais em desenvolvimento ativo e foi [oficialmente deprecada no PHP 5.5.0]. Isso 
+significa que ela será removida dentro de alguns lançamentos das próximas versões. Se você estiver usando funções que 
+inicial com `mysql_*` como a `mysql_connect()` e a `mysql_query()` em suas aplicações você irá se deparar com uma 
+reescrita em algum momento no futuro, por isso a melhor opção é substituir o uso do mysql pelo mysqli ou pela PDO na sua 
+aplicação dentro de sua própria agenda de desenvolvimento, assim você não terá que correr lá na frente. 
 
 **Se você estiver começando do zero então não utilize de forma nenhuma a
 extensão mysql: use a [extensão MySQLi][mysqli], ou use a [PDO].**
@@ -31,7 +31,8 @@ extensão mysql: use a [extensão MySQLi][mysqli], ou use a [PDO].**
 ## Extensão PDO
 
 A [PDO] é uma biblioteca para abstração de conexões a bancos de dados &mdash; embutida no PHP desde a versão 5.1.0 
-&mdash; que fornece uma interface comum para conversar com vários bancos de dados diferentes. Por exemplo, vocẽ pode usar basicamente o mesmo código para fazer a interface com o MySQL ou SQLite:
+&mdash; que fornece uma interface comum para conversar com vários bancos de dados diferentes. Por exemplo, vocẽ pode 
+usar basicamente o mesmo código para fazer a interface com o MySQL ou SQLite:
 
 {% highlight php %}
 // PDO + MySQL
@@ -53,8 +54,7 @@ bancos de dados com a mesma API.
 
 Mais importante, a `PDO` permite que você injete de forma segura entradas externas (e.g IDs) em suas consultas SQL
 sem se preocupar com ataques de SQL injection.
-Isso é possível usando instruções PDO (PDO statements) e parâmetros
-restritos (bound parameters).
+Isso é possível usando instruções PDO (PDO statements) e parâmetros restritos (bound parameters).
 
 Vamos assumir que um script PHP recebe um ID numérico como parâmetro de uma consulta. Este ID deve ser usado para
 buscar um registro de um usuário no banco de dados. Essa é a forma `errada` de fazer isso:
@@ -66,10 +66,10 @@ $pdo->query("SELECT name FROM users WHERE id = " . $_GET['id']); // <-- NÃO!
 {% endhighlight %}
 
 Esse código é péssimo. Você está inserindo um parâmetro bruto na sua consulta SQL. Isso fará você ser hackeado num
-piscar de olhos, usando uma prática chamada [SQL Injection](http://wiki.hashphp.org/Validation). Apenas imagine se um hacker passar como parâmetro um `id` inventivo chamando uma URL como
-`http://domain.com/?id=1%3BDELETE+FROM+users`. Isso irá definir a variável `$_GET['id']` como `id=1;DELETE FROM users`,
-o que irá excluir todos os seus usuários. Em vez disso, você deveria higienizar (sanitize) a entrada do ID usando
-parâmetros restritos da PDO.
+piscar de olhos, usando uma prática chamada [SQL Injection](http://wiki.hashphp.org/Validation). Apenas imagine se um 
+hacker passar como parâmetro um `id` inventivo chamando uma URL como `http://domain.com/?id=1%3BDELETE+FROM+users`. 
+Isso irá definir a variável `$_GET['id']` como `id=1;DELETE FROM users`, o que irá excluir todos os seus usuários. Em 
+vez disso, você deveria higienizar (sanitize) a entrada do ID usando parâmetros restritos da PDO.
 
 {% highlight php %}
 <?php

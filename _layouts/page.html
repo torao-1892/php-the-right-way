@@ -5,7 +5,7 @@
         <title>{% if page.title %}{{ page.title }} - {% endif %}PHP: Do Jeito Certo</title>
         <meta name="description" content="{{ page.description }}"/>
         <meta name="robots" content="index,follow,archive"/>
-        <meta property="og:image" content="http://www.phptherightway.com/images/og-logo.png"/>
+        <meta property="og:image" content="{{ site.baseurl }}images/og-logo.png"/>
         <meta property="og:title" content="PHP: Do Jeito Certo"/>
         <meta property="og:description" content="Uma referência rápida de melhores práticas de PHP, renomados padrões de código e links para tutoriais competentes pela Web."/>
         <meta property="og:url" content="http://br.phptherightway.com"/>
@@ -13,9 +13,9 @@
         <meta property="og:type" content="website"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One|Droid+Serif:400,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="/styles/all.css"/>
-        <link rel="stylesheet" href="/styles/syntax.css"/>
-        <link rel="icon" href="/images/favicon.png" type="image/png"/>
+        <link rel="stylesheet" href="{{ site.baseurl }}styles/all.css"/>
+        <link rel="stylesheet" href="{{ site.baseurl }}styles/syntax.css"/>
+        <link rel="icon" href="{{ site.baseurl }}images/favicon.png" type="image/png"/>
         <script>
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-362072-7']);
@@ -32,7 +32,7 @@
             <div class="site-title"><a href="/">PHP</a></div>
             <div class="site-slogan">Do Jeito Certo.</div>
             <a class="btn btn-h" href="/">Voltar ao início</a>
-            <a class="fork-me" href="https://github.com/PHPSP/php-the-right-way">
+            <a class="fork-me" href="https://github.com/phpsp/php-the-right-way">
                 <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Faça fork no GitHub">
             </a>
         </header>

@@ -26,7 +26,9 @@ dependências do seu projeto. <strong>Por favor, Observe:</strong> Se você pass
 interpretador, por favor leia primeiro o código online para confirmar que ele é seguro.
 
 #### Instalação no Windows
-Para usuários Windows a forma mais fácil de obter e executá-lo é usar o instalador [ComposerSetup][6], que realiza uma instalação global e configura seu `$PATH` de modo que você possa executar o comando `composer` em qualquer diretório pela linha de comando. 
+Para usuários Windows a forma mais fácil de obter e executá-lo é usar o instalador [ComposerSetup][6], que realiza uma 
+instalação global e configura seu `$PATH` de modo que você possa executar o comando `composer` em qualquer diretório 
+pela linha de comando. 
 
 ### Como instalar o Composer (manualmente)
 
@@ -90,9 +92,9 @@ executou `php composer.phar install`. Se você compartilhar seu projeto com outr
 versões como você.
 Para atualizar suas dependências, execute `php composer.phar update`.
 Isso é muito útil quando você define as versões requiridas. Por exemplo, a versão requerida de ~1.8 significa "qualquer
-versão mais recente que 1.8.0, mas menos recente do que 2.0.x-dev". Você também pode usar o curinga `*` como `1.8.*`. Agora
-o comando `php composer.phar update` do Composer atualizará todas as suas dependências para a versão mais recente que
-se encaixa às restrições definidas.
+versão mais recente que 1.8.0, mas menos recente do que 2.0.x-dev". Você também pode usar o curinga `*` como `1.8.*`. 
+Agora o comando `php composer.phar update` do Composer atualizará todas as suas dependências para a versão mais recente 
+que se encaixa às restrições definidas.
 
 ### Notificações de Atualização
 

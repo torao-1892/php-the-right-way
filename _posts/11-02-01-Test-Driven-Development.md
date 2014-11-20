@@ -16,7 +16,7 @@ afirmou em 2003 que o TDD encoraja design simples e inspira confiança.
 
 Existem vários tipos diferentes de testes que você pode fazer para sua aplicação.
 
-### Testes Unitários
+### Testes Unitários {#testes_unitarios}
 
 Testes unitários são uma metodologia de programação que garante que as funções, as classes e os métodos estão
 funcionando como esperado, desde o momento que você os constrói até o fim do ciclo de desenvolvimento. Verificando
@@ -44,7 +44,7 @@ existem várias alternativas:
 * [PUnit](http://punit.smf.me.uk/)
 * [atoum](https://github.com/mageekguy/atoum)
 
-### Testes de Integração
+### Testes de Integração {#testes_integracao}
 
 Da [Wikipedia](http://en.wikipedia.org/wiki/Integration_testing):
 
@@ -57,16 +57,18 @@ saída o sistema integrado pronto para os testes de sistema.
 Muitos das mesmas ferramentas que são usadas para testes unitários podem ser usadas para testes de integração, pois
 muitos dos mesmos princípios são usados.
 
-### Testes Funcionais
+### Testes Funcionais {#testes_funcionais}
 
 Algumas vezes conhecidos também como testes de aceitação, os testes funcionais consistem em utilizar ferramentas para
 criar testes automatizados que usem de verdade sua aplicação, em vez de apenas verificar se unidades individuais de
 código se comportam adequadamente ou se essas partes conversam entre si do jeito certo. Essas ferramentas geralmente
 trabalham usando dados reais e simulam usuários verdadeiros da sua aplicação.
 
-#### Ferramentas para Testes Funcionais
+#### Ferramentas para Testes Funcionais {#ferramentas_para_testes_funcionais}
 
 * [Selenium](http://seleniumhq.com)
 * [Mink](http://mink.behat.org)
-* O [Codeception](http://codeception.com) é um framework de testes full-stack que inclui ferramentas para testes de aceitação
-* O [Storyplayer](http://datasift.github.io/storyplayer/) é um framework de testes full-stack que inclui suporte para criação e destruição de ambientes sob demanda
+* O [Codeception](http://codeception.com) é um framework de testes full-stack que inclui ferramentas para testes de 
+aceitação
+* O [Storyplayer](http://datasift.github.io/storyplayer/) é um framework de testes full-stack que inclui suporte para 
+criação e destruição de ambientes sob demanda

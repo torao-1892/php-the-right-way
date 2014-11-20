@@ -6,7 +6,8 @@ anchor: interagindo_com_o_banco_de_dados
 
 ## Interagindo com o banco de dados {#interagindo_com_o_banco_de_dados_title}
 
-Quando os desenvolvedores começam a aprender PHP, muitas vezes acabam misturando a interação com o banco de dados com a camada de apresentação, usando código que pode parecer com isso:
+Quando os desenvolvedores começam a aprender PHP, muitas vezes acabam misturando a interação com o banco de dados com a 
+camada de apresentação, usando código que pode parecer com isso:
 
 {% highlight php %}
 <ul>
@@ -18,9 +19,12 @@ foreach ($db->query('SELECT * FROM table') as $row) {
 </ul>
 {% endhighlight %}
 
-Esta é uma má prática por várias razões, principalmente por ser difícil de depurar, testar, ler e ainda pode gerar na saída um monte de campos se não houver um limite.
+Esta é uma má prática por várias razões, principalmente por ser difícil de depurar, testar, ler e ainda pode gerar na 
+saída um monte de campos se não houver um limite.
 
-Embora existam muitas outras soluções para fazer isso - dependendo se você preferir a [OOP](/#object-oriented-programming) ou [programação funcional](/#functional-programming) - deve haver algum elemento de separação.
+Embora existam muitas outras soluções para fazer isso - dependendo se você preferir a 
+[OOP](/#programacao_orientada_objetos) ou [programação funcional](/#programacao_funcional) - deve haver algum elemento 
+de separação.
 
 Considere o passo mais básico:
 
@@ -37,7 +41,9 @@ foreach (getAllFoos($db) as $row) {
 
 Este é um bom começo. Coloque estes dois itens em dois arquivos diferentes e você terá alguma separação limpa.
 
-Crie uma classe para colocar este método e você terá um "Modelo". Criando um arquivo `.php` simples para colocar a lógica de apresentação e você terá uma "View", que é quase um [MVC] - uma arquitura OOP comum para a maioria dos [frameworks](/#frameworks_title).
+Crie uma classe para colocar este método e você terá um "Modelo". Criando um arquivo `.php` simples para colocar a 
+lógica de apresentação e você terá uma "View", que é quase um [MVC] - uma arquitura OOP comum para a maioria dos 
+[frameworks](/#frameworks).
 
 **foo.php**
 
@@ -84,9 +90,12 @@ class Foo()
 <? endforeach ?>
 {% endhighlight %}
 
-Isto é essenciamente o mesmo que a maioria dos frameworks modernos fazem, todos sejam eles um pouco mais manual. Você pode não precisar de tudo a todo momento, mas misturando muita lógica de apresentação e interação com o banco de dados pode ser um problema real se você quiser [testes unitários](/#unit-testing) em sua aplicação.
+Isto é essenciamente o mesmo que a maioria dos frameworks modernos fazem, todos sejam eles um pouco mais manual. Você 
+pode não precisar de tudo a todo momento, mas misturando muita lógica de apresentação e interação com o banco de dados 
+pode ser um problema real se você quiser [testes unitários](/#testes_unitarios) em sua aplicação.
 
-[PHPBridge] tem um grande recurso chamado [Criando uma classe de dados] que aborda um tópico muito similar e é ótimo para os desenvolvedores se acostumar ao o conceito de interagir com o banco de dados.
+[PHPBridge] tem um grande recurso chamado [Criando uma classe de dados] que aborda um tópico muito similar e é ótimo 
+para os desenvolvedores se acostumar ao o conceito de interagir com o banco de dados.
 
 [MVC]: http://code.tutsplus.com/tutorials/mvc-for-noobs--net-10488
 [PHPBridge]: http://phpbridge.org/

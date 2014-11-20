@@ -48,7 +48,8 @@ if($start < $end) {
 {% endhighlight %}
     
 Um último exemplo para demonstrar a classe DatePeriod. Ela é usada para iterar por eventos recorrentes. Ela pode
-receber dois objetos DateTime, um início e um fim, e o intervalo para o qual ele retornará todos os eventos intermediários.
+receber dois objetos DateTime, um início e um fim, e o intervalo para o qual ele retornará todos os eventos 
+intermediários.
 {% highlight php %}
 <?php
 // mostra todas as quintas-feiras entre $start e $end

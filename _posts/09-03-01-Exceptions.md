@@ -49,7 +49,8 @@ finally
 
 ### Exceções SPL
 
-A classe genérica `Exception` fornece muito pouco contexto de depuração para o desenvolvedor; no entanto, para remediar esta situação, é possível criar uma `Exception` especializada como sub-classes da classe genérica `Exception`:
+A classe genérica `Exception` fornece muito pouco contexto de depuração para o desenvolvedor; no entanto, para remediar 
+esta situação, é possível criar uma `Exception` especializada como sub-classes da classe genérica `Exception`:
 
 {% highlight php %}
 <?php

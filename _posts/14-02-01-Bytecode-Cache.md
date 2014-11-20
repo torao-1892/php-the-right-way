@@ -14,7 +14,8 @@ significa que o passo de compilação é um desperdício de recursos de CPU.
 reutilizando-o em chamadas sucessivas. A configuração do cache de bytecode é feita em questão de minutos, e sua
 aplicação irá acelerar de forma significativa. Não existe razão para não utilizá-lo.
 
-No PHP 5.5 o OPcache foi incluído como um cache de bytecode nativo chamado [OPcache][opcache-book]. Ele também está disponível para versões anteriores.
+No PHP 5.5 o OPcache foi incluído como um cache de bytecode nativo chamado [OPcache][opcache-book]. Ele também está 
+disponível para versões anteriores.
 
 Caches de bytecode populares são:
 

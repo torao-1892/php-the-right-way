@@ -12,10 +12,12 @@ e implementação de código compartilhado. Existem vários repositórios de com
 * [Packagist](/#composer_and_packagist)
 * [PEAR](/#pear)
 
-Ambos repositórios possuem ferramentas de linha de comando para ajudar a instalação e processos de atualização,
-e foram explicados com mais detalhes na seção [Gerenciamento de Dependência]
+Ambos repositórios possuem ferramentas de linha de comando para ajudar a instalação e processos de atualização, e foram 
+explicados com mais detalhes na seção [Gerenciamento de Dependência]
 
-Há também componentes de frameworks e componentes de fornecedores que não oferecem nenhum framework. Estes projetos fornecem outra fonte de pacotes que idealmente tem pouco ou nenhum dependências de outros pacotes, ou estruturas específicas.
+Há também componentes de frameworks e componentes de fornecedores que não oferecem nenhum framework. Estes projetos 
+fornecem outra fonte de pacotes que idealmente tem pouco ou nenhum dependências de outros pacotes, ou estruturas 
+específicas.
 
 Por exemplo, você pode usar o [FuelPHP Validation package] sem precisar usar o framework
 FuelPHP em si.
@@ -33,5 +35,6 @@ FuelPHP em si.
      * [Eloquent ORM](https://github.com/illuminate/database)
      * [Fila](https://github.com/illuminate/queue)
 
-_Outros [Componentes Illuminate do Laravel](https://github.com/illuminate) virão com menor desacoplamento do framework Laravel.
+_Outros [Componentes Illuminate do Laravel](https://github.com/illuminate) virão com menor desacoplamento do framework 
+Laravel.
 Por enquanto, apenas os componentes mais desacoplados do framework Laravel estão listados acima._

@@ -21,7 +21,6 @@ Entre as tarefas que talvez você deseja automatizar estão:
 * Empacotamento
 * Implementação
 
-
 ### Ferramentas de Automação
 
 Ferramentas de automação podem ser descritas como uma coleção de scripts que tratam de tarefas comuns da implementação
@@ -33,15 +32,15 @@ Aqui estão alguns exemplos:
 
 [Phing](http://www.phing.info/) é o jeito mais fácil de começar com automação de implementação no PHP. Com Phing você
 pode controlar os processos de empacotamento, implementação e testes através de um simples arquivo XML. Phing (Que é
-baseado em [Apache Ant](http://ant.apache.org/)) fornece um rico conjunto de tarefas geralmente necessárias para instalar
-ou atualizar uma aplicação web e pode ser estendido com tarefas adicionais personalizadas, escritas em PHP.
+baseado em [Apache Ant](http://ant.apache.org/)) fornece um rico conjunto de tarefas geralmente necessárias para 
+instalar ou atualizar uma aplicação web e pode ser estendido com tarefas adicionais personalizadas, escritas em PHP.
 
 [Capistrano](https://github.com/capistrano/capistrano/wiki) é um sistema para *programadores intermediarios ou
 avançados* que executa comando de forma estruturada e repetitiva em uma ou mais maquinas. Ele é pré-configurado para
 implementar aplicações Ruby on Rails, entretanto pessoas estão **implementando com sucesso sistemas em PHP** com ele.
 Ter sucesso com uso de Capistrano depende de um conhecimento de trabalho com Ruby e Rails.
 
-O artigo de Dave Gardner [PHP Deployment with Capistrano](http://www.davegardner.me.uk/blog/2012/02/13/php-deployment-with-capistrano/)
+O artigo de Dave Gardner [PHP Deployment com Capistrano](http://www.davegardner.me.uk/blog/2012/02/13/php-deployment-with-capistrano/)
 é um bom ponto de partida para desenvolvedores PHP interessando em Capistrano.
 
 [Chef](http://www.opscode.com/chef/) é mais que um framework de implementação, é um framework de integração bastante

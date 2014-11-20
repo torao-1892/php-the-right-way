@@ -6,14 +6,14 @@ anchor: guia_de_estilo_de_codigo
 # Guia de estilo de código {#guia_de_estilo_de_codigo_title}
 
 A comunidade PHP é grande e diversa, composta por inúmeras bibliotecas, frameworks e componentes. É comum para
-desenvolvedores PHP escolher vários destes e combiná-los em um único projeto. É importante que código PHP siga (o
-mais próximo possível) um estilo de código comum para que desenvolvedores PHP possam misturar várias bibliotecas em
-seus projetos.
+desenvolvedores PHP escolher vários destes e combiná-los em um único projeto. É importante que código PHP siga (o mais 
+próximo possível) um estilo de código comum para que desenvolvedores PHP possam misturar várias bibliotecas em seus 
+projetos.
 
 O [Framework Interop Group][fig] propôs e aprovou uma série de recomendações de estilo, conhecidas como [PSR-0][psr0],
-[PSR-1][psr1], [PSR-2][psr2] e [PSR-4][psr4]. Não deixe os nomes estranhos confundí-lo, estas recomendações são meramente um conjunto
-de regras que projetos como Drupal, Zend, Symfony, CakePHP, phpBB, AWS SDK, FuelPHP, Lithium etc. estão começando a
-adotar. Você pode utilizá-las para seus próprios projetos, ou continuar utilizando seu estilo pessoal.
+[PSR-1][psr1], [PSR-2][psr2] e [PSR-4][psr4]. Não deixe os nomes estranhos confundí-lo, estas recomendações são 
+meramente um conjunto de regras que projetos como Drupal, Zend, Symfony, CakePHP, phpBB, AWS SDK, FuelPHP, Lithium etc. 
+estão começando a adotar. Você pode utilizá-las para seus próprios projetos, ou continuar utilizando seu estilo pessoal.
 
 Idealmente você deveria escrever código PHP que adere a um ou mais destes padrões. Pode ser qualquer combinação das
 PSR's, ou um dos padrões de código feitos pela PEAR ou Zend. Isso significa que outros desenvolvedores podem facilmente

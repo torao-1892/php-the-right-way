@@ -10,7 +10,7 @@ O PHP é uma linguagem dinâmica e flexível, que suporta uma variedade de técn
 drasticamente com o passar dos anos, notavelmente adicionando um sólido modelo de orientação a objetos no PHP 5.0 
 (2004), funções anônimas e namespaces no PHP 5.3 (2009) e traits no PHP 5.4 (2012).
 
-### Programação orientada a objetos
+### Programação orientada a objetos {#programacao_orientada_objetos}
 
 O PHP possui um conjunto completo de funcionalidades de programação orientada a objetos, incluindo suporte à classes,
 classes abstratas, interfaces, herança, construtores, clonagem, exceções e muito mais.
@@ -18,7 +18,7 @@ classes abstratas, interfaces, herança, construtores, clonagem, exceções e mu
 * [Leia sobre PHP orientado a objetos][oop]
 * [Leia sobre Traits][traits]
 
-### Programação funcional
+### Programação funcional {#programacao_funcional}
 
 PHP suporta funções de primeira classe, o que significa que funções podem ser atribuidas a variáveis. Tanto funções
 nativas como funções definidas por usuários podem ser referenciadas por uma variável e invocadas dinamicamente. Funções
@@ -40,7 +40,7 @@ PHP 5.4 inclui a habilidade de vincular closures com o escopo de objetos e tamb�
 * [Leia mais sobre invocáveis (callables)][callables]
 * [Leia sobre invocamento dinâmico de funções com `call_user_func_array`][call-user-func-array]
 
-### Meta Programação
+### Meta Programação {#meta_programacao}
 
 PHP suporta várias formas de meta-programação através de mecanismos como a API de reflexão e métodos mágicos. Existem
 vários métodos mágicos disponíveis como __get(), __set(), __clone(), __toString(), __invoke(), etc. Isso permite que
