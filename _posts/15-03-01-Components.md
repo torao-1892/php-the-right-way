@@ -32,8 +32,8 @@ FuelPHP em si.
 * [Componentes Symfony](http://symfony.com/doc/current/components/index.html)
 * [A Liga Extraordinária de pacotes](http://thephpleague.com/)
 * Componentes Illuminate do Laravel
-     * [Eloquent ORM](https://github.com/illuminate/database)
-     * [Fila](https://github.com/illuminate/queue)
+     * [Eloquent ORM](https://github.com/illuminate/database)
+     * [Fila](https://github.com/illuminate/queue)
 
 _Outros [Componentes Illuminate do Laravel](https://github.com/illuminate) virão com menor desacoplamento do framework 
 Laravel.
