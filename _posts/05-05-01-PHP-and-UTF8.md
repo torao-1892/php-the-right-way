@@ -10,7 +10,7 @@ _Esta seção foi originalmente escrita por [Alex Cabal](https://alexcabal.com/)
 [PHP Melhores Práticas](https://phpbestpractices.org/#utf-8) e tem sido usado como base para o nossos próprios conselhos 
 sobre UTF-8_.
 
-### Não há **one-liner** [ melhor tradução para este termo: "one-liner" ]. Seja cuidadoso, detalhado e consistente.
+### Não existe um jeito fácil. Seja cuidadoso, detalhado e consistente.
 
 Atualmente o PHP não possui suporte a Unicode em um nível baixo. Existem maneiras de garantir que strings UTF-8 sejam 
 processadas OK, mas não é fácil e isto requer cavar cavar quase todos os níveis da aplicação web do HTML ao SQL e o PHP. 
