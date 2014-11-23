@@ -13,7 +13,7 @@ sobre UTF-8_.
 ### Não existe um jeito fácil. Seja cuidadoso, detalhado e consistente.
 
 Atualmente o PHP não possui suporte a Unicode em um nível baixo. Existem maneiras de garantir que strings UTF-8 sejam 
-processadas OK, mas não é fácil e isto requer cavar cavar quase todos os níveis da aplicação web do HTML ao SQL e o PHP. 
+processadas OK, mas não é fácil e isto requer cavar quase todos os níveis da aplicação web desde o HTML passando pelo SQL, até o PHP. 
 Vamos abordar para um resumo reve e prático.
 
 ### UTF-8 no nível do PHP
