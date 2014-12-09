@@ -11,7 +11,8 @@ comando (CLI). Programas PHP de linha de comando podem te ajudar a automatizar t
 e administração de aplicações.
 
 Programas PHP CLI são poderosos pois você pode usar o código de sua aplicação diretamente sem precisar criar e
-proteger uma GUI web para isso. Apenas tenha a certeza de não colocar seus scripts PHP CLI no seu web root público!
+proteger uma GUI (Interface Gráfica do Usuário) web para isso. Apenas tenha a certeza de não colocar seus scripts PHP 
+CLI na raiz pública do seu servidor web!
 
 Tente executar o PHP a partir da sua linha de comando:
 

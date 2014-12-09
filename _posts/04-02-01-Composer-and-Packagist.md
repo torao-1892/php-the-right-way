@@ -15,7 +15,7 @@ estão listados no [Packagist][1], o repositório oficial das bibliotecas PHP co
 
 ### Como Instalar o Composer
 
-Você pode instalar o Composer localmente (no seu diretório de trabalho atual; embora isso não seja mais recomendado)
+Você pode instalar o Composer localmente (no seu diretório de trabalho atual; embora isso não seja o mais recomendado)
 ou globalmente (e.g. /usr/local/bin). Vamos assumir que você queira instalar o Composer localmente. A partir do
 diretório raiz do seu projeto:
 
@@ -24,6 +24,11 @@ diretório raiz do seu projeto:
 Isso irá baixar o `composer.phar` (um arquivo PHP binário). Você pode executá-lo com o `php` para gerenciar as
 dependências do seu projeto. <strong>Por favor, Observe:</strong> Se você passar o código baixado diretamente para um
 interpretador, por favor leia primeiro o código online para confirmar que ele é seguro.
+
+#### Instalação no Windows
+Para usuários Windows a forma mais fácil de obter e executá-lo é usar o instalador [ComposerSetup][6], que realiza uma 
+instalação global e configura seu `$PATH` de modo que você possa executar o comando `composer` em qualquer diretório 
+pela linha de comando. 
 
 ### Como instalar o Composer (manualmente)
 
@@ -46,7 +51,7 @@ para você. Se sim, segue abaixo como obter o Composer manualmente:
 O caminho `$HOME/local/bin` (ou um diretório de sua escolha) deve estar na sua variável de ambiente `$PATH`. Isso
 fará com que o comando `composer` fique disponível.
 
-Quando você vir a documentação dizendo para executar o Composer como `php composer install`, você pode
+Quando você vir a documentação dizendo para executar o Composer como `php composer.phar install`, você pode
 substituir por isso:
 
     composer install
@@ -82,14 +87,14 @@ Agora você pode usar as dependências do seu projeto, e elas serão carregadas 
 ### Atualizando suas dependências
 
 O Composer cria um arquivo chamado `composer.lock` que armazena a versão exata de cada pacote baixado quando você
-executou `composer install`. Se você compartilhar seu projeto com outros desenvolvedores e o arquivo
-`composer.lock` é parte da sua distribuição, quando eles executarem `composer install` receberão as mesmas
+executou `php composer.phar install`. Se você compartilhar seu projeto com outros desenvolvedores e o arquivo
+`composer.lock` é parte da sua distribuição, quando executarem `php composer.phar install` eles receberão as mesmas
 versões como você.
-Para atualizar suas dependências, execute `php composer update`.
+Para atualizar suas dependências, execute `php composer.phar update`.
 Isso é muito útil quando você define as versões requiridas. Por exemplo, a versão requerida de ~1.8 significa "qualquer
-coisa mais recente que 1.8.0, mas menos do que 2.0.x-dev". Você também pode usar o `*` curinga como `1.8.*`. Agora
-o comando `php composer update` do Composer atualizará todas as suas dependências para a versão mais recente que
-se encaixa às restrições definidas.
+versão mais recente que 1.8.0, mas menos recente do que 2.0.x-dev". Você também pode usar o curinga `*` como `1.8.*`. 
+Agora o comando `php composer.phar update` do Composer atualizará todas as suas dependências para a versão mais recente 
+que se encaixa às restrições definidas.
 
 ### Notificações de Atualização
 
@@ -99,7 +104,7 @@ monitorar sua conta GitHub e BitBucket para arquivos `composer.json` e envia ema
 ### Verificando suas dependências para as questões de segurança
 
 O [Security Advisories Checker][4] é um serviço web e uma ferramenta de linha de comando, ambos examinarão seu arquivo
-`composer.lock` e diz se você precisa atualizar alguma das dependências.
+`composer.lock` e dirão se você precisa atualizar alguma das dependências.
 
 * [Aprenda sobre o Composer][5]
 
@@ -108,3 +113,4 @@ O [Security Advisories Checker][4] é um serviço web e uma ferramenta de linha 
 [3]: https://www.versioneye.com/
 [4]: https://security.sensiolabs.org/
 [5]: http://getcomposer.org/doc/00-intro.md
+[6]: https://getcomposer.org/Composer-Setup.exe

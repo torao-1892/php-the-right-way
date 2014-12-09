@@ -6,9 +6,9 @@ anchor: filtro_de_dados
 
 ## Filtro de Dados {#filtro_de_dados_title}
 
-Nunca, jamais (nunca mesmo), confie em entradas externas feitas no seu código PHP. Sempre higienize(sanitize) e valide
+Nunca, jamais (nunca mesmo), confie em entradas externas feitas no seu código PHP. Sempre higienize (sanitize) e valide
 as entradas externas antes de utilizá-las no seu código. As funcões `filter_var` e `filter_input` podem higienizar
-textos e validar formatos (e.g.  endereços de email).
+textos e validar formatos (e.g. endereços de email).
 
 Entradas externas podem ser qualquer coisa: dados de entrada de formulário `$_GET` ou `$_POST`, alguns valores na
 superglobal `$_SERVER` e o corpo da requisição HTTP via `fopen('php://input', 'r')`. Lembre-se, entradas externas não

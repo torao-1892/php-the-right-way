@@ -8,11 +8,15 @@ anchor: desenvolvimento_guiado_por_testes
 
 Da [Wikipedia](http://en.wikipedia.org/wiki/Test-driven_development):
 
-> O desenvolvimento guiado por testes (TDD) é um processo de desenvolvimento que se baseia na repetição de um ciclo de desenvolvimento bem curto: primeiro o desenvolvedor escreve um caso de teste automatizado que falha, definindo uma melhoria ou uma nova função desejada, em seguida produz o código para passar no teste, e finalmente refatora o novo código pelos padrões aceitáveis. Kent Beck, que é creditado como quem desenvolveu ou "redescobriu" essa técnica, afirmou em 2003 que o TDD encoraja design simples e inspira confiança.
+> O desenvolvimento guiado por testes (TDD) é um processo de desenvolvimento que se baseia na repetição de um ciclo 
+de desenvolvimento bem curto: primeiro o desenvolvedor escreve um caso de teste automatizado que falha, definindo uma 
+melhoria ou uma nova função desejada, em seguida produz o código para passar no teste, e finalmente refatora o novo 
+código pelos padrões aceitáveis. Kent Beck, que é creditado como quem desenvolveu ou "redescobriu" essa técnica, 
+afirmou em 2003 que o TDD encoraja design simples e inspira confiança.
 
 Existem vários tipos diferentes de testes que você pode fazer para sua aplicação.
 
-### Testes Unitários
+### Testes Unitários {#testes_unitarios}
 
 Testes unitários são uma metodologia de programação que garante que as funções, as classes e os métodos estão
 funcionando como esperado, desde o momento que você os constrói até o fim do ciclo de desenvolvimento. Verificando
@@ -40,25 +44,31 @@ existem várias alternativas:
 * [PUnit](http://punit.smf.me.uk/)
 * [atoum](https://github.com/mageekguy/atoum)
 
-### Testes de Integração
+### Testes de Integração {#testes_integracao}
 
 Da [Wikipedia](http://en.wikipedia.org/wiki/Integration_testing):
 
-> Testes de integração (chamado às vezes de "Integração e Teste", abreviado como "I&T") é a fase do teste do software na qual módulos individuais do sistema são combinados e testados como um grupo. Ela acontece após os testes unitários e antes dos testes de validação. Os testes de integração recebem como entrada os módulos que foram testados unitariamente, os agrupa em grandes blocos, aplica testes definidos em um plano de teste de integração, e entrega como saída o sistema integrado pronto para os testes de sistema.
+> Testes de integração (chamado às vezes de "Integração e Teste", abreviado como "I&T") é a fase do teste do software 
+na qual módulos individuais do sistema são combinados e testados como um grupo. Ela acontece após os testes unitários 
+e antes dos testes de validação. Os testes de integração recebem como entrada os módulos que foram testados 
+unitariamente, os agrupa em grandes blocos, aplica testes definidos em um plano de teste de integração, e entrega como 
+saída o sistema integrado pronto para os testes de sistema.
 
 Muitos das mesmas ferramentas que são usadas para testes unitários podem ser usadas para testes de integração, pois
 muitos dos mesmos princípios são usados.
 
-### Testes Funcionais
+### Testes Funcionais {#testes_funcionais}
 
 Algumas vezes conhecidos também como testes de aceitação, os testes funcionais consistem em utilizar ferramentas para
 criar testes automatizados que usem de verdade sua aplicação, em vez de apenas verificar se unidades individuais de
 código se comportam adequadamente ou se essas partes conversam entre si do jeito certo. Essas ferramentas geralmente
 trabalham usando dados reais e simulam usuários verdadeiros da sua aplicação.
 
-#### Ferramentas para Testes Funcionais
+#### Ferramentas para Testes Funcionais {#ferramentas_para_testes_funcionais}
 
 * [Selenium](http://seleniumhq.com)
 * [Mink](http://mink.behat.org)
-* O [Codeception](http://codeception.com) é um framework de testes full-stack que inclui ferramentas para testes de aceitação
-* O [Storyplayer](http://datasift.github.io/storyplayer/) é um framework de testes full-stack que inclui suporte para criação e destruição de ambientes sob demanda
+* O [Codeception](http://codeception.com) é um framework de testes full-stack que inclui ferramentas para testes de 
+aceitação
+* O [Storyplayer](http://datasift.github.io/storyplayer/) é um framework de testes full-stack que inclui suporte para 
+criação e destruição de ambientes sob demanda

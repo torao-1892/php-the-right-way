@@ -35,18 +35,22 @@ try
 }
 catch(Fuel\Email\ValidationFailedException $e)
 {
-    // The validation failed
+    // A validação falhou
 }
 catch(Fuel\Email\SendingFailedException $e)
 {
-    // The driver could not send the email
+    // O driver não pode enviar o e-mail
+}
+finally
+{
+    // Executado independentemente de se uma exceção foi acionada e antes de retomar a execução normal
 }
 {% endhighlight %}
 
-### SPL Exceptions
+### Exceções SPL
 
-Por padrão uma exceção não tem significado nenhum, e a forma mais comum de dar um significado é pela definição do seu
-próprio nome:
+A classe genérica `Exception` fornece muito pouco contexto de depuração para o desenvolvedor; no entanto, para remediar 
+esta situação, é possível criar uma `Exception` especializada como sub-classes da classe genérica `Exception`:
 
 {% highlight php %}
 <?php
@@ -54,8 +58,8 @@ class ValidationException extends Exception {}
 {% endhighlight %}
 
 Isso significa que você pode adicionar múltiplos blocos de captura para lidar com diferentes Exceções. Isso pode lhe
-levar a criação de <em>muitas</em> exceções customizadas, e algumas delas poderiam ter sido evitadas como o uso das
-SPL Exceptions (exceções da biblioteca padrão) que estão disponíveis em [SPL extension][splext].
+levar a criação de <em>muitas</em> exceções customizadas e algumas delas poderiam ter sido evitadas como o uso das
+Exceções SPL (exceções da biblioteca padrão) que estão disponíveis em [SPL extension][splext].
 
 Se por exemplo você fizer uso do método mágico `__call()` e o método chamado for inválido, então em vez de disparar
 uma exceção padrão que seria muito vaga, ou criar uma exceção apenas para isso, você poderia disparar apenas um

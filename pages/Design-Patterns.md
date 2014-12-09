@@ -11,6 +11,7 @@ esforço pensando na sua arquitetura. Mas é geralmente uma boa ideia seguir à 
 
 * [Padrões de Arquitetura na Wikipedia](https://en.wikipedia.org/wiki/Architectural_pattern)
 * [Padrões de Design de Software na Wikipedia](https://en.wikipedia.org/wiki/Software_design_pattern)
+* [Coleção de exemplos de implementação](https://github.com/domnikl/DesignPatternsPHP)
 
 ## Factory (Fábrica)
 
@@ -159,7 +160,6 @@ atual. Existem várias variações do padrão "Strategy" o mais simples deles é
 
 O primeiro bloco de código apresenta uma familia de algorítimos; você pode querer uma array serializado, um JSON ou
 talvez somente um array de dados:
-
 {% highlight php %}
 <?php
 
@@ -196,10 +196,9 @@ class ArrayOutput implements OutputInterface
 Através do encapsulamento do algoritimo acima você está fazendo seu código de forma limpa e clara para que outros
 desenvolvedores possam facilmente adicionar novos tipos de saída sem que isso afete o código cliente.
 
-Você pode ver como cada classe de saída concreta implementa a OutputInterface - isso serve a dois propósitos,
+Você pode ver como cada classe concreta 'output' implementa a OutputInterface - isso serve a dois propósitos,
 primeiramente isso prevê um simples contrato que precisa ser obedecido por cada implementação concreta. Segundo, através
-da implementação de uma interface comum você verá na próxima seção que você pode utilizar [Indução de Tipo](http://php.net/manual/en/language.oop5.typehinting.php)
-para garantir que  o cliente que está utilizando esse comportamento é do tipo correto, nesse caso 'OutputInterface'.
+da implementação de uma interface comum você verá na próxima seção que você pode utilizar [Indução de Tipo](http://php.net/manual/en/language.oop5.typehinting.php) para garantir que  o cliente que está utilizando esse comportamento é do tipo correto, nesse caso 'OutputInterface'.
 
 O próximo bloco de código demonstra como uma classe cliente relizando uma chamada deve usar um desses algorítimos e
 ainda melhor definir o comportamento necessário em tempo de execução:
@@ -224,7 +223,7 @@ class SomeClient
 
 A classe cliente tem uma propriedade private que deve ser definida em tempo de execução e ser do tipo 'OutputInterface'
 uma vez que essa propriedade é definida uma chamada a loadOutput() irá chamar o método load() na classe concreta do tipo
-"output" que foi definida.
+'output' que foi definida.
 {% highlight php %}
 <?php
 

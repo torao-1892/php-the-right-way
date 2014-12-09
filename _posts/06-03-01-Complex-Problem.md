@@ -14,22 +14,22 @@ Estes são os problemas complexos que a Inversão de Dependência resolve.
 
 Inversão de controle é como se diz, "invertendo o controle" de um sistema para manter os controles organizacionais
 totalmente separados dos seus objetos.
-Em termos de Dependency Injection, isto significa desacoplar as dependências para controlá-las e instanciá-las em
-outro lugar do sistema.
+Em termos de Dependency Injection, isto significa desacoplar as dependências para controlá-las e instanciá-las em outro 
+lugar do sistema.
 
-Por anos, os frameworks PHP usam a Inversão de Controle, no entanto, a questão é: que parte do controle
-está invertendo, e onde? Por exemplo, frameworks MVC, em geral, fornecem um super objeto ou um controlador base que
-outros controladores devem extender para obter acesso as suas dependências. Isto **é** Inversão de Controle, no entanto,
-em vez de desacoplar as dependências, este método simplesmente as mudou.
+Por anos, os frameworks PHP usam a Inversão de Controle, no entanto, a questão é: que parte do controle está invertendo, 
+e onde? Por exemplo, frameworks MVC, em geral, fornecem um super objeto ou um controlador base que outros controladores 
+devem extender para obter acesso as suas dependências. Isto **é** Inversão de Controle, no entanto, em vez de desacoplar 
+as dependências, este método simplesmente as mudou.
 
-Dependency Injection permite resolver de forma mais elegante este problema apenas injetando a dependência que
-precisamos, quando precisamos dela, sem a necessidade de quaisquer dependências no código.
+Dependency Injection permite resolver de forma mais elegante este problema apenas injetando a dependência que precisamos, 
+quando precisamos dela, sem a necessidade de quaisquer dependências no código.
 
 ### Princípio da Inversão de Dependência
 
-O Princípio da Inversão de Dependência é o "D", no S.O.L.I.D, define o princípio de design da orientação a objeto
-que afirma que *"Depende de uma Abstração. Não depende de Objetos concretos"*. Simplificando, isto significa que
-nossas dependências devem ser classes de interfaces/contratos ou class abstratas em vez de implementações concretas.
+O Princípio da Inversão de Dependência é o "D", no S.O.L.I.D, define o princípio de design da orientação a objeto que 
+afirma que *"Dependa de uma Abstração. Não depende de Objetos concretos"*. Simplificando, isto significa que nossas 
+dependências devem ser classes de interfaces/contratos ou class abstratas em vez de implementações concretas.
 Podemos facilmente refatorar o exemplo abaixo para seguir este princípio.
 
 {% highlight php %}

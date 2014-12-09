@@ -31,8 +31,8 @@ visitantes ao mesmo tempo.
 O Apache tem várias configurações possíveis para executar o PHP. A mais comum e mais fácil para configurar é a
 [prefork MPM](http://httpd.apache.org/docs/2.4/mod/prefork.html) com o mod_php5. Mesmo não sendo a mais eficiente em
 memória, é a mais simples para começar a usar. Essa é provavelmente a melhor escolha se você não quiser entrar muito
-profundamente nos aspectos de administração do servidor. Observe que, se você usar o mod_php5, terá que usar o
-prefork MPM.
+profundamente nos aspectos de administração do servidor. Observe que, se você usar o mod_php5, terá que usar o prefork 
+MPM.
 
 Alternativamente, se você quiser extrair mais performance e estabilidade do seu Apache então você poderia se
 beneficiar do mesmo sistema FPM que o nginx e executar o [worker MPM](http://httpd.apache.org/docs/2.4/mod/worker.htm)

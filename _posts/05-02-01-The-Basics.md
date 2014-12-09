@@ -11,4 +11,4 @@ mas eficientemente. Entretando enquanto se avança na linguagem, nós frequentem
 aprendido no começo (ou passado o olho) em prol de atalhos e/ou maus hábitos. Para ajudar a combater esse problema
 comum, esse seção é focada em lembrar aos programadores das práticas básicas de codificação no PHP.
 
-* Continue lendo [O Básico](/pages/The-Basics.html)
+* Continue lendo [O Básico]({{ site.baseurl }}pages/The-Basics.html)

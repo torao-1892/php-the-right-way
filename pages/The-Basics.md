@@ -56,7 +56,7 @@ function test($a)
     }
 }
 
-vs.
+// vs
 
 function test($a)
 {
@@ -90,7 +90,7 @@ function test($a)
             // código...
             break;             // break é usado para terminar a estrutura de decisão
         case 2:
-            // código...         // sem o break, a comparação ira continuar em 'case 3'
+            // código...       // sem o break, a comparação ira continuar em 'case 3'
         case 3:
             // código...
             return $result;    // dentro de uma função, 'return' termina essa função
@@ -160,20 +160,21 @@ entre os tipos de strings e seus usos e benefícios.
 
 #### Aspas Simples
 
-Usar aspas simples é o melhor jeito de definir strings e geralmente também o mais rápido. Sua velocidade se dá ao fato
-do PHP não tentar interpretar essa string (suas variáveis). É a melhor aplicação quando:
+As aspas simples são utilizadas para indicar uma "string literal". Strings literais não tenta analisar caracteres 
+especiais ou variáveis.
 
-- Strings não precisam ser interpretadas
-- Uma variável é escrita em texto plano
+Se estiver usando aspas simples, você pode digitar um nome de variável em uma string assim: `'some $thing'` e você verá 
+a saída exata `some $thing`. Se você estiver usando aspas duplas, irá tentar avaliar a variável `$thing` e então 
+mostrará erros se nenhuma variável for encontrada.
 
 {% highlight php %}
 <?php
-echo 'Essa é minha string, veja como ela é bonita.';    // sem necessidade de interpretar uma string simples
+echo 'This is my string, look at how pretty it is.';    // sem necessidade de interpretar uma string simples
 
 /**
  * Saída:
  *
- * Essa é minha string, veja como ela é bonita.
+ * This is my string, look at how pretty it is.
  */
 {% endhighlight %}
 
@@ -181,45 +182,51 @@ echo 'Essa é minha string, veja como ela é bonita.';    // sem necessidade de 
 
 #### Aspas Duplas
 
-Aspas Duplas são o canivete suíço das strings, mas são mais lentas devido a interpretação das strings. É a melhor
-aplicação quando:
-
-- Escapando strings
-- Usando strings com muitas variáveis e texto plano
-- Condensando concatenação de múltiplas linhas e aumentando a legibilidade
+Aspas Duplas são o canivete suíço das strings, mas são mais lentas devido a interpretação das strings. Ele não só irá 
+analisar as variáveis como mencionado acima mas também todos os tipos de caracteres especiais, como `\n` para nova 
+linha, `\t` para identação, etc.
 
 {% highlight php %}
 <?php
 echo 'phptherightway é ' . $adjective . '.'      // Um exemplo com aspas simples que usa concatenação múltipla para
     . "\n"                                       // variáveis e escapar strings
-    . 'Eu amo aprender' . $code . '!';
+    . 'I love learning' . $code . '!';
 
-vs.
+// vs
 
-echo "phptherightway is $adjective.\n Eu amo aprender $code!"  // Em vez de concatenação múltipla, aspas duplas
+echo "phptherightway is $adjective.\n I love learning $code!"  // Em vez de concatenação múltipla, aspas duplas
                                                                // nos permitem utilizar strings interpretáveis
 {% endhighlight %}
 
-Quando strings em aspas duplas que contenham variáveis, são comuns os casos onde a variável pode estar colada com outro
-caracter. Isso fará com que o PHP não consiga interpretar essa variável pelo fato dela estar sendo camuflada. Para
-corrigir esse problema envolva a variável em um par de chaves.
+Aspas duplas que contém variáveis; Isto é chamado "interpolação".
 
 {% highlight php %}
 <?php
-$juice = 'ameixa';
-echo "Eu bebi suco feito de $juices";    // $juice não pode ser interpretado
+$juice = 'plum';
+echo "I like $juice juice";    // Output: I like plum juice
+{% endhighlight %}
 
-vs.
+Quando usando interpolação, são comuns os casos onde a variável pode estar colada com outro
+caracter. Isso fará com que o PHP não consiga interpretar essa variável pelo fato dela estar sendo camuflada. 
 
-$juice = 'ameixa';
-echo "Eu bebi suco feito de {$juice}s";    // $juice será interpretado
+Para corrigir esse problema envolva a variável em um par de chaves.
+
+{% highlight php %}
+<?php
+$juice = 'plum';
+echo "I drank some juice made of $juices";    // $juice cannot be parsed
+
+// vs
+
+$juice = 'plum';
+echo "I drank some juice made of {$juice}s";    // $juice will be parsed
 
 /**
  * Variáveis complexas também serão interpretadas com o uso de chaves
  */
 
-$juice = array('maça', 'laranja', 'ameixa');
-echo "Eu bebi suco feito de {$juice[1]}s";   // $juice[1] será interpretado
+$juice = array('apple', 'orange', 'plum');
+echo "I drank some juice made of {$juice[1]}s";   // $juice[1] will be parsed
 {% endhighlight %}
 
 * [Aspas Duplas](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.double)
@@ -231,20 +238,20 @@ adequada para o uso de strings de múltiplas linhas sem a necessidade de concate
 
 {% highlight php %}
 <?php
-$str = <<<'EOD'             // iniciada por <<<
-Exemplo de string
-pulando multiplas linhas
-usando a sintaxe nowdoc.
-$a não é interpretada.
-EOD;                        // fechando 'EOD' precisa estar na sua própria linha, e no ponto mais a esquerda
+$str = <<<'EOD'            // iniciada por <<<
+Example of string
+spanning multiple lines
+using nowdoc syntax.
+$a does not parse.
+EOD;                       // fechando 'EOD' precisa estar na sua própria linha, e no ponto mais a esquerda
 
 /**
- * Saída:
+ * Output:
  *
- * Exemplo de string
- * pulando múltiplas linhas
- * usando a sintaxe nowdoc.
- * $a não é interpretada.
+ * Example of string
+ * spanning multiple lines
+ * using nowdoc syntax.
+ * $a does not parse.
  */
 {% endhighlight %}
 
@@ -257,26 +264,40 @@ de múltiplas linhas sem a necessidade de concatenação.
 
 {% highlight php %}
 <?php
-$a = 'Variáveis';
+$a = 'Variables';
 
-$str = <<<EOD               // initialized by <<<
-Exemplo de string
-pulando múltiplas linhas
-usando a sintaxe heredoc.
-$a são interpretadas.
-EOD;                        // closing 'EOD' must be on it's own line, and to the left most point
+$str = <<<EOD             // iniciada por <<<
+Example of string
+spanning multiple lines
+using heredoc syntax.
+$a are parsed.
+EOD;                      // fechando 'EOD' precisa estar na sua própria linha, e no ponto mais a esquerda
 
 /**
  * Output:
  *
- * Exemplo de string
- * pulando múltiplas linhas
- * usando a sintaxe heredoc.
- * variáveis são interpretadas.
+ * Example of string
+ * spanning multiple lines
+ * using heredoc syntax.
+ * Variables are parsed.
  */
 {% endhighlight %}
 
 * [Sintaxe Heredoc](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.heredoc)
+
+### O que é mais rápido?
+
+Há um mito por aí que usar aspas simples em strings são interpretadas mais rápida do que usar aspas duplas. Isso não é fundamentalmente falso.
+
+Se você estiver definindo uma string única e não concatenar valores ou qualquer coisa complicada, então aspas simples ou duplas serão idênticas. Não será mais rápido.
+
+Se você está concatenando várias strings de qualquer tipo, ou interpolar valores em uma string entre aspas duplas, então os resultados podem variar. Se você estiver trabalhando com um pequeno número de valores, a concatenação é minuciosamente mais rápida. Com um monte de valores, interpolação é minuciosamente mais rápida.
+
+Independentemente do que você está fazendo com strings, nenhum dos tipos vai ter qualquer impacto perceptível sobre a sua aplicação.
+Tentar reescrever código para usar um ou o outro é sempre um exercício de futilidade, de modo a evitar este micro-otimização, a menos que você realmente compreenda o significado e o impacto das diferenças.
+
+[Desmentindo o mito de desempenho das aspas simples]: http://nikic.github.io/2012/01/09/Disproving-the-Single-Quotes-Performance-Myth.html
+
 
 ## Operadores Ternários
 
@@ -287,10 +308,11 @@ Apesar de operações ternárias poderem ser agrupadas e aconselhado usar uma po
 <?php
 $a = 5;
 echo ($a == 5) ? 'yay' : 'nay';
+{% endhighlight %}
 
-vs.
+// vs
 
-// operações ternárias agrupadas
+{% highlight php %}
 $b = 10;
 echo ($a) ? ($a == 5) ? 'yay' : 'nay' : ($b == 10) ? 'excessive' : ':(';    // excesso de agrupamento sacrifica a legibilidade
 {% endhighlight %}
@@ -302,10 +324,59 @@ Para usar 'return' em um operador ternário utilize a sintaxe correta.
 $a = 5;
 echo ($a == 5) ? return true : return false;    // esse exemplo irá disparar um erro
 
-vs.
+// vs
 
 $a = 5;
 return ($a == 5) ? 'yay' : 'nope';    // esse exemplo irá retornar 'yay'
+{% endhighlight %}
+
+Note que você não precisa usar um operador ternário para retornar um valor booleano. Um exemplo disto seria.
+
+{% highlight php %}
+<?php
+$a = 3;
+return ($a == 3) ? true : false; // esse exemplo irá retornar true ou false se $a == 3
+
+// vs
+
+$a = 3;
+return $a == 3; // esse exemplo irá retornar true ou false se $a == 3
+
+{% endhighlight %}
+
+Isso também pode ser dito para as operações (===, !==, !=, == etc).
+
+#### Utilizando parênteses com operadores ternários para formato e função
+
+Quando se utiliza um operador ternário, os parênteses podem melhorar a legibilidade do código e também incluir as uniões 
+dentro de blocos de instruções. Um exemplo de quando não há nenhuma exigência para usar de parênteses é:
+
+{% highlight php %}
+<?php
+$a = 3;
+return ($a == 3) ? "yay" : "nope"; // vai retornar yay ou nope se $a == 3
+
+// vs
+
+<?php
+$a = 3;
+return $a == 3 ? "yay" : "nope"; // vai retornar yay ou nope se $a == 3
+{% endhighlight %}
+
+O uso de parênteses também nos dá a capacidade de criar união dentro de um bloco de declaração onde o bloco será 
+verificado como um todo. Tal como este exemplo abaixo que retornará verdadeiro se ambos ($a == 3 e $b == 4) são 
+verdadeiras e $c == 5 também é verdadeiro.
+
+{% highlight php %}
+<?php
+return ($a == 3 && $b == 4) && $c == 5;
+{% endhighlight %}
+
+Outro exemplo é o trecho de código abaixo que vai returnar true se ($a != 3 e $b != 4) ou $c == 5.
+
+{% highlight php %}
+<?php
+return ($a != 3 && $b != 4) || $c == 5;
 {% endhighlight %}
 
 * [Operadores Ternários](http://php.net/manual/en/language.operators.comparison.php)
@@ -321,7 +392,7 @@ contém 1MB de dado válido, copiando a variável você aumenta o consumo de mem
 $about = 'Uma string com texto bem longo';    // usa 2MB de memória
 echo $about;
 
-vs.
+// vs
 
 echo 'Uma string com texto bem longo';        // usa 1MB de memória
 {% endhighlight %}

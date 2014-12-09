@@ -1,16 +1,17 @@
 (function ($) {
     // Load contributors
     var $contributors = $('#contributors');
+    var repo_user = 'PHPSP';
     if ( $contributors.length ) {
         var fail = function () {
-            $contributors.html('<p>Este projeto não seria possível sem a ajuda de <a href="https://github.com/codeguy/php-the-right-way/graphs/contributors">nossos contribuintes</a> no GitHub.</p>');
+            $contributors.html('<p>Este projeto não seria possível sem a ajuda de <a href="https://github.com/' + repo_user + '/php-the-right-way/graphs/contributors">nossos contribuintes</a> no GitHub.</p>');
         };
         $.ajax({
             cache: false,
             dataType: 'jsonp',
             timeout: 3000,
             type: 'GET',
-            url: 'https://api.github.com/repos/codeguy/php-the-right-way/contributors'
+            url: 'https://api.github.com/repos/' + repo_user + '/php-the-right-way/contributors'
         }).done(function (data) {
             if ( data.data && data.data.length ) {
                 var $ul = $('<ul></ul>'), dataLength = data.data.length;
@@ -77,4 +78,3 @@
         }
     });
 })(jQuery);
-
