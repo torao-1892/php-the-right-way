@@ -22,7 +22,7 @@ no entanto, este é mínimo quando o cache apropriado é usado.
 
 Utilizando a biblioteca [Twig](http://twig.sensiolabs.org/).
 
-{% highlight text %}
+{% highlight html+jinja %}
 {% raw %}
 {% include 'header.html' with {'title': 'User Profile'} %}
 
@@ -37,7 +37,7 @@ Utilizando a biblioteca [Twig](http://twig.sensiolabs.org/).
 
 Utilizando a biblioteca [Twig](http://twig.sensiolabs.org/).
 
-{% highlight text %}
+{% highlight html+jinja %}
 {% raw %}
 // template.php
 
