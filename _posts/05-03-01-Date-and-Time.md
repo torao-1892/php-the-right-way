@@ -64,5 +64,5 @@ foreach($periodIterator as $date) {
 * [Leia sobre a classe DateTime][datetime]
 * [Leia sobre formatação de datas][dateformat] (opções aceitas para formatos de strings de data)
 
-[datetime]: http://www.php.net/manual/book.datetime.php
-[dateformat]: http://www.php.net/manual/function.date.php
+[datetime]: http://php.net/book.datetime
+[dateformat]: http://php.net/function.date

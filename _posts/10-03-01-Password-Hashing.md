@@ -36,7 +36,7 @@ $passwordHash = password_hash('secret-password', PASSWORD_DEFAULT);
 if (password_verify('bad-password', $passwordHash)) {
     //Senha correta
 } else {
-    //Senha Errada
+    //Senha errada
 }
 {% endhighlight %}
 
@@ -45,7 +45,7 @@ if (password_verify('bad-password', $passwordHash)) {
 * [Aprenda sobre hashing no que diz respeito à criptografia] [3]
 * [PHP `password_hash` RFC] [4]
 
-[1]: http://us2.php.net/manual/en/function.password-hash.php
+[1]: http://php.net/function.password-hash
 [2]: https://github.com/ircmaxell/password_compat
 [3]: http://en.wikipedia.org/wiki/Cryptographic_hash_function
 [4]: https://wiki.php.net/rfc/password_hash

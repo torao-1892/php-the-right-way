@@ -36,6 +36,6 @@ marcada como descontinuada em 21/10/2014.
 * [Leia sobre a PSR-0][psr0]
 * [Leia sobre a PSR-4][psr4]
 
-[namespaces]: http://php.net/manual/en/language.namespaces.php
+[namespaces]: http://php.net/language.namespaces
 [psr0]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
 [psr4]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md

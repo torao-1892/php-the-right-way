@@ -13,4 +13,4 @@ iniciar o servidor, execute o seguinte comando no seu terminal dentro da raiz de
 
 * [Saiba mais sobre o servidor web embutido, pela linha de comando][cli-server]
 
-[cli-server]: http://www.php.net/manual/en/features.commandline.webserver.php
+[cli-server]: http://php.net/features.commandline.webserver

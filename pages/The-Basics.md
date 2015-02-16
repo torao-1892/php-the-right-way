@@ -33,8 +33,8 @@ if (strpos('testing', 'test') !== false) {    // true, já que uma comparação 
 }
 {% endhighlight %}
 
-* [Operadores de Comparação](http://php.net/manual/en/language.operators.comparison.php)
-* [Tabela de Comparação](http://php.net/manual/en/types.comparisons.php)
+* [Operadores de Comparação](http://php.net/language.operators.comparison)
+* [Tabela de Comparação](http://php.net/types.comparisons)
 
 ## Estrutura de Controle
 
@@ -67,7 +67,7 @@ function test($a)
 }
 {% endhighlight %}
 
-* [Estrutura Condicionais](http://php.net/manual/en/control-structures.if.php)
+* [Estrutura Condicionais](http://php.net/control-structures.if)
 
 ### Estruturas de Decisão
 
@@ -101,7 +101,7 @@ function test($a)
 }
 {% endhighlight %}
 
-* [Estruturas de Decisão](http://php.net/manual/en/control-structures.switch.php)
+* [Estruturas de Decisão](http://php.net/control-structures.switch)
 * [PHP Switch](http://phpswitch.com/)
 
 ## Namespace Global
@@ -126,8 +126,8 @@ function array()
 }
 {% endhighlight %}
 
-* [Espaço Global](http://php.net/manual/en/language.namespaces.global.php)
-* [Regras Globais](http://php.net/manual/en/userlandnaming.rules.php)
+* [Espaço Global](http://php.net/language.namespaces.global)
+* [Regras Globais](http://php.net/userlandnaming.rules)
 
 ## Strings
 
@@ -151,7 +151,7 @@ $a = 'Multi-line example'      // operador de concatenação (.)
     . 'of what to do';
 {% endhighlight %}
 
-* [Operadores de Strings](http://php.net/manual/en/language.operators.string.php)
+* [Operadores de Strings](http://php.net/language.operators.string)
 
 ### Tipos de Strings
 
@@ -178,7 +178,7 @@ echo 'This is my string, look at how pretty it is.';    // sem necessidade de in
  */
 {% endhighlight %}
 
-* [Aspas Simples](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.single)
+* [Aspas Simples](http://php.net/language.types.string#language.types.string.syntax.single)
 
 #### Aspas Duplas
 
@@ -229,7 +229,7 @@ $juice = array('apple', 'orange', 'plum');
 echo "I drank some juice made of {$juice[1]}s";   // $juice[1] will be parsed
 {% endhighlight %}
 
-* [Aspas Duplas](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.double)
+* [Aspas Duplas](http://php.net/language.types.string#language.types.string.syntax.double)
 
 #### Sintaxe Nowdoc
 
@@ -255,7 +255,7 @@ EOD;                       // fechando 'EOD' precisa estar na sua própria linha
  */
 {% endhighlight %}
 
-* [Sintaxe Nowdoc](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.nowdoc)
+* [Sintaxe Nowdoc](http://php.net/language.types.string#language.types.string.syntax.nowdoc)
 
 #### Sintaxe Heredoc
 
@@ -283,7 +283,7 @@ EOD;                      // fechando 'EOD' precisa estar na sua própria linha,
  */
 {% endhighlight %}
 
-* [Sintaxe Heredoc](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.heredoc)
+* [Sintaxe Heredoc](http://php.net/language.types.string#language.types.string.syntax.heredoc)
 
 ### O que é mais rápido?
 
@@ -379,7 +379,7 @@ Outro exemplo é o trecho de código abaixo que vai returnar true se ($a != 3 e 
 return ($a != 3 && $b != 4) || $c == 5;
 {% endhighlight %}
 
-* [Operadores Ternários](http://php.net/manual/en/language.operators.comparison.php)
+* [Operadores Ternários](http://php.net/language.operators.comparison)
 
 ## Declaração de Variáveis
 

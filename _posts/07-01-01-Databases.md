@@ -25,7 +25,7 @@ aplicação dentro de sua própria agenda de desenvolvimento, assim você não t
 **Se você estiver começando do zero então não utilize de forma nenhuma a
 extensão mysql: use a [extensão MySQLi][mysqli], ou use a [PDO].**
 
-* [PHP: Choosing an API for MySQL](http://php.net/manual/en/mysqlinfo.api.choosing.php)
+* [PHP: Choosing an API for MySQL](http://php.net/mysqlinfo.api.choosing)
 * [PDO Tutorial for MySQL Developers](http://wiki.hashphp.org/PDO_Tutorial_for_MySQL_Developers)
 
 ## Extensão PDO
@@ -93,9 +93,9 @@ terminar - a não ser é claro que você esteja usando conexões persistentes.
 
 * [Leia mais sobre conexões PDO]
 
-[Leia mais sobre a PDO]: http://www.php.net/manual/en/book.pdo.php
-[Leia mais sobre conexões PDO]: http://php.net/manual/en/pdo.connections.php
-[oficialmente descontinuada no PHP 5.5.0]: http://php.net/manual/en/migration55.deprecated.php
+[Leia mais sobre a PDO]: http://php.net/book.pdo
+[Leia mais sobre conexões PDO]: http://php.net/pdo.connections
+[oficialmente descontinuada no PHP 5.5.0]: http://php.net/migration55.deprecated
 [SQL Injection]: http://wiki.hashphp.org/Validation
 
 [pdo]: http://php.net/pdo

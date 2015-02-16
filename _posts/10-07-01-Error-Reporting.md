@@ -21,7 +21,7 @@ ini`:
     error_reporting = -1
     log_errors = On
 
-Do [php.net](http://php.net/manual/function.error-reporting.php):
+Do [php.net](http://php.net/function.error-reporting):
 
 > Passar o valor -1 irá mostrar todos os erros possíveis, até mesmo quando novos níveis e constantes forem adicionados 
 em versões futuras do PHP. A constante E_ALL também se comporta desta maneira a partir do PHP 5.4.
@@ -48,7 +48,7 @@ Para esconder os erros no seu ambiente de <strong>produção</strong>, configure
 Com essas configurações em produção, os erros continuarão sendo registrados nos logs de erros do servidor web, mas
 eles não serão mostrados para o usuário. Para mais informações sobre essas configurações, veja o manual do PHP:
 
-* [error_reporting](http://www.php.net/manual/en/errorfunc.configuration.php#ini.error-reporting)
-* [display_errors](http://www.php.net/manual/en/errorfunc.configuration.php#ini.display-errors)
-* [display_startup_errors](http://php.net/manual/errorfunc.configuration.php#ini.display-startup-errors)
-* [log_errors](http://www.php.net/manual/en/errorfunc.configuration.php#ini.log-errors)
+* [error_reporting](http://php.net/errorfunc.configuration#ini.error-reporting)
+* [display_errors](http://php.net/errorfunc.configuration#ini.display-errors)
+* [display_startup_errors](http://php.net/errorfunc.configuration#ini.display-startup-errors)
+* [log_errors](http://php.net/errorfunc.configuration#ini.log-errors)

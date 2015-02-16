@@ -32,12 +32,12 @@ oportunidade para aprender diretamente dos líderes do setor.
 
 [Encontre uma Conferência PHP][php-conf]
 
-[php-calendar]: http://www.php.net/cal.php
+[php-calendar]: http://php.net/cal
 [google]: https://www.google.com/search?q=php+user+group+near+me
 [meetup]: http://www.meetup.com/find/
 [php-ug]: http://php.ug
 [php-wiki]: https://wiki.php.net/usergroups
-[php-conf]: http://php.net/conferences/index.php
+[php-conf]: http://php.net/conferences
 [phpc-twitter]: https://twitter.com/phpc
 [php-programmers-gplus]: https://plus.google.com/u/0/communities/104245651975268426012
 [php-irc]: http://webchat.freenode.net/?channels=phpc
