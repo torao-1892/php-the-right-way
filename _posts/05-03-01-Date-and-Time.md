@@ -19,7 +19,7 @@ um objeto DateTime de volta para uma string para saída.
 $raw = '22. 11. 1968';
 $start = \DateTime::createFromFormat('d. m. Y', $raw);
 
-echo "Start date: " . $start->format('m/d/Y') . "\n";
+echo "Start date: " . $start->format('Y-m-d') . "\n";
 {% endhighlight %}
 
 Cálculos com a DateTime são possíveis com a classe DateInterval. A DateTime tem métodos como o `add()` e o `sub()` que
@@ -57,7 +57,7 @@ $periodInterval = \DateInterval::createFromDateString('first thursday');
 $periodIterator = new \DatePeriod($start, $periodInterval, $end, \DatePeriod::EXCLUDE_START_DATE);
 foreach($periodIterator as $date) {
     //mostra cada data no período
-    echo $date->format('m/d/Y') . " ";
+    echo $date->format('Y-m-d') . " ";
 }
 {% endhighlight %}
 
