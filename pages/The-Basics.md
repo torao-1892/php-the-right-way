@@ -397,4 +397,4 @@ echo $about;
 echo 'Uma string com texto bem longo';        // usa 1MB de memória
 {% endhighlight %}
 
-* [Dicas de Performance](https://developers.google.com/speed/articles/optimizing-php)
+* [Dicas de Performance](http://web.archive.org/web/20140625191431/https://developers.google.com/speed/articles/optimizing-php)
