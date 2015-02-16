@@ -150,6 +150,7 @@ header('Content-Type: text/html; charset=UTF-8');
   * [`htmlentities()`](http://php.net/function.htmlentities)
   * [`htmlspecialchars()`](http://php.net/function.htmlspecialchars)
 * [Dicas PHP e UTF-8](http://blog.loftdigital.com/blog/php-utf-8-cheatsheet)
+* [Manuseando UTF-8 com o PHP](http://www.phpwact.org/php/i18n/utf-8)
 * [Stack Overflow: Quais os fatores que fazem o PHP incompatível com Unicode?](http://stackoverflow.com/questions/571694/what-factors-make-php-unicode-incompatible)
 * [Stack Overflow: Melhores práticas em PHP e MySQL com strings internacionais](http://stackoverflow.com/questions/140728/best-practices-in-php-and-mysql-with-international-strings)
 * [Como ter suporte total a Unicode em bases de dados MySQL](http://mathiasbynens.be/notes/mysql-utf8mb4)
