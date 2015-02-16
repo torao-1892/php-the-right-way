@@ -69,7 +69,7 @@ o [Twig][2] como uma dependência do seu projeto.
 
 Outra alternativa é o comando `composer init` que guiará a criação completa do arquivo `composer.json` para
 seu projeto. De qualquer maneira, uma vez criado o arquivo `composer.json` você pode chamar o Composer para baixar suas
-dependências para o diretório `vendors/`. Isto também se aplica para projetos baixados que fornecem um arquivo
+dependências para o diretório `vendor/`. Isto também se aplica para projetos baixados que fornecem um arquivo
 `composer.json`:
 
     composer install
