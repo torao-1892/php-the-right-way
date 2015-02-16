@@ -91,9 +91,9 @@ executou `php composer.phar install`. Se você compartilhar seu projeto com outr
 `composer.lock` é parte da sua distribuição, quando executarem `php composer.phar install` eles receberão as mesmas
 versões como você.
 Para atualizar suas dependências, execute `php composer.phar update`.
-Isso é muito útil quando você define as versões requiridas. Por exemplo, a versão requerida de ~1.8 significa "qualquer
-versão mais recente que 1.8.0, mas menos recente do que 2.0.x-dev". Você também pode usar o curinga `*` como `1.8.*`. 
-Agora o comando `php composer.phar update` do Composer atualizará todas as suas dependências para a versão mais recente 
+Isso é muito útil quando você define as versões requiridas. Por exemplo, a versão requerida de `~1.8` significa "qualquer
+versão mais recente que `1.8.0`, mas menos recente do que `2.0.x-dev`". Você também pode usar o curinga `*` como `1.8.*`.
+Agora o comando `php composer.phar update` do Composer atualizará todas as suas dependências para a versão mais recente
 que se encaixa às restrições definidas.
 
 ### Notificações de Atualização
