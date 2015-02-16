@@ -16,7 +16,7 @@ CLI na raiz pública do seu servidor web!
 
 Tente executar o PHP a partir da sua linha de comando:
 
-{% highlight bash %}
+{% highlight console %}
 > php -i
 {% endhighlight %}
 
@@ -47,7 +47,7 @@ saída normalmente usados podem ser encontrados [aqui][exit-codes].
 
 Para executar nosso script acima, a partir da linha de comando:
 
-{% highlight bash %}
+{% highlight console %}
 > php hello.php
 Usage: php hello.php [name]
 > php hello.php world

@@ -28,7 +28,6 @@ As duas string são diferentes ('secret-password' vs. 'bad-password') e por isso
 
 {% highlight php %}
 <?php
-
 require 'password.php';
 
 $passwordHash = password_hash('secret-password', PASSWORD_DEFAULT);

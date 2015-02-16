@@ -19,7 +19,9 @@ Você pode instalar o Composer localmente (no seu diretório de trabalho atual; 
 ou globalmente (e.g. /usr/local/bin). Vamos assumir que você queira instalar o Composer localmente. A partir do
 diretório raiz do seu projeto:
 
-    curl -s https://getcomposer.org/installer | php
+{% highlight console %}
+curl -s https://getcomposer.org/installer | php
+{% endhighlight %}
 
 Isso irá baixar o `composer.phar` (um arquivo PHP binário). Você pode executá-lo com o `php` para gerenciar as
 dependências do seu projeto. <strong>Por favor, Observe:</strong> Se você passar o código baixado diretamente para um
@@ -45,8 +47,10 @@ sua instalação do PHP para garantir que:
 Como uma instalação manual não executa nenhuma dessas verificações, você precisa decidir se o custo valerá a pena
 para você. Se sim, segue abaixo como obter o Composer manualmente:
 
-    curl -s https://getcomposer.org/composer.phar -o $HOME/local/bin/composer
-    chmod +x $HOME/local/bin/composer
+{% highlight console %}
+curl -s https://getcomposer.org/composer.phar -o $HOME/local/bin/composer
+chmod +x $HOME/local/bin/composer
+{% endhighlight %}
 
 O caminho `$HOME/local/bin` (ou um diretório de sua escolha) deve estar na sua variável de ambiente `$PATH`. Isso
 fará com que o comando `composer` fique disponível.
@@ -54,7 +58,9 @@ fará com que o comando `composer` fique disponível.
 Quando você vir a documentação dizendo para executar o Composer como `php composer.phar install`, você pode
 substituir por isso:
 
-    composer install
+{% highlight console %}
+composer install
+{% endhighlight %}
 
 Esta seção assumirá que você tem globalmente instalado o composer.
 
@@ -65,14 +71,18 @@ controlá-lo na mão se preferir ou usar o próprio Composer. O comando `compose
 projeto e se você não tem um arquivo `composer.json`, ele será criado. Aqui está um exemplo que adiciona
 o [Twig][2] como uma dependência do seu projeto.
 
-    composer require twig/twig:~1.8
+{% highlight console %}
+composer require twig/twig:~1.8
+{% endhighlight %}
 
 Outra alternativa é o comando `composer init` que guiará a criação completa do arquivo `composer.json` para
 seu projeto. De qualquer maneira, uma vez criado o arquivo `composer.json` você pode chamar o Composer para baixar suas
 dependências para o diretório `vendor/`. Isto também se aplica para projetos baixados que fornecem um arquivo
 `composer.json`:
 
-    composer install
+{% highlight console %}
+composer install
+{% endhighlight %}
 
 Em seguida, adicione esta linha ao arquivo PHP principal da sua aplicação; isso dirá ao PHP para usar o autoloader do
 Composer para as dependências do seu projeto.

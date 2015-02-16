@@ -9,7 +9,9 @@ anchor: servidor_web_embutido
 Com a versão PHP 5.4+, você pode começar a aprender PHP sem os problemas de instalar e configurar um servidor web. Para 
 iniciar o servidor, execute o seguinte comando no seu terminal dentro da raiz de seu projeto:
 
-    > php -S localhost:8000
+{% highlight console %}
+> php -S localhost:8000
+{% endhighlight %}
 
 * [Saiba mais sobre o servidor web embutido, pela linha de comando][cli-server]
 

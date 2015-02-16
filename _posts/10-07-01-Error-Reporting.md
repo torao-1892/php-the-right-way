@@ -16,10 +16,12 @@ diferentes quando em desenvolvimento versus quando em produção (no ar).
 Para mostrar erros no seus ambiente de <strong>desenvolvimento</strong>, configure as definições a seguir no seu `php
 ini`:
 
-    display_errors = On
-    display_startup_errors = On
-    error_reporting = -1
-    log_errors = On
+{% highlight ini %}
+display_errors = On
+display_startup_errors = On
+error_reporting = -1
+log_errors = On
+{% endhighlight %}
 
 Do [php.net](http://php.net/function.error-reporting):
 
@@ -40,10 +42,12 @@ O nível de error `E_STRICT` foi introduzido no 5.3.0 e não faz parte do `E_ALL
 
 Para esconder os erros no seu ambiente de <strong>produção</strong>, configure seu `php.ini` assim:
 
-    display_errors = Off
-    display_startup_errors = Off
-    error_reporting = E_ALL
-    log_errors = On
+{% highlight ini %}
+display_errors = Off
+display_startup_errors = Off
+error_reporting = E_ALL
+log_errors = On
+{% endhighlight %}
 
 Com essas configurações em produção, os erros continuarão sendo registrados nos logs de erros do servidor web, mas
 eles não serão mostrados para o usuário. Para mais informações sobre essas configurações, veja o manual do PHP:

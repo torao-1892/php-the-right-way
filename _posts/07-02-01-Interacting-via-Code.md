@@ -49,7 +49,6 @@ lógica de apresentação e você terá uma "View", que é quase um [MVC] - uma 
 
 {% highlight php %}
 <?php
-
 $db = new PDO('mysql:host=localhost;dbname=testdb;charset=utf8', 'username', 'password');
 
 // Deixe seu modelo disponível

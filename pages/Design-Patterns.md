@@ -204,7 +204,6 @@ O próximo bloco de código demonstra como uma classe cliente relizando uma cham
 ainda melhor definir o comportamento necessário em tempo de execução:
 {% highlight php %}
 <?php
-
 class SomeClient
 {
     private $output;
@@ -226,7 +225,6 @@ uma vez que essa propriedade é definida uma chamada a loadOutput() irá chamar 
 'output' que foi definida.
 {% highlight php %}
 <?php
-
 $client = new SomeClient();
 
 // Quer um array?
