@@ -12,12 +12,12 @@ interface orientada a objetos para a maioria dos usos comuns. Ela pode tratar de
 dessa breve introdução.
 
 Para começar a trabalhar com a DateTime, converta uma string bruta de data e hora para um objeto com o método _factory_
-`createFromFormat()`, ou use `new \DateTime` para obter a data e a hora atual. Use o método `format()` para converter
+`createFromFormat()`, ou use `new DateTime` para obter a data e a hora atual. Use o método `format()` para converter
 um objeto DateTime de volta para uma string para saída.
 {% highlight php %}
 <?php
 $raw = '22. 11. 1968';
-$start = \DateTime::createFromFormat('d. m. Y', $raw);
+$start = DateTime::createFromFormat('d. m. Y', $raw);
 
 echo "Start date: " . $start->format('Y-m-d') . "\n";
 {% endhighlight %}
@@ -32,7 +32,7 @@ que é bem fácil de mostrar.
 <?php
 // cria uma cópia de $start e adiciona um mês e 6 dias
 $end = clone $start;
-$end->add(new \DateInterval('P1M6D'));
+$end->add(new DateInterval('P1M6D'));
 
 $diff = $end->diff($start);
 echo "Difference: " . $diff->format('%m month, %d days (total: %a days)') . "\n";
@@ -53,8 +53,8 @@ intermediários.
 {% highlight php %}
 <?php
 // mostra todas as quintas-feiras entre $start e $end
-$periodInterval = \DateInterval::createFromDateString('first thursday');
-$periodIterator = new \DatePeriod($start, $periodInterval, $end, \DatePeriod::EXCLUDE_START_DATE);
+$periodInterval = DateInterval::createFromDateString('first thursday');
+$periodIterator = new DatePeriod($start, $periodInterval, $end, DatePeriod::EXCLUDE_START_DATE);
 foreach($periodIterator as $date) {
     //mostra cada data no período
     echo $date->format('Y-m-d') . " ";
