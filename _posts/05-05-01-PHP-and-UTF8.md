@@ -50,7 +50,7 @@ Finalmente, se você estiver criando um aplicativo distribuído e não tiver cer
 ativada, então considere o uso do pacote Composer [patchwork/utf8]. Isto irá usar a `mbstring` se estiver disponível, e 
 criar fall back para funções UTF-8 que não estiverem.
 
-[Multibyte Extensão String]: http://php.net/manual/en/book.mbstring.php
+[Multibyte Extensão String]: http://php.net/book.mbstring
 [patchwork/utf8]: https://packagist.org/packages/patchwork/utf8
 
 ### UTF-8 no nível de banco de dados
@@ -75,7 +75,7 @@ tag `<head>` da sua página. Esta abordagem é perfeitamente válida, mas defini
 realmente [muito mais rápido](https://developers.google.com/speed/docs/best-practices/rendering#SpecifyCharsetEarly).
 
 {% highlight php%}
-<? php
+<?php
 // Diz para o PHP que estamos usando strings UTF-8 até o final do script
 mb_internal_encoding('UTF-8');
 
@@ -92,13 +92,13 @@ $string = mb_substr($string, 0, 15);
 // Conectar a um banco de dados para armazenar a string transformada
 // Veja o exemplo PDO neste documento para obter mais informações
 // Observe os comandos `set names utf8mb4`!
-$link = new \PDO(   
+$link = new PDO(
     'mysql:host=your-hostname;dbname=your-db;charset=utf8mb4',
     'your-username',
     'your-password',
     array(
-        \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
-        \PDO::ATTR_PERSISTENT => false
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_PERSISTENT => false
     )
 );
 
@@ -115,7 +115,7 @@ $handle->bindValue(1, 1, PDO::PARAM_INT);
 $handle->execute();
 
 // Armazena o resultado em um objeto que vamos saída mais tarde em nossa HTML
-$result = $handle->fetchAll(\PDO::FETCH_OBJ);
+$result = $handle->fetchAll(PDO::FETCH_OBJ);
 
 header('Content-Type: text/html; charset=UTF-8');
 ?><!doctype html>
@@ -136,20 +136,21 @@ header('Content-Type: text/html; charset=UTF-8');
 
 ### Leitura adicional
 
-* [Manual do PHP: Operações Strings](http://php.net/manual/en/language.operators.string.php)
-* [Manual do PHP: Funções para Strings](http://php.net/manual/en/ref.strings.php)
-  * [`strpos()`](http://php.net/manual/en/function.strpos.php)
-  * [`strlen()`](http://php.net/manual/en/function.strlen.php)
-  * [`substr()`](http://php.net/manual/en/function.substr.php)
-* [Manual do PHP: Funções multibyte de strings](http://php.net/manual/en/ref.mbstring.php)
-  * [`mb_strpos()`](http://php.net/manual/en/function.mb-strpos.php)
-  * [`mb_strlen()`](http://php.net/manual/en/function.mb-strlen.php)
-  * [`mb_substr()`](http://php.net/manual/en/function.mb-substr.php)
-  * [`mb_internal_encoding()`](http://php.net/manual/en/function.mb-internal-encoding.php)
-  * [`mb_http_output()`](http://php.net/manual/en/function.mb-http-output.php)
-  * [`htmlentities()`](http://php.net/manual/en/function.htmlentities.php)
-  * [`htmlspecialchars()`](http://www.php.net/manual/en/function.htmlspecialchars.php)
+* [Manual do PHP: Operações Strings](http://php.net/language.operators.string)
+* [Manual do PHP: Funções para Strings](http://php.net/ref.strings)
+  * [`strpos()`](http://php.net/function.strpos)
+  * [`strlen()`](http://php.net/function.strlen)
+  * [`substr()`](http://php.net/function.substr)
+* [Manual do PHP: Funções multibyte de strings](http://php.net/ref.mbstring)
+  * [`mb_strpos()`](http://php.net/function.mb-strpos)
+  * [`mb_strlen()`](http://php.net/function.mb-strlen)
+  * [`mb_substr()`](http://php.net/function.mb-substr)
+  * [`mb_internal_encoding()`](http://php.net/function.mb-internal-encoding)
+  * [`mb_http_output()`](http://php.net/function.mb-http-output)
+  * [`htmlentities()`](http://php.net/function.htmlentities)
+  * [`htmlspecialchars()`](http://php.net/function.htmlspecialchars)
 * [Dicas PHP e UTF-8](http://blog.loftdigital.com/blog/php-utf-8-cheatsheet)
+* [Manuseando UTF-8 com o PHP](http://www.phpwact.org/php/i18n/utf-8)
 * [Stack Overflow: Quais os fatores que fazem o PHP incompatível com Unicode?](http://stackoverflow.com/questions/571694/what-factors-make-php-unicode-incompatible)
 * [Stack Overflow: Melhores práticas em PHP e MySQL com strings internacionais](http://stackoverflow.com/questions/140728/best-practices-in-php-and-mysql-with-international-strings)
 * [Como ter suporte total a Unicode em bases de dados MySQL](http://mathiasbynens.be/notes/mysql-utf8mb4)

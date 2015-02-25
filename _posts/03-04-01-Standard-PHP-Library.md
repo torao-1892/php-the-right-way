@@ -13,4 +13,4 @@ interfaces SPL.
 
 * [Leia sobre a SPL][spl]
 
-[spl]: http://php.net/manual/en/book.spl.php 
+[spl]: http://php.net/book.spl

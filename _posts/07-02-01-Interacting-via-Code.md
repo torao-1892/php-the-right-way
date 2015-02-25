@@ -49,7 +49,6 @@ lógica de apresentação e você terá uma "View", que é quase um [MVC] - uma 
 
 {% highlight php %}
 <?php
-
 $db = new PDO('mysql:host=localhost;dbname=testdb;charset=utf8', 'username', 'password');
 
 // Deixe seu modelo disponível
@@ -85,9 +84,9 @@ class Foo()
 **views/foo-list.php**
 
 {% highlight php %}
-<? foreach ($fooList as $row): ?>
+<?php foreach ($fooList as $row): ?>
     <?= $row['field1'] ?> - <?= $row['field1'] ?>
-<? endforeach ?>
+<?php endforeach ?>
 {% endhighlight %}
 
 Isto é essenciamente o mesmo que a maioria dos frameworks modernos fazem, todos sejam eles um pouco mais manual. Você 

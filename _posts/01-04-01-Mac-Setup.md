@@ -37,7 +37,7 @@ amarrá-los todos juntos, mas a facilidade de configuração vem com o contra-po
 
 [Homebrew]: http://brew.sh/
 [Homebrew PHP]: https://github.com/Homebrew/homebrew-php#installation
-[mac-compile]: http://www.php.net/manual/en/install.macosx.compile.php
+[mac-compile]: http://php.net/install.macosx.compile
 [xcode-gcc-substitution]: https://github.com/kennethreitz/osx-gcc-installer
 ["Command Line Tools for XCode"]: https://developer.apple.com/downloads
 [mamp-downloads]: http://www.mamp.info/en/downloads/

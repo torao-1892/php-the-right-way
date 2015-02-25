@@ -28,11 +28,14 @@ com bastante código de terceiros.
 * [Leia sobre os Padrões de Código da Zend][zend-cs]
 * [Leia sobre os Padrões de Código do Symfony][symfony-cs]
 
-Você pode usar o [PHP_CodeSniffer][phpcs] para checar seu código contra qualquer uma dessas recomendações, e plugins
+Você pode usar o [PHP_CodeSniffer][phpcs] para checar seu código contra qualquer uma dessas recomendações e plugins
 para editores de texto como o [Sublime Text 2][st-cs] para fazer a verificação em tempo real.
 
-Use o [PHP Coding Standards Fixer][phpcsfixer] do Fabien Potencier para automaticamente modificar seu código para que
-ele seja compatível com os padrões, evitando corrigir cada problema na mão.
+Você pode corrigir o estilo do código com uma das duas possíveis ferramentas. Uma é a
+[PHP Coding Standards Fixer][phpcsfixer] do Fabien Potencier que tem uma base de código muito bem testada. É maior
+e mais lenta, mas muito estável e usada por grandes projetos como Magento e Symfony. Outra opção é a [php.tools][phptools],
+que se tornou popular pelo plugin [sublime-phpfmt][sublime-phpfmt] do sublime. Apesar de ser mais novo ela tem grandes
+melhorias no desempenho fazendo com que a correção do estilo de código em tempo real seja mais fluída.
 
 O Inglês é a linguagem preferida para todos os nomes simbólicos e para a infra-estrutura do código. Comentários devem
 ser escritos em qualquer linguagem que possa ser facilmente lida por todos os atuais e futuros desenvolvedores que
@@ -49,3 +52,5 @@ possam trabalhar nessa base de código.
 [phpcs]: http://pear.php.net/package/PHP_CodeSniffer/
 [st-cs]: https://github.com/benmatselby/sublime-phpcs
 [phpcsfixer]: http://cs.sensiolabs.org/
+[phptools]: https://github.com/dericofilho/php.tools
+[sublime-phpfmt]: https://github.com/dericofilho/sublime-phpfmt

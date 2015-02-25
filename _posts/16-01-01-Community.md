@@ -22,6 +22,8 @@ lista oficial de PUGs, você pode encontrar facilmente seu PUG local buscando no
 [Meetup.com][meetup] ou [PHP.ug][php-ug]. Se você vive em uma cidade menor, talvez não exista um PUG local; se for o 
 caso, comece um!
 
+Devem ser feitas menções especiais a dois grupos de usuários globais: [NomadPHP] e [PHPWomen]. [NomadPHP] oferece duas reuniões on-line mensalmente com apresentações de alguns dos principais oradores da comunidade PHP. [PHPWomen] é um grupo de usuários mas não exclusivo que é originalmente voltado para as mulheres no mundo do PHP. A associação é aberta a todos os que buscam uma comunidade mais diversificada. PHPWomen oferece ajuda, orientação, educação e geralmente promove a criação de uma atmosfera profissional mais feminina.
+
 [Leia sobre Grupos de Usuários na PHP Wiki][php-wiki]
 
 ## Conferências PHP
@@ -32,12 +34,14 @@ oportunidade para aprender diretamente dos líderes do setor.
 
 [Encontre uma Conferência PHP][php-conf]
 
-[php-calendar]: http://www.php.net/cal.php
+[php-calendar]: http://php.net/cal
 [google]: https://www.google.com/search?q=php+user+group+near+me
 [meetup]: http://www.meetup.com/find/
-[php-ug]: http://php.ug
+[php-ug]: http://php.ug/
+[NomadPHP]: https://nomadphp.com/
+[PHPWomen]: http://phpwomen.org/
 [php-wiki]: https://wiki.php.net/usergroups
-[php-conf]: http://php.net/conferences/index.php
+[php-conf]: http://php.net/conferences
 [phpc-twitter]: https://twitter.com/phpc
 [php-programmers-gplus]: https://plus.google.com/u/0/communities/104245651975268426012
 [php-irc]: http://webchat.freenode.net/?channels=phpc
