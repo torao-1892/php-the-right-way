@@ -12,7 +12,7 @@ responsáveis por pesquisa de dados, persistência ou outras tarefas mais comple
 legível que é especialmente útil em um ambiente de equipe, onde os desenvolvedores trabalham no código do lado do 
 servidor (controladores, modelos) e designers trabalham no código do lado do cliente (markup).
 
-Os templates também melhorar a organização do código de apresentação. Os templates são normalmente colocados em uma 
+Os templates também melhoram a organização do código de apresentação. Os templates são normalmente colocados em uma 
 pasta "views", cada um definido dentro de um único arquivo. Essa abordagem incentiva a reutilização de código, onde 
 grandes blocos de código são quebrados em pequenos pedaços reutilizáveis, chamados frequentemente de partials. Por 
 exemplo, o cabeçalho e o rodapé do site de cada um pode ser definido como templates, que são então incluídos antes e 
