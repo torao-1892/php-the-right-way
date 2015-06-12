@@ -5,9 +5,9 @@ title: Design Patterns
 
 # Design Patterns (Padrões de Projeto)
 
-Existem inúmeros jeitos de estruturar o código e o projeto da sua aplicação web, e você pode dispender muito ou pouco
-esforço pensando na sua arquitetura. Mas é geralmente uma boa ideia seguir à padrões comuns pois isso irá fazer com que
- seu código seja mais fácil de manter e mais fácil de ser entendido por outros desenvolvedores.
+Existem diversas formas de estruturar o código e o projeto da sua aplicação web e você pode gastar muito ou pouco
+esforço pensando na sua arquitetura. Mas geralmente é uma boa ideia seguir à padrões comuns, pois isso irá fazer com que
+ seu código seja mais fácil de manter e de ser entendido por outros desenvolvedores.
 
 * [Padrões de Arquitetura na Wikipedia](https://en.wikipedia.org/wiki/Architectural_pattern)
 * [Padrões de Design de Software na Wikipedia](https://en.wikipedia.org/wiki/Software_design_pattern)
@@ -15,7 +15,7 @@ esforço pensando na sua arquitetura. Mas é geralmente uma boa ideia seguir à 
 
 ## Factory (Fábrica)
 
-Um dos padrões de design mais comumente utilizados e o padrão "Factory" (Fábrica). Através dele uma classe simplesmente
+Um dos padrões de design mais utilizados é o padrão "Factory" (Fábrica). Através dele uma classe simplesmente
 cria o objeto que você gostaria de usar. Considere o seguinte exemplo desse padrão de design:
 
 {% highlight php %}
@@ -45,7 +45,7 @@ class AutomobileFactory
     }
 }
 
-// Solicite a "Factory" que crie o objeto Automobile
+// Solicita a "Factory" que crie o objeto Automobile
 $veyron = AutomobileFactory::create('Bugatti', 'Veyron');
 
 print_r($veyron->get_make_and_model()); // imprime "Bugatti Veyron"
@@ -54,7 +54,7 @@ print_r($veyron->get_make_and_model()); // imprime "Bugatti Veyron"
 Esse código usa uma "Factory" para criar o objeto do tipo "Automobile". Existem dois possíveis benefícios para criar seu
 código dessa forma, o primeiro é que se você precisar mudar, renomear ou substituir a classe Automobile futuramente você
 pode fazer e só terá que modificar o código na "Factory", em vez de em todos os lugares do seu projeto onde você usa a
-classe Automobile. O segundo benefício possível é que caso realizar a criação do objeto seja um processo complicado você
+classe Automobile. O segundo benefício possível é que caso a criação do objeto seja um processo complicado, você
 pode executar todo esse trabalho na factory, em vez de repetí-lo toda vez que precisar criar uma nova instância da classe.
 
 Usar o padrão de "Factory" não é sempre necessário (ou esperto). O código de exemplo usado aqui é tão simples que essa
@@ -65,7 +65,7 @@ pouco maior ou mais complexo você pode se salvar de muitos problemas com o uso 
 
 ## Singleton (Única Instancia)
 
-Quando arquitetando uma aplicação web, é comum fazer sentido tanto conceitualmente quanto arquitetônicamente permitir o
+Quando arquitetando uma aplicação web, é comum fazer sentido tanto conceitualmente quanto arquitetonicamente permitir o
 acesso a somente uma instância de uma classe em particular, o padrão "Singleton" nos permite realizar essa tarefa.
 
 {% highlight php %}
