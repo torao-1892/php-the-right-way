@@ -7,7 +7,7 @@ anchor: php_e_utf8
 ## Trabalhando com UTF-8 {#php_e_utf8_title}
 
 _Esta seção foi originalmente escrita por [Alex Cabal](https://alexcabal.com/) como 
-[PHP Melhores Práticas](https://phpbestpractices.org/#utf-8) e tem sido usado como base para o nossos próprios conselhos 
+[PHP Melhores Práticas](https://phpbestpractices.org/#utf-8) e tem sido usado como base para os nossos próprios conselhos 
 sobre UTF-8_.
 
 ### Não existe um jeito fácil. Seja cuidadoso, detalhado e consistente.
@@ -55,7 +55,7 @@ criar fall back para funções UTF-8 que não estiverem.
 
 ### UTF-8 no nível de banco de dados
 
-Se o seu script PHP acessa o MySQL, há uma chance de suas strings seren armazenadas como strings não-UTF-8 no banco de 
+Se o seu script PHP acessa o MySQL, há uma chance de suas strings serem armazenadas como strings não-UTF-8 no banco de 
 dados, mesmo que você siga todas as precauções acima.
 
 Para certificar-se de que suas strings irão do PHP para o MySQL como UTF-8, verifique se o banco de dados e as tabelas 
@@ -69,7 +69,7 @@ Continue lendo para o porquê.
 
 Use a função `mb_http_output()` para garantir que o seu script PHP gere strings UTF-8 para o seu browser.
 
-O navegador então será ser avisado pela resposta HTTP que esta página deve ser considerada como UTF-8. A abordagem 
+O navegador então será avisado pela resposta HTTP que esta página deve ser considerada como UTF-8. A abordagem 
 histórica para fazer isso foi a inclusão da [tag `<meta>` charset](http://htmlpurifier.org/docs/enduser-utf8.html) na 
 tag `<head>` da sua página. Esta abordagem é perfeitamente válida, mas definir o charset no cabeçalho `Content-type` é 
 realmente [muito mais rápido](https://developers.google.com/speed/docs/best-practices/rendering#SpecifyCharsetEarly).
@@ -154,4 +154,4 @@ header('Content-Type: text/html; charset=UTF-8');
 * [Stack Overflow: Quais os fatores que fazem o PHP incompatível com Unicode?](http://stackoverflow.com/questions/571694/what-factors-make-php-unicode-incompatible)
 * [Stack Overflow: Melhores práticas em PHP e MySQL com strings internacionais](http://stackoverflow.com/questions/140728/best-practices-in-php-and-mysql-with-international-strings)
 * [Como ter suporte total a Unicode em bases de dados MySQL](http://mathiasbynens.be/notes/mysql-utf8mb4)
-* [Trazendo Unicode para o PHP com com `Portable UTF-8`](http://www.sitepoint.com/bringing-unicode-to-php-with-portable-utf8/)
+* [Trazendo Unicode para o PHP com `Portable UTF-8`](http://www.sitepoint.com/bringing-unicode-to-php-with-portable-utf8/)

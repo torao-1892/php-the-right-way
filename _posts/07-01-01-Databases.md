@@ -6,7 +6,7 @@ anchor: banco_de_dados
 # Bancos de Dados {#banco_de_dados_title}
 
 Muitas vezes o seu código PHP usará um banco de dados para persistir informações. Você tem algumas opções para
-conectar e interagir como seu banco de dados. A opção recomendada _até o PHP 5.1.0_ era usar os drivers nativos, como
+conectar e interagir com o seu banco de dados. A opção recomendada _até o PHP 5.1.0_ era usar os drivers nativos, como
 o [mysqli], o [pgsql], [mssql]  etc.
 
 Drivers nativos são excelentes se você estiver usando apenas _um_ banco de dados em sua aplicação, mas se, por exemplo,
