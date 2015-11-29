@@ -49,7 +49,7 @@ possam trabalhar nessa base de código.
 [psr4]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md
 [psr7]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-7-http-message.md
 [pear-cs]: http://pear.php.net/manual/en/standards.php
-[zend-cs]: http://framework.zend.com/manual/1.12/en/coding-standard.html
+[zend-cs]: http://framework.zend.com/manual/current/en/ref/coding.standard.html
 [symfony-cs]: http://symfony.com/doc/current/contributing/code/standards.html
 [phpcs]: http://pear.php.net/package/PHP_CodeSniffer/
 [st-cs]: https://github.com/benmatselby/sublime-phpcs
