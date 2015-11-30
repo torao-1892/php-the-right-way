@@ -25,7 +25,6 @@ com bastante código de terceiros.
 * [Leia sobre a PSR-2][psr2]
 * [Leia sobre a PSR-4][psr4]
 * [Leia sobre os Padrões de Código da PEAR][pear-cs]
-* [Leia sobre os Padrões de Código da Zend][zend-cs]
 * [Leia sobre os Padrões de Código do Symfony][symfony-cs]
 
 Você pode usar o [PHP_CodeSniffer][phpcs] para checar seu código contra qualquer uma dessas recomendações e plugins
@@ -47,7 +46,6 @@ possam trabalhar nessa base de código.
 [psr2]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
 [psr4]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md
 [pear-cs]: http://pear.php.net/manual/en/standards.php
-[zend-cs]: http://framework.zend.com/wiki/display/ZFDEV2/Coding+Standards
 [symfony-cs]: http://symfony.com/doc/current/contributing/code/standards.html
 [phpcs]: http://pear.php.net/package/PHP_CodeSniffer/
 [st-cs]: https://github.com/benmatselby/sublime-phpcs
