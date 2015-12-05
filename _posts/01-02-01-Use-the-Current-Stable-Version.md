@@ -1,15 +1,20 @@
 ---
-title: Use a versão estável atual (5.6)
+title: Use a versão estável atual (7.0)
 isChild: true
 anchor: use_a_versao_estavel_atual
 ---
 
-## Use a versão estável atual (5.6) {#use_a_versao_estavel_atual_title}
+## Use a versão estável atual (7.0) {#use_a_versao_estavel_atual_title}
 
-Se você está começando com o PHP, certifique-se de começar com a versão estável atual do [PHP 5.6][php-release]. O PHP
-fez grandes avanços adicionando [novas funcionalidades](#language_highlights) poderosas nos últimos anos. Não deixe que
-a pequena diferença entre os números decimais das versões 5.2 a 5.6 o enganem, elas representam _grandes_ melhorias. Se 
-você está procurando por uma função ou seu uso, a documentação no [php.net][php-docs] terá a resposta.
+Se você está começando com o PHP, certifique-se de começar com a atual versão estável do [PHP 7.0][php-release]. PHP 7.0 
+é muito novo, e adicionou [novas funcionalidades](#destaques_da_linguagem) incríveis às antigas versões 5.x. O motor tem  
+sido amplamente reescrito e o PHP é agora ainda mais rápido que as versões antigas.
+
+Mais comum, atualmente, é encontrar o PHP 5.x sendo usado e a versão 5.x mais recente é a 5.6. Não é uma opção ruim, mas 
+você deve tentar migrar para a última versão rapidamente. Atualizar é realmente bem fácil como não há muitas 
+[quebras de compatibilidade com versões anteriores][php-breaks]. Se você não tem certeza de qual versão uma função ou 
+recurso está, você pode verificar a documentação do PHP no site [php.net][php-docs].
 
 [php-release]: http://php.net/downloads
 [php-docs]: http://php.net/manual/
+[php-breaks]: http://php.net/manual/pt_BR/migration70.incompatible.php
