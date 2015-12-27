@@ -160,12 +160,12 @@ entre os tipos de strings e seus usos e benefícios.
 
 #### Aspas Simples
 
-As aspas simples são utilizadas para indicar uma "string literal". Strings literais não tenta analisar caracteres 
+As aspas simples são utilizadas para indicar uma 'string literal'. Strings literais não tentam analisar caracteres 
 especiais ou variáveis.
 
 Se estiver usando aspas simples, você pode digitar um nome de variável em uma string assim: `'some $thing'` e você verá 
-a saída exata `some $thing`. Se você estiver usando aspas duplas, irá tentar avaliar a variável `$thing` e então 
-mostrará erros se nenhuma variável for encontrada.
+a saída exata `some $thing`. Se você estiver usando aspas duplas, o motor da linguagem tentará avaliar a variável "$thing" e então 
+exibirá erros se nenhuma variável for encontrada.
 
 {% highlight php %}
 <?php
@@ -182,7 +182,7 @@ echo 'This is my string, look at how pretty it is.';    // sem necessidade de in
 
 #### Aspas Duplas
 
-Aspas Duplas são o canivete suíço das strings, mas são mais lentas devido a interpretação das strings. Ele não só irá 
+Aspas duplas são o canivete suíço das strings, mas são mais lentas devido a interpretação das strings. Ele não só irá 
 analisar as variáveis como mencionado acima mas também todos os tipos de caracteres especiais, como `\n` para nova 
 linha, `\t` para identação, etc.
 
