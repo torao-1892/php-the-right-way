@@ -10,7 +10,7 @@ padrões de código e links para tutoriais competentes pela Web.
 disponíveis e boas informações, que por muitas vezes, quando descobertas, já é tarde
 demais. Além disso leva o desenvolvedor a ter conceitos maduros sobre coisas que eram
 feitas durante anos e nunca foram reconsideradas. Esse site não é para dizer quais
-ferramentas você deve utilizar, mas ao invés disso, oferecer sugestões e multiplas
+ferramentas você deve utilizar, mas ao invés disso, oferecer sugestões e múltiplas
 opções, e quando possível explicar as diferenças de acordo com casos de uso.
 
 Este é um documento "vivo", que continuará sendo atualizado com mais informações úteis
