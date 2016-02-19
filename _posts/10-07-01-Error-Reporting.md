@@ -28,7 +28,7 @@ Do [php.net](http://php.net/function.error-reporting):
 > Passar o valor -1 irá mostrar todos os erros possíveis, até mesmo quando novos níveis e constantes forem adicionados 
 em versões futuras do PHP. A constante E_ALL também se comporta desta maneira a partir do PHP 5.4.
 
-O nível de error `E_STRICT` foi introduzido no 5.3.0 e não faz parte do `E_ALL`, contudo ele tornou-se parte do `E_AL
+O nível de error `E_STRICT` foi introduzido no 5.3.0 e não faz parte do `E_ALL`, contudo ele tornou-se parte do `E_ALL
 ` no 5.4.0. O que isso significa?  Que para mostrar todos os erros possíveis na versão 5.3 você precisa usar `-1` ou 
 `E_ALL | E_STRICT`. 
 
