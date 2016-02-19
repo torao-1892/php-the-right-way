@@ -3,6 +3,6 @@ baseurl: /
 url: http://localhost:4000
 
 timezone: "America/Sao_Paulo"
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 permalink: date
