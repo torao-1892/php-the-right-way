@@ -55,7 +55,7 @@ Existem vários benefícios para a classe `Database`, agora, dependendo de uma i
 
 Considerando que você trabalha em uma equipe e o adaptador está sendo trabalhado por um colega. No primeiro exemplo,
 teriamos que esperar o colega dizer que terminou o adaptador antes que pudéssemos simulá-la(mock) nos testes unitários.
-Agora, que a denpendência é uma interface/contrato podemos facilmente simulá-la(mock) sabendo que o colega vai
+Agora, que a dependência é uma interface/contrato podemos facilmente simulá-la(mock) sabendo que o colega vai
 construir o adaptador com base neste contrato.
 
 Um benefício ainda maior para este método é que nosso código, agora, está mais escalável. Se um ano depois decidir
