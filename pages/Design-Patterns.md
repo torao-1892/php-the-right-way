@@ -138,7 +138,7 @@ Note o seguinte:
 * O construtor [`__construct`](http://php.net/language.oop5.decon#object.construct) é declarado como protegido para prevenir que uma nova instância seja criada fora dessa classe pelo operador `new`.
 * O método mágico [`__clone`](http://php.net/language.oop5.cloning#object.clone) é declarado como privado para prevenir a clonagem dessa instância da classe pelo operador [`clone`](http://php.net/language.oop5.cloning).
 * O método mágico [`__wakeup`](http://php.net/language.oop5.magic#object.wakeup) é declarado como privado para prevenir a desserialização de uma instância dessa classe pela função global [`unserialize()`](http://php.net/function.unserialize).
-* Uma nova instância é criada via [late static binding](http://php.net/language.oop5.late-static-bindings) no método de criação `getInstance()` declarado como estático. Isso permite a criação de classes "filhas. da classe Singleton no exemplo
+* Uma nova instância é criada via [late static binding](http://php.net/language.oop5.late-static-bindings) no método de criação `getInstance()` declarado como estático. Isso permite a criação de classes "filhas" da classe Singleton no exemplo
 
 O padrão Singleton é útil quando você precisa garantir que somente uma instância da classe seja criada em todo o ciclo
 de vida da requisição em uma aplicação web. Isso tipicamente ocorre quando você tem objetos globais (tais como uma
