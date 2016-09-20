@@ -36,8 +36,8 @@ e mais lenta, mas muito estável e usada por grandes projetos como Magento e Sym
 que se tornou popular pelo plugin [sublime-phpfmt][sublime-phpfmt] do sublime. Apesar de ser mais novo ela tem grandes
 melhorias no desempenho fazendo com que a correção do estilo de código em tempo real seja mais fluída.
 
-O Inglês é a linguagem preferida para todos os nomes simbólicos e para a infra-estrutura do código. Comentários devem
-ser escritos em qualquer linguagem que possa ser facilmente lida por todos os atuais e futuros desenvolvedores que
+O Inglês é o idioma preferido para todos os nomes simbólicos e para a infra-estrutura do código. Comentários devem
+ser escritos em qualquer idioma que possa ser facilmente lido por todos os atuais e futuros desenvolvedores que
 possam trabalhar nessa base de código.
 
 [fig]: http://www.php-fig.org/
