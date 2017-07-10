@@ -6,17 +6,46 @@ anchor: instalacao_no_mac
 
 ## Instalação no Mac {#instalacao_no_mac_title}
 
-O OS X já vem com o PHP, mas ele é normalmente um pouco atrasado em relação à última versão estável. O Mountain Lion 
-vem com a 5.3.10, o Mavericks com a 5.4.17 e o Yosemite com a 5.5.9.
+O OS X já vem com o PHP, mas ele é normalmente um pouco atrasado em relação à última versão estável. O Mavericks com a 
+5.4.17, o Yosemite com a 5.5.9, o El Capitan com a 5.5.29 e o Sierra com a 5.6.24. Não há nenhuma atualmente com PHP 7.1.
 
 Existem várias maneiras de instalar o PHP no Mac OS X.
+
+### Instalar PHP via Homebrew
 
 [Homebrew](http://brew.sh/) é um poderoso gerenciador de pacotes para OS X, que pode ajudá-lo a instalar o PHP e várias 
 extensões facilmente. [Homebrew PHP] é um repositório que contém "fórmulas" relacionadas ao PHP para Homebrew e permite 
 a você instalar o PHP.
 
-Neste ponto, você pode instalar o `php53`, `php54`, `php55` ou `php56` usando o comando `brew install` e alternar entre 
-elas modificando a variável `PATH`.
+Neste ponto, você pode instalar o `php53`, `php54`, `php55`, `php56`, `php70` ou `php71` usando o comando 
+`brew install` e alternar entre elas modificando a variável `PATH`.
+
+### Instalar PHP via Macports
+O projeto [Macports] é uma iniciativa comunitária de código aberto para projetar um sistema fácil de usar para
+compilar, instalar e atualizar software de código aberto baseado em linha de comando, X11 ou Aqua no sistema 
+operacional OS X.
+
+O MacPorts suporta binários pré-compilados, portanto, você não precisa recompilar todas as dependências dos arquivos 
+tar de origem, ele agiliza sua vida se você não tiver nenhum pacote instalado no seu sistema.
+
+Neste ponto, você pode instalar `php54`, `php55`, `php56`, `php70` ou `php71` usando o comando `port install`,
+ como por exemplo:
+ 
+ ```
+    sudo port install php56
+    sudo port install php71
+ ```
+
+E você pode utilizar o comando `select` para trocar a versão ativa do PHP:
+```
+    sudo port select --set php php71
+```
+
+### Instalar PHP via instalador binário da Liip's
+
+Outra opção popular é php-osx.liip.ch que fornece métodos de instalação de um forro para versões 5.3
+através da 7.1. Não substitui os binários do PHP instalados pela Apple, mas instala tudo em uma 
+localização separada (/usr/local/php5).
 
 ### Instalar PHP via phpbrew
 
@@ -43,3 +72,4 @@ amarrá-los todos juntos, mas a facilidade de configuração vem com o contra-po
 [mamp-downloads]: http://www.mamp.info/en/downloads/
 [phpbrew]: https://github.com/phpbrew/phpbrew
 [xampp]: http://www.apachefriends.org/en/xampp.html
+[Macports]: https://www.macports.org/install.php
