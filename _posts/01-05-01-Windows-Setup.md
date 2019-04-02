@@ -6,13 +6,11 @@ anchor: instalacao_no_windows
 
 ## Instalação no Windows {#instalacao_no_windows_title}
 
-O PHP está disponível de diversas maneiras no Windows. Você pode [baixar os binários](php-downloads) e até recentemente
-você podia usar um instalador '.msi'. O instalador não é mais suportado e parou no PHP 5.3.0.
+Você pode fazer o download dos binários no site [windows.php.net/download][php-downloads]. Depois de extrair o arquivo baixado, é recomendado incluir na variável [PATH][windows-path] a pasta raiz do seu PHP (onde o arquivo php.exe está localizado). Dessa forma você pode executar o PHP de qualquer lugar.
 
 Para aprender e desenvolver localmente, você pode utilizar o servidor web embutido do PHP 5.4+, de forma que você não
 precisa se preocupar em configurá-lo. Se você prefere um "pacote completo" que inclui um servidor web e MySQL, então
-ferramentas como o [Web Platform Installer][wpi], o [Zend Server][zs], o [XAMPP][xampp] e o [WAMP][wamp] irão ajudá-lo a 
-montar rapidamente um ambiente de desenvolvimento em Windows. Dito isso, estas ferramentas serão um pouco diferentes das 
+ferramentas como [Web Platform Installer][wpi], [XAMPP][xampp], [EasyPHP][easyphp], [OpenServer][openserver] and [WAMP][wamp] irão ajudá-lo a montar rapidamente um ambiente de desenvolvimento em Windows. Dito isso, estas ferramentas serão um pouco diferentes das 
 ferramentas em produção, portanto tenha cuidado quanto às diferenças de ambiente caso esteja trabalhando
 em Windows e publicando em Linux. 
 
@@ -21,10 +19,17 @@ performance. Você pode usar o [phpmanager][phpmanager] (um plugin GUI para o II
 gerenciamento do PHP mais simples. O IIS7 vem com o FastCGI embutido e pronto para uso, você só precisa configurar o PHP 
 como handler. Para suporte e mais recursos, existe uma [área dedicada no iis.net][php-iis] ao PHP.
 
-[php-downloads]: http://windows.php.net
+Geralmente rodar sua aplicação em ambientes diferentes para desenvolvimento e produção podem levar a bugs estranhos enquanto estiverem rodando. Se você está desenvolvendo no Windows e irá fazer deploy no Linux (ou qualquer outro ambiente não Windows) então você deveria considerar usar uma [Máquina Virtual](/#virtualization_title).
+
+Chris Tankersley tem uma postagem muito útil em quais ferramentas ele usa para o [Desenvolvimento PHP usando Windows][windows-tools].
+
+[easyphp]: http://www.easyphp.org/
 [phpmanager]: http://phpmanager.codeplex.com/
-[wpi]: http://www.microsoft.com/web/downloads/platform.aspx
-[zs]: http://www.zend.com/en/products/server
-[xampp]: http://www.apachefriends.org/en/xampp.html
-[wamp]: http://www.wampserver.com/
+[openserver]: http://open-server.ru/
+[wamp]: http://www.wampserver.com/en/
+[php-downloads]: http://windows.php.net/download/
 [php-iis]: http://php.iis.net/
+[windows-path]: http://www.windows-commandline.com/set-path-command-line/
+[windows-tools]: http://ctankersley.com/2016/11/13/developing-on-windows-2016/
+[wpi]: https://www.microsoft.com/web/downloads/platform.aspx
+[xampp]: http://www.apachefriends.org/en/xampp.html
