@@ -24,10 +24,8 @@ serviços HTTP remotos.
 
 Muitos frameworks adicionam um número considerável de funcionalidades ao que está disponível em um micro-framework e
 são conhecidos como frameworks completos ou full-stack. Eles frequentemente possuem ORMs, pacotes de autenticação,
-entre outros componentes embutidos.
+etc.
 
 Frameworks baseados em componentes são coleções de bibliotecas especializadas ou de propósito-único. Diferentes
 frameworks baseados em componentes podem ser utilizados conjuntamente para criar um micro-framework ou um framework
 completo.
-
-* [Frameworks PHP Populares](https://github.com/codeguy/php-the-right-way/wiki/Frameworks)
