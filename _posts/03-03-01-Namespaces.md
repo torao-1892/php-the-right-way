@@ -18,24 +18,17 @@ namespaces PHP separados. Simples assim.
 É importante que você use namespace no seu código para que ele possa ser usado por outros desenvolvedores sem risco
 de colisão com outras bibliotecas.
 
-Um modo recomendado de usar namespaces está descrito na [PSR-0][psr0], que tem como objetivo fornecer uma convenção
-padrão para arquivos, classes e namespaces, permitindo código plug-and-play.
+Um modo recomendado de usar namespaces está descrito na [PSR-4][psr4], que tem como objetivo fornecer uma convenção
+padrão para arquivos, classes e namespaces para parmitir um código plug-and-play.
 
-Em dezembro de 2013 o PHP-FIG (Framework Interop Group) criou um novo padrão para carregamento automático, a 
-[PSR-4][psr4], que provavelmente vai substituir a PSR-0. Atualmente ambos são utilizáveis, pois a PSR-4 requer o PHP 5.3 
-e muitos projetos que usam apenas o PHP 5.2 ainda implementam a PSR-0. Se você for usar um padrão de carregamento 
-automático para uma nova aplicação ou pacote então é quase certo que você vai querer olhar para a PSR-4.
+Em outubro de 2014 o PHP-FIG (Framework Interop Group) depreciou o padrão para auto-carregamento anterior: a [PSR-0][psr0]. Tanto a PSR-0 e a PSR-4 ainda são perfeitamente utilizáveis. A última requer o PHP 5.3, então muitos projetos que rodam apenas em PHP 5.2 implementam a PSR-0.
 
-```
-Nota do tradutor
-* Aguardando atualização do repositório oficial sobre o uso da PSR-0 que foi 
-marcada como descontinuada em 21/10/2014. 
-```
+Se você estiver planejando usar um padrão para auto-carregamento para uma nova aplicação ou pacote, olhe na PSR-4.
 
 * [Leia sobre os Namespaces][namespaces]
 * [Leia sobre a PSR-0][psr0]
 * [Leia sobre a PSR-4][psr4]
 
-[namespaces]: http://php.net/language.namespaces
-[psr0]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
-[psr4]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md
+[namespaces]: https://secure.php.net/language.namespaces
+[psr0]: https://www.php-fig.org/psr/psr-0/
+[psr4]: https://www.php-fig.org/psr/psr-4/
