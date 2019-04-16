@@ -67,20 +67,20 @@ Para evitar fragmentação e confusão para o leitor, por favor escolha uma dest
 1. Vincularemos seu fork com a sua GitHub Page `[username].github.com/php-the-right-way`
 2. Vincularemos seu fork com a sua GitHub Page com um subdomínio (por exemplo, "br.phptherightway.com")
 
-Se você usa um subdomínio, coloque-o no arquivo `CNAME`, e avíse-nos para configurar o DNS para você. Se não usa um
+Se você usa um subdomínio, coloque-o no arquivo `CNAME`, e avise-nos para configurar o DNS para você. Se não usa um
 subdomínio, apague o arquivo `CNAME` senão seu fork não vai fazer o build quando for publicado.
 
 Quando sua tradução estiver pronta, abra uma issue no Isse Tracker para nos avisar.
 
 [Notas de tradução](notas_de_traducao.md)
 
-## Porque?
+## Por que?
 
 Têm havido muita discussão ultimamente sobre como a comunidade PHP carece de informação válida e suficiente para programadores novos no PHP. Este repositório busca resolver este problema.
 
 ## Quem
 
-Meu nome é [Josh Lockhart](http://twitter.com/codeguy). Sou o autor do [Slim Framework](http://www.slimframework.com/), e trabalho para a [New Media Campaigns](http://www.newmediacampaigns.com/).
+Meu nome é [Josh Lockhart](http://twitter.com/codeguy). Sou o autor do [Slim Framework](http://www.slimframework.com/) e trabalho para a [New Media Campaigns](http://www.newmediacampaigns.com/).
 
 ## Colaboradores
 
