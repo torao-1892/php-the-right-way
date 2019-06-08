@@ -15,7 +15,7 @@ PHP é focado em iteração.
 
 Funções Anônimas (com suporte para closures) estão presentes desde a versão 5.3 do PHP (2009).
 
-No PHP 5.4+ foi adicionada a capacidade de atribuir closures no escopo de um objetos e também melhorou o suporte
+No PHP 5.4 foi adicionada a capacidade de atribuir closures no escopo de um objetos e também melhorou o suporte
 para funções chamáveis de tal forma podem ser usadas como sinônimo de funções anônimas em quase todos os casos.
 
 O uso mais comum de funções de ordem superior ocorre na implementação do padrão Estratégia (Strategy). A função embutida
@@ -84,6 +84,6 @@ a função anônima for compilada.
 * [Mais detalhes em Closures RFC][closures-rfc]
 * [Leia sobre invocar dinamicamente funções com `call_user_func_array`][call-user-func-array]
 
-[anonymous-functions]: http://www.php.net/manual/en/functions.anonymous.php
-[call-user-func-array]: http://php.net/manual/en/function.call-user-func-array.php
+[anonymous-functions]: http://php.net/functions.anonymous
+[call-user-func-array]: http://php.net/function.call-user-func-array
 [closures-rfc]: https://wiki.php.net/rfc/closures

@@ -1,5 +1,7 @@
 ---
+title: Namespaces
 isChild: true
+anchor: namespaces
 ---
 
 ## Namespaces {#namespaces_title}
@@ -16,11 +18,17 @@ namespaces PHP separados. Simples assim.
 É importante que você use namespace no seu código para que ele possa ser usado por outros desenvolvedores sem risco
 de colisão com outras bibliotecas.
 
-Um modo recomendado de usar namespaces está descrito na [PSR-0][psr0], que tem como objetivo fornecer uma convenção
-padrão para arquivos, classes e namespaces, permitindo código plug-and-play.
+Um modo recomendado de usar namespaces está descrito na [PSR-4][psr4], que tem como objetivo fornecer uma convenção
+padrão para arquivos, classes e namespaces para parmitir um código plug-and-play.
+
+Em outubro de 2014 o PHP-FIG (Framework Interop Group) depreciou o padrão para auto-carregamento anterior: a [PSR-0][psr0]. Tanto a PSR-0 e a PSR-4 ainda são perfeitamente utilizáveis. A última requer o PHP 5.3, então muitos projetos que rodam apenas em PHP 5.2 implementam a PSR-0.
+
+Se você estiver planejando usar um padrão para auto-carregamento para uma nova aplicação ou pacote, olhe na PSR-4.
 
 * [Leia sobre os Namespaces][namespaces]
 * [Leia sobre a PSR-0][psr0]
+* [Leia sobre a PSR-4][psr4]
 
-[namespaces]: http://php.net/manual/en/language.namespaces.php
-[psr0]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
+[namespaces]: https://secure.php.net/language.namespaces
+[psr0]: https://www.php-fig.org/psr/psr-0/
+[psr4]: https://www.php-fig.org/psr/psr-4/

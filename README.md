@@ -13,67 +13,51 @@ Este é o repositório GitHub Pages para o projeto _PHP: Do Jeito Certo_, tradu�
 
 _PHP: Do Jeito Certo_ possui banners que você pode usar em seu site. Para mostrar seu apoio, deixe que novos desenvolvedores PHP saibam onde encontrar boas informações!
 
-[Banners](http://www.phptherightway.com/banners.html)
-
-## Instruções de Instalação
-
-### Localmente
-
-* Instale opicionalmente [Ruby](https://rvm.io/rvm/install/) com [Jekyll](https://github.com/mojombo/jekyll/) gem para visualizar
-
-### Vagrant
-
-* Instale [Vagrant](http://www.vagrantup.com/) e [VirtualBox](https://www.virtualbox.org/)
-* Execute o comando `vagrant up` no diretório do projeto
-* Quando o provisionamento terminar, [visualize localmente](http://localhost:4000)
+[Banners para divulgação](http://br.phptherightway.com/banners.html)
 
 ## Como contribuir
 
-* Fork e edite
-* Visualize suas atualizações (com vagrant, execute `vagrant ssh -c 'cd /vagrant && jekyll build'`)
-* Envie um pull request para análise
+1. Fork e edite
+2. Instale opcionalmente [Ruby](https://rvm.io/rvm/install/) com [Jekyll](https://github.com/mojombo/jekyll/) gem para visualizar
+3. Envie um pull request para consideração
 
-### Guia de Estilo para o Contribuidor
+[Instalar utilizando o Vagrant](vagrant.md)
 
-1. Use a ortografia do Português Brasileiro neste repositório.
-2. Use quatro (4) espaços para identar o texto; não use TAB.
+## Guia de Estilo para o Contribuidor
+
+1. Use a ortografia do Português do Brasil neste repositório.
+2. Use quatro (4) espaços para indentar o texto; não use TAB.
 3. Limite o texto em 120 caracteres.
 4. Os exemplos de código devem seguir a [PSR-1](http://www.php-fig.org/psr/psr-1/) ou superior.
 
-
-### Traduzir ou não traduzir?
-
-Tendo em vista que o projeto tem caráter didático, vale traduzir tudo que se entender importante.
-
-Exemplos de coisas possíveis de se traduzir:
-
-- comentários explicativos
-- conteúdo de strings, heredocs ou nowdocs quando for julgado necessário etc.
-
-Sempre avaliar o que vale ou não, pensando no caratér didático da tradução.
-
-Reforçar que nunca se deve alterar o sentido dos textos, nem colocar informações complementares que não existem na versão original (exceto talvez alguma nota do tradutor)
-
 ## Onde
 
-<http://www.phptherightway.com>
+<http://br.phptherightway.com>
 
 * [Inglês](http://www.phptherightway.com)
-* [Catalão] (http://ca.phptherightway.com)
-* [Chinês](http://wulijun.github.com/php-the-right-way)
-* [Japanês] (http://ja.phptherightway.com)
-* [Coreano] (http://wafe.github.io/php-the-right-way)
-* [Italiano] (http://it.phptherightway.com)
-* [Polonês](http://pl.phptherightway.com)
-* [Português Brasileiro](http://br.phptherightway.com)
-* [Russo] (http://getjump.github.io/ru-php-the-right-way)
-* [Espanhol] (http://es.phptherightway.com)
-* [Ucraniano](http://iflista.github.com/php-the-right-way)
+* [Alemão](http://rwetzlmayr.github.io/php-the-right-way)
 * [Búlgaro](http://bg.phptherightway.com)
-* [Alemão] (http://rwetzlmayr.github.io/php-the-right-way)
+* [Chinês (Simplificado)](http://wulijun.github.com/php-the-right-way)
+* [Chinês (Tradicional)](http://laravel-taiwan.github.io/php-the-right-way)
+* [Coreano](http://modernpug.github.io/php-the-right-way)
+* [Esloveno](http://sl.phptherightway.com)
+* [Espanhol](http://phpdevenezuela.github.io/php-the-right-way)
+* [Francês](http://eilgin.github.io/php-the-right-way/)
+* [Indonésio](http://id.phptherightway.com)
+* [Italiano](http://it.phptherightway.com)
+* [Japonês](http://ja.phptherightway.com)
+* [Persa](http://novid.github.io/php-the-right-way/)
+* [Polonês](http://pl.phptherightway.com)
+* [Português](http://br.phptherightway.com)
+* [Romeno](https://bgui.github.io/php-the-right-way/)
+* [Russo](http://getjump.github.io/ru-php-the-right-way)
+* [Sérvio](http://smatejic.github.io/php-the-right-way/)
+* [Tailandês](https://apzentral.github.io/php-the-right-way/)
 * [Turco](http://hkulekci.github.io/php-the-right-way/)
+* [Ucraniano](http://iflista.github.com/php-the-right-way)
 
-### Traduções
+
+## Traduções
 
 Se você tem interesse em traduzir _PHP: The Right Way_, faça o fork do repo no GitHub e publique seu fork para sua
 própria conta do GitHub. Nós vamos vincular sua tradução a partir do documento principal.
@@ -83,20 +67,22 @@ Para evitar fragmentação e confusão para o leitor, por favor escolha uma dest
 1. Vincularemos seu fork com a sua GitHub Page `[username].github.com/php-the-right-way`
 2. Vincularemos seu fork com a sua GitHub Page com um subdomínio (por exemplo, "br.phptherightway.com")
 
-Se você usa um subdomínio, coloque-o no arquivo `CNAME`, e avíse-nos para configurar o DNS para você. Se não usa um
+Se você usa um subdomínio, coloque-o no arquivo `CNAME`, e avise-nos para configurar o DNS para você. Se não usa um
 subdomínio, apague o arquivo `CNAME` senão seu fork não vai fazer o build quando for publicado.
 
 Quando sua tradução estiver pronta, abra uma issue no Isse Tracker para nos avisar.
 
-## Porque?
+[Notas de tradução](notas_de_traducao.md)
+
+## Por que?
 
 Têm havido muita discussão ultimamente sobre como a comunidade PHP carece de informação válida e suficiente para programadores novos no PHP. Este repositório busca resolver este problema.
 
 ## Quem
 
-Meu nome é [Josh Lockhart](http://twitter.com/codeguy). Sou o autor do [Slim Framework](http://www.slimframework.com/), e trabalho para a [New Media Campaigns](http://www.newmediacampaigns.com/).
+Meu nome é [Josh Lockhart](http://twitter.com/codeguy). Sou o autor do [Slim Framework](http://www.slimframework.com/) e trabalho para a [New Media Campaigns](http://www.newmediacampaigns.com/).
 
-### Colaboradores
+## Colaboradores
 
 * [Kris Jordan](http://krisjordan.com/)
 * [Phil Sturgeon](http://philsturgeon.co.uk/)

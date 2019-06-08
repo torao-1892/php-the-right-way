@@ -1,6 +1,7 @@
 ---
 title: Interface de Linha de Comando
 isChild: true
+anchor: interface_de_linha_de_comando
 ---
 
 ## Interface de Linha de Comando {#interface_de_linha_de_comando_title}
@@ -10,11 +11,12 @@ comando (CLI). Programas PHP de linha de comando podem te ajudar a automatizar t
 e administração de aplicações.
 
 Programas PHP CLI são poderosos pois você pode usar o código de sua aplicação diretamente sem precisar criar e
-proteger uma GUI web para isso. Apenas tenha a certeza de não colocar seus scripts PHP CLI no seu web root público!
+proteger uma GUI (Interface Gráfica do Usuário) web para isso. Apenas tenha a certeza de não colocar seus scripts PHP 
+CLI na raiz pública do seu servidor web!
 
 Tente executar o PHP a partir da sua linha de comando:
 
-{% highlight bash %}
+{% highlight console %}
 > php -i
 {% endhighlight %}
 
@@ -45,7 +47,7 @@ saída normalmente usados podem ser encontrados [aqui][exit-codes].
 
 Para executar nosso script acima, a partir da linha de comando:
 
-{% highlight bash %}
+{% highlight console %}
 > php hello.php
 Usage: php hello.php [name]
 > php hello.php world
@@ -56,10 +58,10 @@ Hello, world
  * [Aprenda sobre como executar o PHP a partir da linha de comando][php-cli]
  * [Aprenda sobre como configurar o Windows para executar o PHP a partir da linha de comando][php-cli-windows]
 
-[phpinfo]: http://php.net/manual/en/function.phpinfo.php
-[cli-options]: http://www.php.net/manual/en/features.commandline.options.php
-[argc]: http://php.net/manual/en/reserved.variables.argc.php
-[argv]: http://php.net/manual/en/reserved.variables.argv.php
-[php-cli]: http://php.net/manual/en/features.commandline.php
-[php-cli-windows]: http://www.php.net/manual/en/install.windows.commandline.php
-[exit-codes]: http://www.gsp.com/cgi-bin/man.cgi?section=3&topic=sysexits
+[phpinfo]: http://php.net/function.phpinfo
+[cli-options]: http://php.net/features.commandline.options
+[argc]: http://php.net/reserved.variables.argc
+[argv]: http://php.net/reserved.variables.argv
+[php-cli]: http://php.net/features.commandline
+[php-cli-windows]: http://php.net/install.windows.commandline
+[exit-codes]: http://gsp.com/cgi-bin/man.cgi?section=3&topic=sysexits
